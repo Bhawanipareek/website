@@ -1,5 +1,12 @@
 // BillingServer — Enterprise SaaS Interaction Engine
 
+// Immediate Redirection to Official Production Domain
+if (window.location.hostname.includes('github.io')) {
+  var cleanPath = window.location.pathname.replace(/^\/website/, '');
+  if (!cleanPath.startsWith('/')) cleanPath = '/' + cleanPath;
+  window.location.replace('https://billingserver.in' + cleanPath + window.location.search + window.location.hash);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   const mobileToggle = document.getElementById('mobileToggle');
