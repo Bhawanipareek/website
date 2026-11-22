@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BillingServer — Hotel & Restaurant Management System</title>
+  <meta name="description" content="Enterprise hospitality platform unifying high-speed POS billing, hotel property management, kitchen display systems, and multi-branch operations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVIGATION BAR — INSTITUTIONAL SAAS HEADER
+       ======================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BillingServer Home">
+        <img src="assets/logo.png" alt="BillingServer Logo" class="logo-img">
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item active">Home</a>
+        <a href="features.html" class="nav-item">Features</a>
+        
+        <!-- Solutions Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Solutions</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="solutions.html#restaurant" class="dropdown-item">
+              <div class="dropdown-item-title">Restaurant Management</div>
+              <div class="dropdown-item-desc">High-speed billing, tables, KOT & delivery</div>
+            </a>
+            <a href="solutions.html#hotel" class="dropdown-item">
+              <div class="dropdown-item-title">Hotel Management (PMS)</div>
+              <div class="dropdown-item-desc">Front desk, room folios, housekeeping & rates</div>
+            </a>
+            <a href="solutions.html#cafe" class="dropdown-item">
+              <div class="dropdown-item-title">Cafe & Quick Service</div>
+              <div class="dropdown-item-desc">Counter sales, quick tokens & drive-thru</div>
+            </a>
+            <a href="solutions.html#multibranch" class="dropdown-item">
+              <div class="dropdown-item-title">Multi-Branch Business</div>
+              <div class="dropdown-item-desc">Central HQ, unified stock & branch reports</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="pricing.html" class="nav-item">Pricing</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Resources</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="help-center.html" class="dropdown-item">
+              <div class="dropdown-item-title">Help Center</div>
+              <div class="dropdown-item-desc">Documentation, setup guides & FAQs</div>
+            </a>
+            <a href="hardware.html" class="dropdown-item">
+              <div class="dropdown-item-title">Hardware</div>
+              <div class="dropdown-item-desc">Touch POS terminals, printers & KDS screens</div>
+            </a>
+            <a href="integrations.html" class="dropdown-item">
+              <div class="dropdown-item-title">Integrations</div>
+              <div class="dropdown-item-desc">Payment gateways, aggregators & accounting</div>
+            </a>
+            <a href="download.html" class="dropdown-item">
+              <div class="dropdown-item-title">Download</div>
+              <div class="dropdown-item-desc">Desktop client & mobile management apps</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about-us.html" class="nav-item">About Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link active">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      
+      <!-- Mobile Solutions Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Solutions</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="solutions.html#restaurant" class="mobile-sublink">Restaurant Management</a>
+          <a href="solutions.html#hotel" class="mobile-sublink">Hotel Management (PMS)</a>
+          <a href="solutions.html#cafe" class="mobile-sublink">Cafe & Quick Service</a>
+          <a href="solutions.html#multibranch" class="mobile-sublink">Multi-Branch Business</a>
+        </div>
+      </div>
+
+      <a href="industries.html" class="mobile-link">Industries</a>
+      <a href="pricing.html" class="mobile-link">Pricing</a>
+
+      <!-- Mobile Resources Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Resources</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="help-center.html" class="mobile-sublink">Help Center</a>
+          <a href="hardware.html" class="mobile-sublink">Hardware</a>
+          <a href="integrations.html" class="mobile-sublink">Integrations</a>
+          <a href="download.html" class="mobile-sublink">Download</a>
+        </div>
+      </div>
+
+      <a href="about-us.html" class="mobile-link">About Us</a>
+
+      <div class="mobile-menu-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-block">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         HERO SECTION — HIGH-IMPACT RESTRAINED VISUAL
+         ======================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Background Video with Clean Neutral Tint (No Neon Glowing Blobs) -->
+      <div class="video-background-wrapper">
+        <video id="bgVideo" src="assets/bg-video-optimized.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="assets/video-poster.jpg">
+          <source src="assets/bg-video-optimized.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay-clean"></div>
+      </div>
+
+      <div class="hero-container">
+    
+        <!-- Clean Bold Headline -->
+        <h1 class="hero-title">
+          <span class="hero-title-primary">Manage Smarter.</span>
+          <span class="hero-title-accent">Serve Better. <span class="text-brand-red">Grow Faster.</span></span>
+        </h1>
+
+        <!-- Restrained Description -->
+        <p class="hero-description">
+          BillingServer brings your entire hotel and restaurant operations together in one powerful platform. 
+          Manage billing, tables, kitchen orders, hotel rooms, inventory, staff and multiple outlets with complete control.
+        </p>
+
+        <!-- CTA Buttons Row -->
+        <div class="hero-actions">
+          <a href="#book-demo" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+          <a href="#software-showcase" class="btn btn-secondary btn-lg">
+            <span>Explore All Features</span>
+          </a>
+        </div>
+
+        <!-- Trust Highlights Bar (Solid Architectural Surface) -->
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <div class="trust-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="trust-text">
+              <strong>All-in-One Business Management</strong>
+              <span>Unified POS, PMS, and back-office accounting</span>
+            </div>
+          </div>
+
+          <div class="trust-separator"></div>
+
+          <div class="trust-item">
+            <div class="trust-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="trust-text">
+              <strong>Desktop & Mobile Ready</strong>
+              <span>Windows high-speed counter POS + staff handhelds</span>
+            </div>
+          </div>
+
+          <div class="trust-separator"></div>
+
+          <div class="trust-item">
+            <div class="trust-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="trust-text">
+              <strong>Multi-Branch Management</strong>
+              <span>Centralized menus, inventory, and cross-outlet reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 1: INTRODUCTION (LIGHT #FFFFFF)
+         ======================================================== -->
+    <section class="section bg-light" id="about-us">
+      <div class="container">
+        <div class="intro-grid">
+          
+          <!-- Left Column: Editorial Statement -->
+          <div class="intro-editorial">
+            <div class="section-label">WELCOME TO BILLINGSERVER</div>
+            <h2 class="section-heading text-dark">
+              One Platform. Complete Business Management.
+            </h2>
+            <div class="intro-copy">
+              <p>
+                Running a hotel or restaurant involves managing multiple operations every day. BillingServer brings your essential business activities together in one centralized platform.
+              </p>
+              <p>
+                From daily billing and customer orders to hotel operations and business management, everything is designed to work together seamlessly.
+              </p>
+            </div>
+
+            <!-- Structured Enterprise Feature Matrix -->
+            <div class="intro-spec-list">
+              <div class="spec-row">
+                <div class="spec-check">
+                  <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Unified Data Architecture</strong>
+                  <span>Eliminate double entry between dining tables, front-desk folios, and central inventory.</span>
+                </div>
+              </div>
+
+              <div class="spec-row">
+                <div class="spec-check">
+                  <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Sub-Second Transaction Speed</strong>
+                  <span>Optimized for rush-hour counter throughput with keyboard hotkeys and instant ticket printing.</span>
+                </div>
+              </div>
+
+              <div class="spec-row">
+                <div class="spec-check">
+                  <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Enterprise Role-Based Access (RBAC)</strong>
+                  <span>Enforce cashier discount limits, audit voided items, and protect owner financials across shifts.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="intro-action">
+              <a href="#solutions" class="btn btn-primary">Explore Solutions</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Commercial Photography Frame (No Fake Floating Badges) -->
+          <div class="intro-media">
+            <div class="image-frame">
+              <img src="assets/images/intro-manager.jpg" alt="Restaurant manager operating BillingServer POS terminal" loading="lazy">
+              <div class="image-caption-bar">
+                <span class="caption-dot"></span>
+                <span>Production Environment — Touchscreen Counter Billing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 2: OUR SOLUTIONS (DARK #050505)
+         ======================================================== -->
+    <section class="section bg-dark" id="solutions">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-left">
+          <div class="section-label text-red">SOLUTIONS FOR YOUR BUSINESS</div>
+          <h2 class="section-heading text-white">
+            Technology That Works for Your Business.
+          </h2>
+          <p class="section-subheading text-muted">
+            Whether you run a restaurant, hotel, cafe or multiple outlets, BillingServer provides an integrated solution to simplify your daily operations.
+          </p>
+        </div>
+
+        <!-- 4 Structured Solutions Cards -->
+        <div class="solutions-grid">
+          
+          <!-- Card 1: Restaurant Management -->
+          <article class="solution-card">
+            <div class="card-media">
+              <img src="assets/images/sol-restaurant.jpg" alt="Modern restaurant cashier POS billing counter" loading="lazy">
+              <span class="card-tag">Hospitality POS</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title text-white">RESTAURANT MANAGEMENT</h3>
+              <p class="card-description">
+                Manage customer orders, billing, tables and daily restaurant activities from one powerful platform.
+              </p>
+              <div class="card-footer">
+                <a href="#book-demo" class="card-link">
+                  <span>Explore Solution</span>
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Hotel Management -->
+          <article class="solution-card">
+            <div class="card-media">
+              <img src="assets/images/sol-hotel.jpg" alt="Luxury hotel reception with front desk and computer" loading="lazy">
+              <span class="card-tag">Property PMS</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title text-white">HOTEL MANAGEMENT</h3>
+              <p class="card-description">
+                Manage hotel rooms, reservations, guest check-in, check-out and room services efficiently.
+              </p>
+              <div class="card-footer">
+                <a href="#book-demo" class="card-link">
+                  <span>Explore Solution</span>
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Cafe & Quick Service -->
+          <article class="solution-card">
+            <div class="card-media">
+              <img src="assets/images/sol-cafe.jpg" alt="Modern premium coffee shop and cafe counter" loading="lazy">
+              <span class="card-tag">Quick Service</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title text-white">CAFE & QUICK SERVICE</h3>
+              <p class="card-description">
+                Manage quick orders, counter billing, menu items and customer service with a streamlined workflow.
+              </p>
+              <div class="card-footer">
+                <a href="#book-demo" class="card-link">
+                  <span>Explore Solution</span>
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Multi-Branch Business -->
+          <article class="solution-card">
+            <div class="card-media">
+              <img src="assets/images/sol-multibranch.jpg" alt="Modern restaurant chain with multiple locations" loading="lazy">
+              <span class="card-tag">Multi-Unit HQ</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title text-white">MULTI-BRANCH BUSINESS</h3>
+              <p class="card-description">
+                Control multiple outlets and monitor business operations from a centralized owner portal.
+              </p>
+              <div class="card-footer">
+                <a href="#book-demo" class="card-link">
+                  <span>Explore Solution</span>
+                  <svg viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 3: SOFTWARE SHOWCASE (NEUTRAL LIGHT #F7F7F8)
+         REALISTIC ENTERPRISE WORKSTATION — NO CARTOON GRAPHICS
+         ======================================================== -->
+    <section class="section bg-neutral" id="software-showcase">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label">POWERFUL TECHNOLOGY. SIMPLE EXPERIENCE.</div>
+          <h2 class="section-heading text-dark">
+            Everything Working Together, Beautifully.
+          </h2>
+          <p class="section-subheading text-secondary">
+            BillingServer connects your business operations through an integrated software ecosystem.
+          </p>
+        </div>
+
+        <!-- Authentic SaaS Software Interface Mockup -->
+        <div class="software-window">
+          
+          <!-- System Window Titlebar -->
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="window-title">
+              BillingServer Enterprise Workstation — Outlet #01 (Bistro & Suites)
+            </div>
+            <div class="window-meta">
+              <span class="status-indicator online"></span>
+              <span>Sync Active • Shift: Dinner Service</span>
+            </div>
+          </div>
+
+          <!-- Software Workspace Interior -->
+          <div class="software-body">
+            
+            <!-- Left Navigation Sidebar -->
+            <aside class="software-nav">
+              <div class="app-brand-mark">
+                <span class="brand-monogram">BS</span>
+                <strong>BillingServer</strong>
+              </div>
+              <ul class="app-menu">
+                <li class="app-menu-item active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  <span>Floor Plan</span>
+                </li>
+                <li class="app-menu-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  <span>Quick Billing</span>
+                </li>
+                <li class="app-menu-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                  <span>Hotel Rooms</span>
+                </li>
+                <li class="app-menu-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Kitchen KDS</span>
+                </li>
+                <li class="app-menu-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  <span>Reports</span>
+                </li>
+              </ul>
+              <div class="app-nav-footer">
+                <div class="hw-chip">
+                  <span class="hw-dot"></span>
+                  <span>Printer: TM-T88VI Ready</span>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Main Operational Dashboard Panel -->
+            <div class="software-canvas">
+              
+              <!-- Metrics Ribbon -->
+              <div class="canvas-kpis">
+                <div class="kpi-block">
+                  <span class="kpi-label">TOTAL SHIFT REVENUE</span>
+                  <div class="kpi-value">$18,450.00</div>
+                  <span class="kpi-subtext positive">+14.2% vs avg</span>
+                </div>
+                <div class="kpi-block">
+                  <span class="kpi-label">ACTIVE TABLES</span>
+                  <div class="kpi-value">22 / 26</div>
+                  <span class="kpi-subtext">84% Capacity</span>
+                </div>
+                <div class="kpi-block">
+                  <span class="kpi-label">ROOM OCCUPANCY</span>
+                  <div class="kpi-value">36 / 40</div>
+                  <span class="kpi-subtext">90% Checked In</span>
+                </div>
+                <div class="kpi-block">
+                  <span class="kpi-label">AVG PREP TIME (KDS)</span>
+                  <div class="kpi-value">7.8 min</div>
+                  <span class="kpi-subtext positive">Target: &lt;10 min</span>
+                </div>
+              </div>
+
+              <!-- Operational Split View -->
+              <div class="canvas-workspace">
+                
+                <!-- Table & Room Grid -->
+                <div class="workspace-main">
+                  <div class="workspace-panel-header">
+                    <h4>Floor Layout & Active Tables</h4>
+                    <div class="status-legend">
+                      <span class="legend-chip occupied">Occupied</span>
+                      <span class="legend-chip dining">Billed</span>
+                      <span class="legend-chip available">Available</span>
+                    </div>
+                  </div>
+
+                  <div class="table-matrix">
+                    <div class="tbl-cell occupied">
+                      <div class="tbl-head">
+                        <strong>T-01</strong>
+                        <span>4 Guests</span>
+                      </div>
+                      <div class="tbl-foot">
+                        <span class="tbl-amt">$142.50</span>
+                        <span class="tbl-tag red">Active Order</span>
+                      </div>
+                    </div>
+
+                    <div class="tbl-cell dining">
+                      <div class="tbl-head">
+                        <strong>T-02</strong>
+                        <span>2 Guests</span>
+                      </div>
+                      <div class="tbl-foot">
+                        <span class="tbl-amt">$58.00</span>
+                        <span class="tbl-tag yellow">Check Printed</span>
+                      </div>
+                    </div>
+
+                    <div class="tbl-cell available">
+                      <div class="tbl-head">
+                        <strong>T-03</strong>
+                        <span>6 Capacity</span>
+                      </div>
+                      <div class="tbl-foot">
+                        <span class="tbl-amt">Ready</span>
+                        <span class="tbl-tag green">Available</span>
+                      </div>
+                    </div>
+
+                    <div class="tbl-cell occupied">
+                      <div class="tbl-head">
+                        <strong>T-04</strong>
+                        <span>8 Guests</span>
+                      </div>
+                      <div class="tbl-foot">
+                        <span class="tbl-amt">$312.00</span>
+                        <span class="tbl-tag red">Main Course</span>
+                      </div>
+                    </div>
+
+                    <div class="tbl-cell available">
+                      <div class="tbl-head">
+                        <strong>T-05</strong>
+                        <span>2 Capacity</span>
+                      </div>
+                      <div class="tbl-foot">
+                        <span class="tbl-amt">Ready</span>
+                        <span class="tbl-tag green">Available</span>
+                      </div>
+                    </div>
+
+                    <div class="tbl-cell occupied">
+                      <div class="tbl-head">
+                        <strong>T-06</strong>
+                        <span>3 Guests</span>
+                      </div>
+                      <div class="tbl-foot">
+                        <span class="tbl-amt">$89.20</span>
+                        <span class="tbl-tag red">Active Order</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Room PMS Integration Preview Strip -->
+                  <div class="room-strip">
+                    <div class="strip-header">
+                      <h5>Hotel Room Quick Status</h5>
+                      <span class="strip-link">View PMS Grid →</span>
+                    </div>
+                    <div class="room-pills">
+                      <span class="room-pill clean">Rm 101 • Checked-In (Folio Active)</span>
+                      <span class="room-pill clean">Rm 102 • Checked-In (Dining Charged)</span>
+                      <span class="room-pill ready">Rm 103 • Inspected & Ready</span>
+                      <span class="room-pill cleaning">Rm 104 • Housekeeping</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Live KDS Queue -->
+                <div class="workspace-sidebar">
+                  <div class="workspace-panel-header">
+                    <h4>Live Kitchen Queue</h4>
+                    <span class="badge-mono">4 Tickets</span>
+                  </div>
+                  <div class="kds-ticket-list">
+                    <div class="kds-ticket urgent">
+                      <div class="ticket-header">
+                        <strong>#KOT-1482 • Table 04</strong>
+                        <span class="ticket-time">04:15m</span>
+                      </div>
+                      <ul class="ticket-items">
+                        <li>2x Grilled Norwegian Salmon</li>
+                        <li>1x Wild Truffle Risotto</li>
+                        <li>1x Rosemary Focaccia</li>
+                      </ul>
+                      <div class="ticket-actions">
+                        <span class="btn-micro">Bump to Pass</span>
+                      </div>
+                    </div>
+
+                    <div class="kds-ticket">
+                      <div class="ticket-header">
+                        <strong>#KOT-1483 • Room 204</strong>
+                        <span class="ticket-time">01:50m</span>
+                      </div>
+                      <ul class="ticket-items">
+                        <li>1x Club Sandwich (Fries)</li>
+                        <li>2x Fresh Citrus Juices</li>
+                      </ul>
+                      <div class="ticket-actions">
+                        <span class="btn-micro">Preparing</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 4: CONNECTED BUSINESS ECOSYSTEM (DARK #050505)
+         ======================================================== -->
+    <section class="section bg-dark" id="ecosystem">
+      <div class="container">
+        <div class="section-header-left">
+          <div class="section-label text-red">ONE CONNECTED ECOSYSTEM</div>
+          <h2 class="section-heading text-white">
+            Every Department. One Connected System.
+          </h2>
+          <p class="section-subheading text-muted">
+            Bring your entire team onto the same platform and create a smoother workflow between different departments.
+          </p>
+        </div>
+
+        <!-- 4 Department Flow Blocks -->
+        <div class="ecosystem-blocks">
+          
+          <!-- Block 1: Front Office -->
+          <div class="eco-block">
+            <div class="eco-block-media">
+              <img src="assets/images/eco-frontoffice.jpg" alt="Restaurant cashier using POS terminal" loading="lazy">
+            </div>
+            <div class="eco-block-text">
+              <div class="eco-num">01</div>
+              <h3 class="eco-block-title text-white">FRONT OFFICE</h3>
+              <p class="eco-block-desc">
+                Manage customer orders, billing and payments.
+              </p>
+              <div class="eco-spec-item">
+                <span class="spec-dot"></span>
+                <span>Fast split-billing, cash drawer management & digital payment gateways.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block 2: Kitchen Operations -->
+          <div class="eco-block">
+            <div class="eco-block-media">
+              <img src="assets/images/eco-kitchen.jpg" alt="Professional kitchen with digital KDS screen" loading="lazy">
+            </div>
+            <div class="eco-block-text">
+              <div class="eco-num">02</div>
+              <h3 class="eco-block-title text-white">KITCHEN OPERATIONS</h3>
+              <p class="eco-block-desc">
+                Keep kitchen staff connected with incoming orders.
+              </p>
+              <div class="eco-spec-item">
+                <span class="spec-dot"></span>
+                <span>Direct Kitchen Display (KDS) routing, modifier tags & preparation timing.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block 3: Hotel Operations -->
+          <div class="eco-block">
+            <div class="eco-block-media">
+              <img src="assets/images/eco-hotel.jpg" alt="Hotel reception and room management environment" loading="lazy">
+            </div>
+            <div class="eco-block-text">
+              <div class="eco-num">03</div>
+              <h3 class="eco-block-title text-white">HOTEL OPERATIONS</h3>
+              <p class="eco-block-desc">
+                Coordinate room management and guest services.
+              </p>
+              <div class="eco-spec-item">
+                <span class="spec-dot"></span>
+                <span>Real-time housekeeping room statuses, guest folios & room-service posting.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block 4: Business Administration -->
+          <div class="eco-block">
+            <div class="eco-block-media">
+              <img src="assets/images/eco-admin.jpg" alt="Business owner reviewing analytics on laptop" loading="lazy">
+            </div>
+            <div class="eco-block-text">
+              <div class="eco-num">04</div>
+              <h3 class="eco-block-title text-white">BUSINESS ADMINISTRATION</h3>
+              <p class="eco-block-desc">
+                Monitor performance and manage business activities.
+              </p>
+              <div class="eco-spec-item">
+                <span class="spec-dot"></span>
+                <span>Consolidated multi-unit P&L, stock audit reports & payroll attendance logs.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 5: WHY CHOOSE BILLINGSERVER (LIGHT #FFFFFF)
+         STRUCTURED BENEFIT MATRIX WITH LUCIDE ICONS
+         ======================================================== -->
+    <section class="section bg-light" id="advantage">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label">THE BILLINGSERVER ADVANTAGE</div>
+          <h2 class="section-heading text-dark">
+            Designed to Make Business Management Easier.
+          </h2>
+          <p class="section-subheading text-secondary">
+            Enterprise software engineered for speed, operational clarity, and reliability without unnecessary complexity.
+          </p>
+        </div>
+
+        <!-- 6 Feature Benefit Icon Cards (Strictly No Stock Photos) -->
+        <div class="advantage-grid">
+          
+          <!-- Card 1 -->
+          <div class="adv-card">
+            <div class="adv-icon">
+              <!-- Lucide Layers -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="adv-title">1. CENTRALIZED MANAGEMENT</h3>
+            <p class="adv-desc">Bring important business operations together in one place.</p>
+            <div class="adv-foot">Unified Database & Sync</div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="adv-card">
+            <div class="adv-icon">
+              <!-- Lucide Zap -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="adv-title">2. EFFICIENT WORKFLOWS</h3>
+            <p class="adv-desc">Simplify everyday tasks and improve coordination between teams.</p>
+            <div class="adv-foot">Reduced Waiter Steps</div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="adv-card">
+            <div class="adv-icon">
+              <!-- Lucide Monitor & Mobile -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="adv-title">3. DESKTOP & MOBILE EXPERIENCE</h3>
+            <p class="adv-desc">Access supported operations through desktop and mobile applications.</p>
+            <div class="adv-foot">Cross-Platform Sync</div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="adv-card">
+            <div class="adv-icon">
+              <!-- Lucide TrendingUp -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="adv-title">4. SCALABLE BUSINESS MANAGEMENT</h3>
+            <p class="adv-desc">Support your growing business with multi-outlet management.</p>
+            <div class="adv-foot">Multi-Store HQ Control</div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="adv-card">
+            <div class="adv-icon">
+              <!-- Lucide ShieldCheck -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="adv-title">5. CONTROLLED ACCESS</h3>
+            <p class="adv-desc">Manage employee roles, permissions and authorized devices.</p>
+            <div class="adv-foot">Shift Audits & Cash Logs</div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="adv-card">
+            <div class="adv-icon">
+              <!-- Lucide BarChart3 -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="adv-title">6. BUSINESS INSIGHTS</h3>
+            <p class="adv-desc">Get better visibility into sales, operations and business performance.</p>
+            <div class="adv-foot">Real-Time P&L Reporting</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 6: INDUSTRIES WE SERVE (DARK #08080A)
+         COMMERCIAL PHOTOGRAPHY WITH RESTRAINED METADATA
+         ======================================================== -->
+    <section class="section bg-dark-alt" id="industries">
+      <div class="container">
+        <div class="section-header-left">
+          <div class="section-label text-red">WHO WE SERVE</div>
+          <h2 class="section-heading text-white">
+            One Solution for Every Hospitality Business.
+          </h2>
+          <p class="section-subheading text-muted">
+            Engineered with deep operational nuance for every segment of the food service and lodging industry.
+          </p>
+        </div>
+
+        <!-- 6 High-Res Segment Cards -->
+        <div class="industries-grid">
+          
+          <div class="industry-card">
+            <img src="assets/images/ind-restaurants.jpg" alt="Fine dining restaurant interior" class="ind-photo" loading="lazy">
+            <div class="ind-scrim"></div>
+            <div class="ind-details">
+              <span class="ind-idx">01</span>
+              <h3 class="ind-name">Restaurants</h3>
+              <p class="ind-sub">Fine dining, casual dining & family bistros</p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img src="assets/images/ind-hotels.jpg" alt="Luxury hotel lobby and resort" class="ind-photo" loading="lazy">
+            <div class="ind-scrim"></div>
+            <div class="ind-details">
+              <span class="ind-idx">02</span>
+              <h3 class="ind-name">Hotels & Resorts</h3>
+              <p class="ind-sub">Boutique hotels, luxury resorts & motels</p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img src="assets/images/ind-cafes.jpg" alt="Artisan coffee bar and cafe" class="ind-photo" loading="lazy">
+            <div class="ind-scrim"></div>
+            <div class="ind-details">
+              <span class="ind-idx">03</span>
+              <h3 class="ind-name">Cafes & Coffee Shops</h3>
+              <p class="ind-sub">Artisan roasters, tea lounges & counters</p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img src="assets/images/ind-qsr.jpg" alt="Quick service restaurant counter" class="ind-photo" loading="lazy">
+            <div class="ind-scrim"></div>
+            <div class="ind-details">
+              <span class="ind-idx">04</span>
+              <h3 class="ind-name">Quick Service Restaurants</h3>
+              <p class="ind-sub">Fast food chains, takeaways & drive-thrus</p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img src="assets/images/ind-bakeries.jpg" alt="Artisan bakery and patisserie display" class="ind-photo" loading="lazy">
+            <div class="ind-scrim"></div>
+            <div class="ind-details">
+              <span class="ind-idx">05</span>
+              <h3 class="ind-name">Bakeries</h3>
+              <p class="ind-sub">Patisseries, dessert parlors & confectioneries</p>
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <img src="assets/images/ind-foodcourts.jpg" alt="Food court and multiple food outlets" class="ind-photo" loading="lazy">
+            <div class="ind-scrim"></div>
+            <div class="ind-details">
+              <span class="ind-idx">06</span>
+              <h3 class="ind-name">Food Courts</h3>
+              <p class="ind-sub">Mall food courts, multi-brand kitchens & hubs</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 7: DESKTOP & MOBILE EXPERIENCE (LIGHT #F7F7F8)
+         ======================================================== -->
+    <section class="section bg-neutral" id="experience">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label">FLEXIBLE. CONNECTED. RELIABLE.</div>
+          <h2 class="section-heading text-dark">
+            Your Business Doesn't Stop at One Device.
+          </h2>
+          <p class="section-subheading text-secondary">
+            BillingServer offers dedicated desktop and mobile experiences to help business owners and employees stay connected with supported operations.
+          </p>
+        </div>
+
+        <!-- Hardware & Software Synergy Showcase -->
+        <div class="hardware-showcase-box">
+          <div class="workstation-grid">
+            
+            <!-- Left: Windows POS Workstation Screen -->
+            <div class="workstation-left">
+              <div class="workstation-panel-title">
+                <span class="os-icon">⊞</span>
+                <span>BillingServer Windows Edition — High-Speed Counter Terminal</span>
+              </div>
+              <div class="workstation-inner">
+                <div class="terminal-bar">
+                  <span class="term-tag">Shift: Dinner #02</span>
+                  <span class="term-status">Thermal Printer: Epson TM-T88VI (Connected)</span>
+                </div>
+                <div class="terminal-items-table">
+                  <div class="table-header-row">
+                    <span>Item Description</span>
+                    <span>Qty</span>
+                    <span>Rate</span>
+                    <span>Amount</span>
+                  </div>
+                  <div class="table-data-row">
+                    <span>1. Grilled Salmon Fillet</span>
+                    <span>2</span>
+                    <span>$24.00</span>
+                    <span>$48.00</span>
+                  </div>
+                  <div class="table-data-row">
+                    <span>2. Truffle Parmesan Fries</span>
+                    <span>1</span>
+                    <span>$8.50</span>
+                    <span>$8.50</span>
+                  </div>
+                  <div class="table-data-row">
+                    <span>3. Sparkling Water (750ml)</span>
+                    <span>2</span>
+                    <span>$4.00</span>
+                    <span>$8.00</span>
+                  </div>
+                </div>
+                <div class="terminal-footer">
+                  <div class="total-block">
+                    <span>Subtotal: $64.50 • Tax (8%): $5.16</span>
+                    <strong>Total Amount: $69.66</strong>
+                  </div>
+                  <div class="quick-keys">
+                    <span class="key-badge">F1 New Bill</span>
+                    <span class="key-badge">F2 KOT</span>
+                    <span class="key-badge">F5 Settle Cash</span>
+                    <span class="key-badge">F8 Card</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Staff Mobile Terminal -->
+            <div class="workstation-right">
+              <div class="mobile-frame">
+                <div class="mobile-header-bar">
+                  <span>BillingServer Waiter POS</span>
+                  <span class="wifi-dot">● Live</span>
+                </div>
+                <div class="mobile-order-card">
+                  <div class="m-card-top">
+                    <strong>Table #04 (Dine-In)</strong>
+                    <span class="m-timer">In Prep: 03m</span>
+                  </div>
+                  <div class="m-items">
+                    <div>1x Garlic Rosemary Bread</div>
+                    <div>1x Wild Mushroom Penne</div>
+                  </div>
+                  <div class="m-btn-primary">Fire to Kitchen KDS</div>
+                </div>
+                <div class="mobile-stat-card">
+                  <span class="m-stat-title">Daily Shift Sales</span>
+                  <strong>$18,450.00</strong>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 5 Supporting Feature Badges -->
+        <div class="feature-pills-row">
+          <div class="feat-pill">
+            <span class="feat-dot"></span>
+            <span>Windows Desktop Application</span>
+          </div>
+          <div class="feat-pill">
+            <span class="feat-dot"></span>
+            <span>Staff Mobile Application</span>
+          </div>
+          <div class="feat-pill">
+            <span class="feat-dot"></span>
+            <span>Centralized Owner Portal</span>
+          </div>
+          <div class="feat-pill">
+            <span class="feat-dot"></span>
+            <span>Multi-Outlet Access</span>
+          </div>
+          <div class="feat-pill">
+            <span class="feat-dot"></span>
+            <span>Compatible Thermal Printing</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 8: GETTING STARTED (DARK #050505)
+         MINIMALIST ROADMAP WITH MONO STEP NUMBERS
+         ======================================================== -->
+    <section class="section bg-dark" id="getting-started">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label text-red">SIMPLE TO GET STARTED</div>
+          <h2 class="section-heading text-white">
+            Start Managing Your Business with Confidence.
+          </h2>
+          <p class="section-subheading text-muted">
+            A clear, 4-step onboarding roadmap to launch your property or restaurant chain seamlessly.
+          </p>
+        </div>
+
+        <!-- 4-Step Horizontal Timeline -->
+        <div class="roadmap-grid">
+          
+          <div class="roadmap-step">
+            <div class="step-num">01</div>
+            <h3 class="step-title">CONNECT WITH OUR TEAM</h3>
+            <p class="step-desc">
+              Tell us about your hotel, restaurant or business requirements.
+            </p>
+            <div class="step-timeline-meta">Step 1 • Requirements Analysis</div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="step-num">02</div>
+            <h3 class="step-title">EXPLORE BILLINGSERVER</h3>
+            <p class="step-desc">
+              Get a personalized demonstration of the platform.
+            </p>
+            <div class="step-timeline-meta">Step 2 • Guided Walkthrough</div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="step-num">03</div>
+            <h3 class="step-title">CONFIGURE YOUR BUSINESS</h3>
+            <p class="step-desc">
+              Set up your business, outlets, employees and operational requirements.
+            </p>
+            <div class="step-timeline-meta">Step 3 • Menu & Room Setup</div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="step-num">04</div>
+            <h3 class="step-title">START MANAGING</h3>
+            <p class="step-desc">
+              Bring your daily business operations onto BillingServer.
+            </p>
+            <div class="step-timeline-meta">Step 4 • Production Go-Live</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 8.5: PRICING (LIGHT/NEUTRAL #F7F7F8)
+         TRANSPARENT TIER ARCHITECTURE
+         ======================================================== -->
+    <section class="section bg-neutral" id="pricing">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label">TRANSPARENT VALUE</div>
+          <h2 class="section-heading text-dark">
+            Simple, Transparent Pricing for Growing Operations.
+          </h2>
+          <p class="section-subheading text-secondary">
+            Select the platform edition that aligns with your operational scale. All plans include automated cloud backups, local offline failover, and dedicated onboarding support.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Starter Plan -->
+          <div class="pricing-card">
+            <div class="pricing-badge">STARTER</div>
+            <h3 class="pricing-title">Quick Service & Cafe</h3>
+            <p class="pricing-desc">For single-outlet cafes, quick-service counters, and bakeries needing instant, reliable billing.</p>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-val">49</span>
+              <span class="price-period">/ month / terminal</span>
+            </div>
+            <ul class="pricing-features">
+              <li>High-speed POS billing & thermal printing</li>
+              <li>Basic table & counter order management</li>
+              <li>Daily sales & end-of-day cash reconciliation</li>
+              <li>Menu catalog & tax configuration</li>
+              <li>Standard email & chat support</li>
+            </ul>
+            <div class="pricing-action">
+              <a href="#contact-us" class="btn btn-secondary btn-block">Choose Starter</a>
+            </div>
+          </div>
+
+          <!-- Professional Plan (Featured) -->
+          <div class="pricing-card pricing-featured">
+            <div class="pricing-badge pricing-badge-popular">MOST POPULAR</div>
+            <h3 class="pricing-title">Full Restaurant & Bar</h3>
+            <p class="pricing-desc">Comprehensive system for dine-in restaurants, bars, and multi-floor dining operations.</p>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-val">89</span>
+              <span class="price-period">/ month / outlet</span>
+            </div>
+            <ul class="pricing-features">
+              <li>Everything in Starter plan</li>
+              <li>Interactive visual floor plan & split billing</li>
+              <li>Multi-station Kitchen Display System (KDS)</li>
+              <li>Recipe costing & raw ingredient inventory</li>
+              <li>QR code contactless order & pay at table</li>
+              <li>Priority 24/7 phone & live remote support</li>
+            </ul>
+            <div class="pricing-action">
+              <a href="#contact-us" class="btn btn-primary btn-block">Get Started</a>
+            </div>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="pricing-card">
+            <div class="pricing-badge">ENTERPRISE</div>
+            <h3 class="pricing-title">Hotel PMS & Chains</h3>
+            <p class="pricing-desc">Unified hospitality platform for hotels, resorts, and multi-location hospitality groups.</p>
+            <div class="pricing-price">
+              <span class="price-currency">$</span>
+              <span class="price-val">179</span>
+              <span class="price-period">/ month / property</span>
+            </div>
+            <ul class="pricing-features">
+              <li>Full Hotel PMS: Front desk, rooms & folios</li>
+              <li>Unified multi-outlet restaurant & hotel billing</li>
+              <li>Centralized warehouse & commissary transfer</li>
+              <li>Franchise royalty tracking & multi-tax compliance</li>
+              <li>Custom ERP / accounting integrations & API access</li>
+              <li>Dedicated customer success manager & SLA</li>
+            </ul>
+            <div class="pricing-action">
+              <a href="#contact-us" class="btn btn-secondary btn-block">Contact Enterprise</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 9: FAQ (LIGHT #FFFFFF)
+         CLEAN TYPOGRAPHIC ACCORDION
+         ======================================================== -->
+    <section class="section bg-light" id="faq">
+      <div class="container-narrow">
+        <div class="section-header-center">
+          <div class="section-label">FREQUENTLY ASKED QUESTIONS</div>
+          <h2 class="section-heading text-dark">
+            Frequently Asked Questions.
+          </h2>
+          <p class="section-subheading text-secondary">
+            Clear, authoritative answers about BillingServer implementation, pricing, hardware, and multi-unit support.
+          </p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="accordion-list">
+          
+          <!-- Q1 -->
+          <div class="accordion-item active">
+            <button class="accordion-header" aria-expanded="true">
+              <span class="accordion-question">1. What is BillingServer?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                BillingServer is a unified enterprise hospitality management platform designed specifically for restaurants, hotels, cafes, and multi-branch hospitality groups. It integrates high-speed point-of-sale billing, table management, Kitchen Display Systems (KDS), hotel room folios, central inventory, and real-time business reporting in one centralized software suite.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">2. Who can use BillingServer?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                BillingServer is designed for businesses of all scales in the food service and lodging industries: fine dining restaurants, casual eateries, boutique hotels and resorts, quick-service counters (QSR), cafes, bakeries, bars, and multi-outlet food court chains requiring centralized brand oversight.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">3. Can BillingServer manage hotels and restaurants together?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Yes. BillingServer natively unifies Hotel Property Management (PMS) and Restaurant Point of Sale (POS) under a single database architecture. Dining charges, bar tabs, and room-service orders can be posted directly to an in-house guest's room folio with one click, completely eliminating manual billing reconciliation between departments.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">4. Does BillingServer support multiple outlets?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Yes. BillingServer features an enterprise Multi-Branch HQ portal. You can manage multiple restaurant locations, hotel branches, or franchise outlets from a single master dashboard. Features include global master menu publishing, cross-branch inventory transfers, centralized supplier management, and consolidated executive sales reports.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">5. Does BillingServer have a Windows application?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Yes. BillingServer offers a native, high-performance Windows desktop application optimized for counter cashiers and touchscreen POS terminals. It includes full keyboard shortcut support (F1–F12 quick billing), direct ESC/POS thermal printing, and an offline-first sync engine that guarantees billing continues uninterrupted even during internet downtime.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">6. Can customers order through QR codes?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Yes. BillingServer includes contact-free dynamic QR code ordering. Guests can scan table QR codes or in-room QR stands on their smartphones to browse digital interactive menus, submit orders straight to the kitchen KDS, and request their final bill without waiting for waitstaff.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">7. Does BillingServer support thermal printers?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Yes. BillingServer provides native support for all standard 2-inch and 3-inch ESC/POS thermal receipt and kitchen ticket printers. Supported connection interfaces include USB, Ethernet (LAN), Wi-Fi, and Bluetooth across industry-standard hardware brands including Epson, Star Micronics, Citizen, and Sunmi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="accordion-question">8. How can I get a product demonstration?</span>
+              <span class="accordion-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                You can request a free, 1-on-1 personalized platform walkthrough by clicking "Book a Free Demo" on this website. Our hospitality systems consultants will walk you through your specific operational workflows—from POS table layouts to room folio management and multi-branch reports.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 10: FINAL CTA (DEEP BLACK #050505)
+         AUTHORITATIVE ENTERPRISE CLOSING
+         ======================================================== -->
+    <section class="section bg-dark-cta" id="contact-us">
+      <div class="container text-center">
+        <div class="section-label text-red">LET'S BUILD SOMETHING SMARTER</div>
+        <h2 class="cta-heading text-white">
+          Take Control of Your Business with <span class="text-brand-red">BillingServer.</span>
+        </h2>
+        <p class="cta-subheading text-muted">
+          Simplify your operations, connect your teams and manage your hospitality business with one powerful platform.
+        </p>
+        <div class="cta-actions">
+          <a href="#contact-us" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+          <a href="#contact-us" class="btn btn-secondary btn-lg">
+            <span>Contact Our Team</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       GRAND BRAND WATERMARK OUTRO (ETHNOCENTRIC DISPLAY)
+       ======================================================== -->
+  <section class="brand-outro-section" id="brandOutro" aria-label="BillingServer Display Stamp">
+    <div class="brand-outro-container">
+      <div class="brand-outro-watermark" id="brandWatermark">
+        <span class="brand-char" style="--char-index: 0">B</span><span class="brand-char" style="--char-index: 1">I</span><span class="brand-char" style="--char-index: 2">L</span><span class="brand-char" style="--char-index: 3">L</span><span class="brand-char" style="--char-index: 4">I</span><span class="brand-char" style="--char-index: 5">N</span><span class="brand-char" style="--char-index: 6">G</span><span class="brand-char" style="--char-index: 7">S</span><span class="brand-char" style="--char-index: 8">E</span><span class="brand-char" style="--char-index: 9">R</span><span class="brand-char" style="--char-index: 10">V</span><span class="brand-char" style="--char-index: 11">E</span><span class="brand-char" style="--char-index: 12">R</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

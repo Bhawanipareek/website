@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — BillingServer Hospitality Platform</title>
+  <meta name="description" content="Explore BillingServer's high-throughput features: POS billing, kitchen display systems, inventory control, table layouts, and central multi-unit analytics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BillingServer Home">
+        <img src="assets/logo.png" alt="BillingServer Logo" class="logo-img">
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="features.html" class="nav-item active">Features</a>
+        
+        <!-- Solutions Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Solutions</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="solutions.html#restaurant" class="dropdown-item">
+              <div class="dropdown-item-title">Restaurant Management</div>
+              <div class="dropdown-item-desc">High-speed billing, tables, KOT & delivery</div>
+            </a>
+            <a href="solutions.html#hotel" class="dropdown-item">
+              <div class="dropdown-item-title">Hotel Management (PMS)</div>
+              <div class="dropdown-item-desc">Front desk, room folios, housekeeping & rates</div>
+            </a>
+            <a href="solutions.html#cafe" class="dropdown-item">
+              <div class="dropdown-item-title">Cafe & Quick Service</div>
+              <div class="dropdown-item-desc">Counter sales, quick tokens & drive-thru</div>
+            </a>
+            <a href="solutions.html#multibranch" class="dropdown-item">
+              <div class="dropdown-item-title">Multi-Branch Business</div>
+              <div class="dropdown-item-desc">Central HQ, unified stock & branch reports</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="pricing.html" class="nav-item">Pricing</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Resources</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="help-center.html" class="dropdown-item">
+              <div class="dropdown-item-title">Help Center</div>
+              <div class="dropdown-item-desc">Documentation, setup guides & FAQs</div>
+            </a>
+            <a href="hardware.html" class="dropdown-item">
+              <div class="dropdown-item-title">Hardware</div>
+              <div class="dropdown-item-desc">Touch POS terminals, printers & KDS screens</div>
+            </a>
+            <a href="integrations.html" class="dropdown-item">
+              <div class="dropdown-item-title">Integrations</div>
+              <div class="dropdown-item-desc">Payment gateways, aggregators & accounting</div>
+            </a>
+            <a href="download.html" class="dropdown-item">
+              <div class="dropdown-item-title">Download</div>
+              <div class="dropdown-item-desc">Desktop client & mobile management apps</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about-us.html" class="nav-item">About Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link active">Features</a>
+      
+      <!-- Mobile Solutions Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Solutions</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="solutions.html#restaurant" class="mobile-sublink">Restaurant Management</a>
+          <a href="solutions.html#hotel" class="mobile-sublink">Hotel Management (PMS)</a>
+          <a href="solutions.html#cafe" class="mobile-sublink">Cafe & Quick Service</a>
+          <a href="solutions.html#multibranch" class="mobile-sublink">Multi-Branch Business</a>
+        </div>
+      </div>
+
+      <a href="industries.html" class="mobile-link">Industries</a>
+      <a href="pricing.html" class="mobile-link">Pricing</a>
+
+      <!-- Mobile Resources Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Resources</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="help-center.html" class="mobile-sublink">Help Center</a>
+          <a href="hardware.html" class="mobile-sublink">Hardware</a>
+          <a href="integrations.html" class="mobile-sublink">Integrations</a>
+          <a href="download.html" class="mobile-sublink">Download</a>
+        </div>
+      </div>
+
+      <a href="about-us.html" class="mobile-link">About Us</a>
+
+      <div class="mobile-menu-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-block">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="page-hero-badge">PLATFORM CAPABILITIES</span>
+        <h1 class="page-hero-title">
+          Engineered for <span class="text-brand-red">High-Throughput</span> Hospitality.
+        </h1>
+        <p class="page-hero-desc">
+          From microsecond local POS transactions to multi-station kitchen displays, hotel room folios, and central warehouse replenishment — explore every capability built into BillingServer.
+        </p>
+        <a href="book-demo.html" class="btn btn-primary btn-lg">
+          <span>Request Full Interactive Demo</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 6 CORE FEATURE PILLARS -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label text-red">CORE INFRASTRUCTURE</div>
+          <h2 class="section-heading text-dark">Built for Operators Who Value Precision and Zero Downtime.</h2>
+          <p class="section-subheading text-secondary">
+            Modern hospitality demands instantaneous transaction processing and airtight audit controls.
+          </p>
+        </div>
+
+        <div class="advantage-grid">
+          <!-- Feature 1 -->
+          <div class="advantage-card">
+            <div class="advantage-num">01</div>
+            <h3 class="advantage-title">Sub-Second Billing & KOT Dispatch</h3>
+            <p class="advantage-desc">
+              Execute split bills, combo modifiers, dynamic table transfers, and kitchen order tickets in under 3 taps with keyboard hotkeys or touchscreen gestures.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="advantage-card">
+            <div class="advantage-num">02</div>
+            <h3 class="advantage-title">Local-First Offline Resiliency</h3>
+            <p class="advantage-desc">
+              Internet outages will never stop your service. All local terminals communicate across the local LAN and automatically sync to the cloud once connectivity resumes.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="advantage-card">
+            <div class="advantage-num">03</div>
+            <h3 class="advantage-title">Live Kitchen Display System (KDS)</h3>
+            <p class="advantage-desc">
+              Color-coded prep timers, station routing (grill, bar, fry, pantry), item aggregation, and bump bar support eliminate printed paper tickets entirely.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="advantage-card">
+            <div class="advantage-num">04</div>
+            <h3 class="advantage-title">Real-Time Recipe & Stock Costing</h3>
+            <p class="advantage-desc">
+              Automatic inventory deduction per sold menu item down to grams and milliliters. Receive low-stock SMS/email alerts and auto-generate purchase orders.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="advantage-card">
+            <div class="advantage-num">05</div>
+            <h3 class="advantage-title">Hotel Property Management (PMS)</h3>
+            <p class="advantage-desc">
+              Manage room availability calendars, guest check-in/check-out, night audit closures, room service billing posted to room folios, and housekeeping states.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="advantage-card">
+            <div class="advantage-num">06</div>
+            <h3 class="advantage-title">Multi-Branch Central Control</h3>
+            <p class="advantage-desc">
+              Push universal menu updates, regional price books, staff permissions, and central warehouse commissary dispatches to 50+ locations in a single click.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: VISUAL WORKSTATION BREAKDOWN -->
+    <section class="section bg-dark">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-editorial">
+            <div class="section-label text-red">WORKSTATION ARCHITECTURE</div>
+            <h2 class="section-heading text-white">A Unified Workflow Between Floor, Kitchen, and Front Desk.</h2>
+            <div class="intro-copy">
+              <p>
+                When a waiter punches an order on a handheld tablet at Table 12, the bar printer prints drink chits instantly, the grill KDS starts its preparation timer, and room charges are ready to merge if the guest is staying in Room 304.
+              </p>
+              <p>
+                BillingServer eliminates communication bottlenecks, double orders, and unbilled items across your entire property.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Schedule a Walkthrough</a>
+              <a href="hardware.html" class="btn btn-secondary">Explore Hardware</a>
+            </div>
+          </div>
+          <div class="intro-media">
+            <img src="assets/images/eco-frontoffice.jpg" alt="BillingServer front office workstation terminal" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FINAL CTA -->
+    <section class="section bg-dark-cta">
+      <div class="container text-center">
+        <div class="section-label text-red">SEE IT IN ACTION</div>
+        <h2 class="cta-heading text-white">
+          Experience BillingServer with Your <span class="text-brand-red">Own Menu.</span>
+        </h2>
+        <p class="cta-subheading text-muted">
+          Our solutions specialists will configure a sample live environment tailored to your exact floor plan, menu items, and outlet footprint.
+        </p>
+        <div class="cta-actions">
+          <a href="book-demo.html" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">
+            <span>View Pricing Plans</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GRAND BRAND WATERMARK OUTRO -->
+  <section class="brand-outro-section" id="brandOutro" aria-label="BillingServer Display Stamp">
+    <div class="brand-outro-container">
+      <div class="brand-outro-watermark" id="brandWatermark">
+        <span class="brand-char" style="--char-index: 0">B</span><span class="brand-char" style="--char-index: 1">I</span><span class="brand-char" style="--char-index: 2">L</span><span class="brand-char" style="--char-index: 3">L</span><span class="brand-char" style="--char-index: 4">I</span><span class="brand-char" style="--char-index: 5">N</span><span class="brand-char" style="--char-index: 6">G</span><span class="brand-char" style="--char-index: 7">S</span><span class="brand-char" style="--char-index: 8">E</span><span class="brand-char" style="--char-index: 9">R</span><span class="brand-char" style="--char-index: 10">V</span><span class="brand-char" style="--char-index: 11">E</span><span class="brand-char" style="--char-index: 12">R</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

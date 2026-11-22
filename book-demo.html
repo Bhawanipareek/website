@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Demo — BillingServer 1-on-1 Product Walkthrough</title>
+  <meta name="description" content="Schedule a personalized 1-on-1 platform demonstration of BillingServer tailored to your hotel, restaurant, cafe, or chain operations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .demo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 4rem;
+      align-items: flex-start;
+    }
+    .demo-form-card {
+      background-color: var(--c-white);
+      border: 1px solid var(--c-light-border);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.25rem;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+    }
+    .form-group {
+      margin-bottom: 1.35rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--c-text-primary);
+      margin-bottom: 0.45rem;
+      letter-spacing: 0.02em;
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--c-light-border);
+      border-radius: var(--radius-sm);
+      font-size: 0.925rem;
+      font-family: inherit;
+      color: var(--c-text-primary);
+      background-color: #FAFAFA;
+      transition: border-color var(--t-fast), box-shadow var(--t-fast);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--c-red);
+      background-color: var(--c-white);
+      box-shadow: 0 0 0 3px rgba(255, 16, 26, 0.12);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 960px) {
+      .demo-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BillingServer Home">
+        <img src="assets/logo.png" alt="BillingServer Logo" class="logo-img">
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="features.html" class="nav-item">Features</a>
+        
+        <!-- Solutions Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Solutions</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="solutions.html#restaurant" class="dropdown-item">
+              <div class="dropdown-item-title">Restaurant Management</div>
+              <div class="dropdown-item-desc">High-speed billing, tables, KOT & delivery</div>
+            </a>
+            <a href="solutions.html#hotel" class="dropdown-item">
+              <div class="dropdown-item-title">Hotel Management (PMS)</div>
+              <div class="dropdown-item-desc">Front desk, room folios, housekeeping & rates</div>
+            </a>
+            <a href="solutions.html#cafe" class="dropdown-item">
+              <div class="dropdown-item-title">Cafe & Quick Service</div>
+              <div class="dropdown-item-desc">Counter sales, quick tokens & drive-thru</div>
+            </a>
+            <a href="solutions.html#multibranch" class="dropdown-item">
+              <div class="dropdown-item-title">Multi-Branch Business</div>
+              <div class="dropdown-item-desc">Central HQ, unified stock & branch reports</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="pricing.html" class="nav-item">Pricing</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Resources</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="help-center.html" class="dropdown-item">
+              <div class="dropdown-item-title">Help Center</div>
+              <div class="dropdown-item-desc">Documentation, setup guides & FAQs</div>
+            </a>
+            <a href="hardware.html" class="dropdown-item">
+              <div class="dropdown-item-title">Hardware</div>
+              <div class="dropdown-item-desc">Touch POS terminals, printers & KDS screens</div>
+            </a>
+            <a href="integrations.html" class="dropdown-item">
+              <div class="dropdown-item-title">Integrations</div>
+              <div class="dropdown-item-desc">Payment gateways, aggregators & accounting</div>
+            </a>
+            <a href="download.html" class="dropdown-item">
+              <div class="dropdown-item-title">Download</div>
+              <div class="dropdown-item-desc">Desktop client & mobile management apps</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about-us.html" class="nav-item">About Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle (Active on Book Demo) -->
+      <div class="nav-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-sm" style="box-shadow: 0 0 0 2px rgba(255,16,26,0.35);">
+          <span>Book a Demo</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      
+      <!-- Mobile Solutions Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Solutions</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="solutions.html#restaurant" class="mobile-sublink">Restaurant Management</a>
+          <a href="solutions.html#hotel" class="mobile-sublink">Hotel Management (PMS)</a>
+          <a href="solutions.html#cafe" class="mobile-sublink">Cafe & Quick Service</a>
+          <a href="solutions.html#multibranch" class="mobile-sublink">Multi-Branch Business</a>
+        </div>
+      </div>
+
+      <a href="industries.html" class="mobile-link">Industries</a>
+      <a href="pricing.html" class="mobile-link">Pricing</a>
+
+      <!-- Mobile Resources Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Resources</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="help-center.html" class="mobile-sublink">Help Center</a>
+          <a href="hardware.html" class="mobile-sublink">Hardware</a>
+          <a href="integrations.html" class="mobile-sublink">Integrations</a>
+          <a href="download.html" class="mobile-sublink">Download</a>
+        </div>
+      </div>
+
+      <a href="about-us.html" class="mobile-link">About Us</a>
+
+      <div class="mobile-menu-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-block">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="page-hero-badge">CONSULTATIVE PRODUCT TOUR</span>
+        <h1 class="page-hero-title">
+          Schedule Your 1-on-1 <span class="text-brand-red">Platform Walkthrough.</span>
+        </h1>
+        <p class="page-hero-desc">
+          See BillingServer in action configured around your specific dining room layout, room folio structures, or multi-branch franchise architecture.
+        </p>
+      </div>
+    </section>
+
+    <!-- DEMO BOOKING SECTION -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="demo-grid">
+          
+          <!-- Left Column: What to expect -->
+          <div>
+            <div class="section-label text-red">PERSONALIZED SESSION</div>
+            <h2 class="section-heading text-dark">What to Expect in Your Demonstration.</h2>
+            <p class="section-subheading text-secondary" style="margin-bottom: 2rem;">
+              No generic sales pitch. Our hospitality solutions engineers walk you through the actual operational workflows you care about.
+            </p>
+
+            <div class="intro-spec-list">
+              <div class="spec-row">
+                <span class="spec-label">Format Customization</span>
+                <span class="spec-value">Tailored to your specific menu & outlets</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Hardware Check</span>
+                <span class="spec-value">Audit of your existing printers & touchscreens</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Offline Demo</span>
+                <span class="spec-value">Live demonstration of local LAN offline mode</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Duration</span>
+                <span class="spec-value">30 Minutes • Live Interactive Screen Share</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2.5rem; padding: 1.5rem; background-color: var(--c-neutral); border-radius: var(--radius-md); border-left: 3px solid var(--c-red);">
+              <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--c-text-primary);">Prefer immediate telephone support?</h4>
+              <p style="font-size: 0.85rem; color: var(--c-text-secondary); margin: 0;">
+                Reach our enterprise solutions desk at <strong>+1 (800) 555-BILLING</strong> or write directly to <strong>contact@billingserver.com</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="demo-form-card">
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--c-text-primary);">Book Demonstration</h3>
+            <p style="font-size: 0.875rem; color: var(--c-text-secondary); margin-bottom: 1.75rem;">Fill out the details below and an engineer will confirm your slot within 1 hour.</p>
+
+            <form id="demoForm" onsubmit="event.preventDefault(); document.getElementById('demoSuccess').style.display='block'; this.style.display='none';">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fullName">Full Name *</label>
+                  <input type="text" id="fullName" class="form-control" placeholder="Alex Morgan" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="businessName">Business / Brand Name *</label>
+                  <input type="text" id="businessName" class="form-control" placeholder="The Grand Reserve" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="workEmail">Work Email *</label>
+                  <input type="email" id="workEmail" class="form-control" placeholder="alex@grandreserve.com" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 019-2834" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="businessType">Establishment Type *</label>
+                  <select id="businessType" class="form-control" required>
+                    <option value="" disabled selected>Select business format</option>
+                    <option value="restaurant">Full-Service Restaurant & Bar</option>
+                    <option value="hotel">Hotel & Resort Property (PMS)</option>
+                    <option value="qsr">Quick Service & Fast Food (QSR)</option>
+                    <option value="cafe">Cafe, Roastery & Bakery</option>
+                    <option value="multibranch">Multi-Branch Chain / Franchise</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="outletCount">Number of Outlets / Rooms</label>
+                  <input type="text" id="outletCount" class="form-control" placeholder="e.g. 3 Outlets or 80 Rooms">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="notes">Operational Notes or Key Inquiries</label>
+                <textarea id="notes" class="form-control" rows="3" placeholder="Tell us about your current POS setup, hardware, or specific pain points..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1rem;">
+                <span>Confirm Demo Walkthrough</span>
+                <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+                  <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </button>
+            </form>
+
+            <div id="demoSuccess" style="display: none; padding: 2rem; background-color: #F0FDF4; border: 1px solid #BBF7D0; border-radius: var(--radius-md); text-align: center;">
+              <div style="font-size: 2.25rem; margin-bottom: 0.75rem;">✓</div>
+              <h4 style="font-size: 1.25rem; font-weight: 700; color: #166534; margin-bottom: 0.5rem;">Demonstration Request Confirmed</h4>
+              <p style="font-size: 0.875rem; color: #15803D; line-height: 1.5;">
+                Thank you! Our hospitality systems engineering specialist will contact you via email and phone within 1 hour with your dedicated calendar invite.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GRAND BRAND WATERMARK OUTRO -->
+  <section class="brand-outro-section" id="brandOutro" aria-label="BillingServer Display Stamp">
+    <div class="brand-outro-container">
+      <div class="brand-outro-watermark" id="brandWatermark">
+        <span class="brand-char" style="--char-index: 0">B</span><span class="brand-char" style="--char-index: 1">I</span><span class="brand-char" style="--char-index: 2">L</span><span class="brand-char" style="--char-index: 3">L</span><span class="brand-char" style="--char-index: 4">I</span><span class="brand-char" style="--char-index: 5">N</span><span class="brand-char" style="--char-index: 6">G</span><span class="brand-char" style="--char-index: 7">S</span><span class="brand-char" style="--char-index: 8">E</span><span class="brand-char" style="--char-index: 9">R</span><span class="brand-char" style="--char-index: 10">V</span><span class="brand-char" style="--char-index: 11">E</span><span class="brand-char" style="--char-index: 12">R</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

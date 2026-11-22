@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries — BillingServer Hospitality Platform</title>
+  <meta name="description" content="Discover how BillingServer powers fine dining, boutique hotels, cafes, bakeries, quick service, and food courts with tailored workflows.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BillingServer Home">
+        <img src="assets/logo.png" alt="BillingServer Logo" class="logo-img">
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="features.html" class="nav-item">Features</a>
+        
+        <!-- Solutions Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Solutions</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="solutions.html#restaurant" class="dropdown-item">
+              <div class="dropdown-item-title">Restaurant Management</div>
+              <div class="dropdown-item-desc">High-speed billing, tables, KOT & delivery</div>
+            </a>
+            <a href="solutions.html#hotel" class="dropdown-item">
+              <div class="dropdown-item-title">Hotel Management (PMS)</div>
+              <div class="dropdown-item-desc">Front desk, room folios, housekeeping & rates</div>
+            </a>
+            <a href="solutions.html#cafe" class="dropdown-item">
+              <div class="dropdown-item-title">Cafe & Quick Service</div>
+              <div class="dropdown-item-desc">Counter sales, quick tokens & drive-thru</div>
+            </a>
+            <a href="solutions.html#multibranch" class="dropdown-item">
+              <div class="dropdown-item-title">Multi-Branch Business</div>
+              <div class="dropdown-item-desc">Central HQ, unified stock & branch reports</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="industries.html" class="nav-item active">Industries</a>
+        <a href="pricing.html" class="nav-item">Pricing</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Resources</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="help-center.html" class="dropdown-item">
+              <div class="dropdown-item-title">Help Center</div>
+              <div class="dropdown-item-desc">Documentation, setup guides & FAQs</div>
+            </a>
+            <a href="hardware.html" class="dropdown-item">
+              <div class="dropdown-item-title">Hardware</div>
+              <div class="dropdown-item-desc">Touch POS terminals, printers & KDS screens</div>
+            </a>
+            <a href="integrations.html" class="dropdown-item">
+              <div class="dropdown-item-title">Integrations</div>
+              <div class="dropdown-item-desc">Payment gateways, aggregators & accounting</div>
+            </a>
+            <a href="download.html" class="dropdown-item">
+              <div class="dropdown-item-title">Download</div>
+              <div class="dropdown-item-desc">Desktop client & mobile management apps</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about-us.html" class="nav-item">About Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      
+      <!-- Mobile Solutions Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Solutions</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="solutions.html#restaurant" class="mobile-sublink">Restaurant Management</a>
+          <a href="solutions.html#hotel" class="mobile-sublink">Hotel Management (PMS)</a>
+          <a href="solutions.html#cafe" class="mobile-sublink">Cafe & Quick Service</a>
+          <a href="solutions.html#multibranch" class="mobile-sublink">Multi-Branch Business</a>
+        </div>
+      </div>
+
+      <a href="industries.html" class="mobile-link active">Industries</a>
+      <a href="pricing.html" class="mobile-link">Pricing</a>
+
+      <!-- Mobile Resources Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Resources</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="help-center.html" class="mobile-sublink">Help Center</a>
+          <a href="hardware.html" class="mobile-sublink">Hardware</a>
+          <a href="integrations.html" class="mobile-sublink">Integrations</a>
+          <a href="download.html" class="mobile-sublink">Download</a>
+        </div>
+      </div>
+
+      <a href="about-us.html" class="mobile-link">About Us</a>
+
+      <div class="mobile-menu-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-block">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="page-hero-badge">SEGMENT SPECIALIZATION</span>
+        <h1 class="page-hero-title">
+          Tailored Workflows for <span class="text-brand-red">Your Sector.</span>
+        </h1>
+        <p class="page-hero-desc">
+          Hospitality is not one-size-fits-all. BillingServer delivers specialized workflows designed around the exact operational demands of restaurants, hotels, cafes, and multi-unit chains.
+        </p>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES GRID -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="industries-grid">
+          <!-- Industry 1: Fine Dining -->
+          <article class="industry-card">
+            <div class="industry-media">
+              <img src="assets/images/ind-restaurants.jpg" alt="Fine dining restaurant interior" loading="lazy">
+              <span class="industry-badge">Fine Dining</span>
+            </div>
+            <div class="industry-body">
+              <h3 class="industry-title">Fine Dining & Bars</h3>
+              <p class="industry-desc">
+                Course firing, table reservation timelines, sommelier wine bottle tracking, and custom split billing by seat.
+              </p>
+              <div class="industry-meta">
+                <span class="meta-tag">Multi-Course</span>
+                <span class="meta-tag">Wine Inventory</span>
+                <span class="meta-tag">Split Folios</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Industry 2: Hotels -->
+          <article class="industry-card">
+            <div class="industry-media">
+              <img src="assets/images/ind-hotels.jpg" alt="Hotel bedroom and reception" loading="lazy">
+              <span class="industry-badge">Lodging</span>
+            </div>
+            <div class="industry-body">
+              <h3 class="industry-title">Hotels & Resorts</h3>
+              <p class="industry-desc">
+                Integrated room folios, front-desk check-in, night audits, housekeeping management, and unified dining charges.
+              </p>
+              <div class="industry-meta">
+                <span class="meta-tag">Room Folios</span>
+                <span class="meta-tag">Night Audit</span>
+                <span class="meta-tag">Housekeeping</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Industry 3: QSR -->
+          <article class="industry-card">
+            <div class="industry-media">
+              <img src="assets/images/ind-qsr.jpg" alt="Fast food and quick service counter" loading="lazy">
+              <span class="industry-badge">High Volume</span>
+            </div>
+            <div class="industry-body">
+              <h3 class="industry-title">QSR & Fast Food</h3>
+              <p class="industry-desc">
+                Sub-second counter checkout, token call screens, automated combo prompts, and delivery aggregator synchronization.
+              </p>
+              <div class="industry-meta">
+                <span class="meta-tag">Token Call</span>
+                <span class="meta-tag">Combo Upsell</span>
+                <span class="meta-tag">Aggregators</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Industry 4: Cafes -->
+          <article class="industry-card">
+            <div class="industry-media">
+              <img src="assets/images/ind-cafes.jpg" alt="Specialty espresso bar" loading="lazy">
+              <span class="industry-badge">Artisan</span>
+            </div>
+            <div class="industry-body">
+              <h3 class="industry-title">Cafes & Roasteries</h3>
+              <p class="industry-desc">
+                Milk and bean deduction down to the gram, customizable beverage modifiers (oat milk, syrups), and loyalty rewards.
+              </p>
+              <div class="industry-meta">
+                <span class="meta-tag">Bean Tracking</span>
+                <span class="meta-tag">Modifiers</span>
+                <span class="meta-tag">Digital Receipts</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Industry 5: Bakeries -->
+          <article class="industry-card">
+            <div class="industry-media">
+              <img src="assets/images/ind-bakeries.jpg" alt="Fresh artisan bakery display" loading="lazy">
+              <span class="industry-badge">Perishable</span>
+            </div>
+            <div class="industry-body">
+              <h3 class="industry-title">Bakeries & Confectioneries</h3>
+              <p class="industry-desc">
+                Batch production tracking, expiry date auditing, scale barcode weighing, and custom advance celebration cake orders.
+              </p>
+              <div class="industry-meta">
+                <span class="meta-tag">Scale Barcode</span>
+                <span class="meta-tag">Batch Expiry</span>
+                <span class="meta-tag">Advance Orders</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Industry 6: Food Courts -->
+          <article class="industry-card">
+            <div class="industry-media">
+              <img src="assets/images/ind-foodcourts.jpg" alt="Busy mall food court" loading="lazy">
+              <span class="industry-badge">Multi-Vendor</span>
+            </div>
+            <div class="industry-body">
+              <h3 class="industry-title">Food Courts & Food Halls</h3>
+              <p class="industry-desc">
+                Central prepaid smart cards, multi-stall settlement, centralized revenue reporting, and shared patron ordering kiosks.
+              </p>
+              <div class="industry-meta">
+                <span class="meta-tag">Prepaid Card</span>
+                <span class="meta-tag">Stall Split</span>
+                <span class="meta-tag">Kiosks</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FINAL CTA -->
+    <section class="section bg-dark-cta">
+      <div class="container text-center">
+        <div class="section-label text-red">CUSTOM CONFIGURATION</div>
+        <h2 class="cta-heading text-white">
+          Deploy the Right Setup for Your <span class="text-brand-red">Establishment.</span>
+        </h2>
+        <p class="cta-subheading text-muted">
+          Our specialists will configure BillingServer with your exact operational business logic and tax setup.
+        </p>
+        <div class="cta-actions">
+          <a href="book-demo.html" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+          </a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">
+            <span>Explore Pricing</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GRAND BRAND WATERMARK OUTRO -->
+  <section class="brand-outro-section" id="brandOutro" aria-label="BillingServer Display Stamp">
+    <div class="brand-outro-container">
+      <div class="brand-outro-watermark" id="brandWatermark">
+        <span class="brand-char" style="--char-index: 0">B</span><span class="brand-char" style="--char-index: 1">I</span><span class="brand-char" style="--char-index: 2">L</span><span class="brand-char" style="--char-index: 3">L</span><span class="brand-char" style="--char-index: 4">I</span><span class="brand-char" style="--char-index: 5">N</span><span class="brand-char" style="--char-index: 6">G</span><span class="brand-char" style="--char-index: 7">S</span><span class="brand-char" style="--char-index: 8">E</span><span class="brand-char" style="--char-index: 9">R</span><span class="brand-char" style="--char-index: 10">V</span><span class="brand-char" style="--char-index: 11">E</span><span class="brand-char" style="--char-index: 12">R</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

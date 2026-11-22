@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions — BillingServer Hospitality Platform</title>
+  <meta name="description" content="Discover BillingServer solutions for full-service restaurants, hotels & resorts, cafes, quick-service counters, and multi-branch hospitality groups.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BillingServer Home">
+        <img src="assets/logo.png" alt="BillingServer Logo" class="logo-img">
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="features.html" class="nav-item">Features</a>
+        
+        <!-- Solutions Dropdown (Active) -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn active" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Solutions</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="solutions.html#restaurant" class="dropdown-item">
+              <div class="dropdown-item-title">Restaurant Management</div>
+              <div class="dropdown-item-desc">High-speed billing, tables, KOT & delivery</div>
+            </a>
+            <a href="solutions.html#hotel" class="dropdown-item">
+              <div class="dropdown-item-title">Hotel Management (PMS)</div>
+              <div class="dropdown-item-desc">Front desk, room folios, housekeeping & rates</div>
+            </a>
+            <a href="solutions.html#cafe" class="dropdown-item">
+              <div class="dropdown-item-title">Cafe & Quick Service</div>
+              <div class="dropdown-item-desc">Counter sales, quick tokens & drive-thru</div>
+            </a>
+            <a href="solutions.html#multibranch" class="dropdown-item">
+              <div class="dropdown-item-title">Multi-Branch Business</div>
+              <div class="dropdown-item-desc">Central HQ, unified stock & branch reports</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="pricing.html" class="nav-item">Pricing</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Resources</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="help-center.html" class="dropdown-item">
+              <div class="dropdown-item-title">Help Center</div>
+              <div class="dropdown-item-desc">Documentation, setup guides & FAQs</div>
+            </a>
+            <a href="hardware.html" class="dropdown-item">
+              <div class="dropdown-item-title">Hardware</div>
+              <div class="dropdown-item-desc">Touch POS terminals, printers & KDS screens</div>
+            </a>
+            <a href="integrations.html" class="dropdown-item">
+              <div class="dropdown-item-title">Integrations</div>
+              <div class="dropdown-item-desc">Payment gateways, aggregators & accounting</div>
+            </a>
+            <a href="download.html" class="dropdown-item">
+              <div class="dropdown-item-title">Download</div>
+              <div class="dropdown-item-desc">Desktop client & mobile management apps</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about-us.html" class="nav-item">About Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      
+      <!-- Mobile Solutions Dropdown (Active) -->
+      <div class="mobile-dropdown open">
+        <button class="mobile-dropdown-btn" type="button">
+          <span style="color: var(--c-red);">Solutions</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="solutions.html#restaurant" class="mobile-sublink">Restaurant Management</a>
+          <a href="solutions.html#hotel" class="mobile-sublink">Hotel Management (PMS)</a>
+          <a href="solutions.html#cafe" class="mobile-sublink">Cafe & Quick Service</a>
+          <a href="solutions.html#multibranch" class="mobile-sublink">Multi-Branch Business</a>
+        </div>
+      </div>
+
+      <a href="industries.html" class="mobile-link">Industries</a>
+      <a href="pricing.html" class="mobile-link">Pricing</a>
+
+      <!-- Mobile Resources Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Resources</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="help-center.html" class="mobile-sublink">Help Center</a>
+          <a href="hardware.html" class="mobile-sublink">Hardware</a>
+          <a href="integrations.html" class="mobile-sublink">Integrations</a>
+          <a href="download.html" class="mobile-sublink">Download</a>
+        </div>
+      </div>
+
+      <a href="about-us.html" class="mobile-link">About Us</a>
+
+      <div class="mobile-menu-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-block">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="page-hero-badge">TAILORED ARCHITECTURE</span>
+        <h1 class="page-hero-title">
+          Solutions for <span class="text-brand-red">Every Dimension</span> of Hospitality.
+        </h1>
+        <p class="page-hero-desc">
+          Whether you run a high-volume urban restaurant, boutique hotel, rapid quick-service counter, or 50-location franchise network, BillingServer adapts seamlessly to your operational rhythm.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOLUTION 1: RESTAURANT MANAGEMENT -->
+    <section class="section bg-light" id="restaurant">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 01</div>
+            <h2 class="section-heading text-dark">Full-Service Restaurant Management.</h2>
+            <div class="intro-copy">
+              <p>
+                From front-of-house table turns to kitchen fire orders and multi-split guest folios, our restaurant solution provides precision controls that eliminate service friction.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li>Dynamic graphic floor plan with real-time seated/vacant table statuses</li>
+                <li>Course-wise firing (Appetizers, Mains, Desserts) direct to KDS & bar chits</li>
+                <li>Automatic split billing by seat, item, or custom ratio</li>
+                <li>Captain mobile ordering apps running on standard Android & iOS devices</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Book Restaurant Demo</a>
+            </div>
+          </div>
+          <div class="intro-media">
+            <img src="assets/images/sol-restaurant.jpg" alt="Restaurant billing counter and dining floor" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION 2: HOTEL MANAGEMENT (PMS) -->
+    <section class="section bg-dark" id="hotel">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-media">
+            <img src="assets/images/sol-hotel.jpg" alt="Hotel front desk lobby" loading="lazy">
+          </div>
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 02</div>
+            <h2 class="section-heading text-white">Hotel Property Management System (PMS).</h2>
+            <div class="intro-copy">
+              <p>
+                Unify front-desk reservations, housekeeping states, room service charges, and restaurant billing into a single seamless guest folio.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li style="color: #D1D5DB;">Visual room occupancy matrix with instant check-in/check-out</li>
+                <li style="color: #D1D5DB;">Automated posting of restaurant, bar, and spa bills to guest rooms</li>
+                <li style="color: #D1D5DB;">Housekeeping status tracking (Clean, Inspected, Dirty, Out of Order)</li>
+                <li style="color: #D1D5DB;">Night audit automation, daily revenue summaries, and tax compliance</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Book Hotel PMS Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION 3: CAFE & QUICK SERVICE -->
+    <section class="section bg-light" id="cafe">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 03</div>
+            <h2 class="section-heading text-dark">Cafe & Quick Service Restaurants (QSR).</h2>
+            <div class="intro-copy">
+              <p>
+                Engineered for maximum queue velocity. Punch items in seconds, dispatch tokens to customer-facing display screens, and automatically push orders to delivery riders.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li>2-touch express ordering with keyboard barcode scanner support</li>
+                <li>Digital Token Call System for order pickup notifications</li>
+                <li>Direct integration with food aggregators (UberEats, DoorDash, Zomato, Swiggy)</li>
+                <li>Raw ingredient deduction for coffee beans, dairy, and bakery items</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Book QSR Demo</a>
+            </div>
+          </div>
+          <div class="intro-media">
+            <img src="assets/images/sol-cafe.jpg" alt="Modern cafe and espresso counter" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION 4: MULTI-BRANCH ENTERPRISE -->
+    <section class="section bg-dark" id="multibranch">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-media">
+            <img src="assets/images/sol-multibranch.jpg" alt="Multi outlet restaurant chain overview" loading="lazy">
+          </div>
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 04</div>
+            <h2 class="section-heading text-white">Multi-Branch Chains & Enterprise HQ.</h2>
+            <div class="intro-copy">
+              <p>
+                Maintain total command over 5 to 500+ locations from a single cloud portal. Synchronize recipes, audit outlet cash reconciliations, and balance supply chains.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li style="color: #D1D5DB;">Centralized menu updates pushed instantly across all locations</li>
+                <li style="color: #D1D5DB;">Central warehouse commissary and inter-branch stock transfers</li>
+                <li style="color: #D1D5DB;">Real-time enterprise dashboard comparing outlet revenue and margins</li>
+                <li style="color: #D1D5DB;">Franchise royalty management and centralized accounting exports</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Book Enterprise Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FINAL CTA -->
+    <section class="section bg-dark-cta">
+      <div class="container text-center">
+        <div class="section-label text-red">TAILORED ARCHITECTURE</div>
+        <h2 class="cta-heading text-white">
+          Ready to Elevate Your <span class="text-brand-red">Hospitality Operations?</span>
+        </h2>
+        <p class="cta-subheading text-muted">
+          Talk to our solutions architect to see how BillingServer can be customized to your exact operations.
+        </p>
+        <div class="cta-actions">
+          <a href="book-demo.html" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+          </a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">
+            <span>View Pricing Plans</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GRAND BRAND WATERMARK OUTRO -->
+  <section class="brand-outro-section" id="brandOutro" aria-label="BillingServer Display Stamp">
+    <div class="brand-outro-container">
+      <div class="brand-outro-watermark" id="brandWatermark">
+        <span class="brand-char" style="--char-index: 0">B</span><span class="brand-char" style="--char-index: 1">I</span><span class="brand-char" style="--char-index: 2">L</span><span class="brand-char" style="--char-index: 3">L</span><span class="brand-char" style="--char-index: 4">I</span><span class="brand-char" style="--char-index: 5">N</span><span class="brand-char" style="--char-index: 6">G</span><span class="brand-char" style="--char-index: 7">S</span><span class="brand-char" style="--char-index: 8">E</span><span class="brand-char" style="--char-index: 9">R</span><span class="brand-char" style="--char-index: 10">V</span><span class="brand-char" style="--char-index: 11">E</span><span class="brand-char" style="--char-index: 12">R</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

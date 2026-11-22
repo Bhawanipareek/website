@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — BillingServer Hospitality Platform</title>
+  <meta name="description" content="Learn about BillingServer's mission to deliver the world's most resilient, local-first enterprise software for restaurants, hotels, and hospitality chains.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BillingServer Home">
+        <img src="assets/logo.png" alt="BillingServer Logo" class="logo-img">
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="features.html" class="nav-item">Features</a>
+        
+        <!-- Solutions Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Solutions</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="solutions.html#restaurant" class="dropdown-item">
+              <div class="dropdown-item-title">Restaurant Management</div>
+              <div class="dropdown-item-desc">High-speed billing, tables, KOT & delivery</div>
+            </a>
+            <a href="solutions.html#hotel" class="dropdown-item">
+              <div class="dropdown-item-title">Hotel Management (PMS)</div>
+              <div class="dropdown-item-desc">Front desk, room folios, housekeeping & rates</div>
+            </a>
+            <a href="solutions.html#cafe" class="dropdown-item">
+              <div class="dropdown-item-title">Cafe & Quick Service</div>
+              <div class="dropdown-item-desc">Counter sales, quick tokens & drive-thru</div>
+            </a>
+            <a href="solutions.html#multibranch" class="dropdown-item">
+              <div class="dropdown-item-title">Multi-Branch Business</div>
+              <div class="dropdown-item-desc">Central HQ, unified stock & branch reports</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="pricing.html" class="nav-item">Pricing</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Resources</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="help-center.html" class="dropdown-item">
+              <div class="dropdown-item-title">Help Center</div>
+              <div class="dropdown-item-desc">Documentation, setup guides & FAQs</div>
+            </a>
+            <a href="hardware.html" class="dropdown-item">
+              <div class="dropdown-item-title">Hardware</div>
+              <div class="dropdown-item-desc">Touch POS terminals, printers & KDS screens</div>
+            </a>
+            <a href="integrations.html" class="dropdown-item">
+              <div class="dropdown-item-title">Integrations</div>
+              <div class="dropdown-item-desc">Payment gateways, aggregators & accounting</div>
+            </a>
+            <a href="download.html" class="dropdown-item">
+              <div class="dropdown-item-title">Download</div>
+              <div class="dropdown-item-desc">Desktop client & mobile management apps</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about-us.html" class="nav-item active">About Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      
+      <!-- Mobile Solutions Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Solutions</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="solutions.html#restaurant" class="mobile-sublink">Restaurant Management</a>
+          <a href="solutions.html#hotel" class="mobile-sublink">Hotel Management (PMS)</a>
+          <a href="solutions.html#cafe" class="mobile-sublink">Cafe & Quick Service</a>
+          <a href="solutions.html#multibranch" class="mobile-sublink">Multi-Branch Business</a>
+        </div>
+      </div>
+
+      <a href="industries.html" class="mobile-link">Industries</a>
+      <a href="pricing.html" class="mobile-link">Pricing</a>
+
+      <!-- Mobile Resources Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Resources</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="help-center.html" class="mobile-sublink">Help Center</a>
+          <a href="hardware.html" class="mobile-sublink">Hardware</a>
+          <a href="integrations.html" class="mobile-sublink">Integrations</a>
+          <a href="download.html" class="mobile-sublink">Download</a>
+        </div>
+      </div>
+
+      <a href="about-us.html" class="mobile-link active">About Us</a>
+
+      <div class="mobile-menu-cta">
+        <a href="book-demo.html" class="btn btn-primary btn-block">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="page-hero-badge">OUR INSTITUTION</span>
+        <h1 class="page-hero-title">
+          Engineering the <span class="text-brand-red">Operational Backbone</span> of Hospitality.
+        </h1>
+        <p class="page-hero-desc">
+          BillingServer was created to eliminate the fragility, lag, and hidden fees of legacy hospitality systems. We build high-throughput, local-first software trusted by operators globally.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: EDITORIAL STORY -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-editorial">
+            <div class="section-label text-red">THE BILLINGSERVER PHILOSOPHY</div>
+            <h2 class="section-heading text-dark">Why We Built a Local-First Cloud System.</h2>
+            <div class="intro-copy">
+              <p>
+                In high-volume restaurant rushes and busy hotel check-in peaks, even 3 seconds of server lag creates guest dissatisfaction, delays kitchen service, and frustrates staff.
+              </p>
+              <p>
+                Pure cloud web apps fail the moment an internet connection stutters. Legacy on-premise systems lock your data in isolated silos. BillingServer unifies both worlds: lightning-fast offline execution on local hardware combined with transparent, continuous cloud replication.
+              </p>
+            </div>
+            <div class="intro-spec-list">
+              <div class="spec-row">
+                <span class="spec-label">Founded</span>
+                <span class="spec-value">2018</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Outlets Powered</span>
+                <span class="spec-value">1,200+ Active Outlets</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Transactions Processed</span>
+                <span class="spec-value">$450M+ Annually</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Platform Uptime</span>
+                <span class="spec-value">99.99% Production SLA</span>
+              </div>
+            </div>
+          </div>
+          <div class="intro-media">
+            <img src="assets/images/intro-manager.jpg" alt="Hospitality manager reviewing real-time operations" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 CORE PILLARS -->
+    <section class="section bg-dark">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label text-red">OUR OPERATING PRINCIPLES</div>
+          <h2 class="section-heading text-white">Three Commitments to Every Hospitality Operator.</h2>
+        </div>
+
+        <div class="advantage-grid">
+          <div class="advantage-card">
+            <div class="advantage-num">01</div>
+            <h3 class="advantage-title">Zero Operational Downtime</h3>
+            <p class="advantage-desc">Your doors stay open, food keeps cooking, and bills keep printing whether your internet provider is online or experiencing an outage.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-num">02</div>
+            <h3 class="advantage-title">Transparent Predictable Cost</h3>
+            <p class="advantage-desc">We never tax your sales or card transactions with sneaky revenue cuts. You pay an honest software subscription, and your profits remain 100% yours.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-num">03</div>
+            <h3 class="advantage-title">Operator-First Engineering</h3>
+            <p class="advantage-desc">Every interface button, table selector, and KDS timer is built and refined in collaboration with real floor captains, head chefs, and hotel managers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FINAL CTA -->
+    <section class="section bg-dark-cta">
+      <div class="container text-center">
+        <div class="section-label text-red">JOIN THE PLATFORM</div>
+        <h2 class="cta-heading text-white">
+          Ready to Modernize Your <span class="text-brand-red">Hospitality Business?</span>
+        </h2>
+        <p class="cta-subheading text-muted">
+          Join thousands of operators running high-throughput dining rooms and hotels on BillingServer.
+        </p>
+        <div class="cta-actions">
+          <a href="book-demo.html" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+          </a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">
+            <span>View Pricing Plans</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GRAND BRAND WATERMARK OUTRO -->
+  <section class="brand-outro-section" id="brandOutro" aria-label="BillingServer Display Stamp">
+    <div class="brand-outro-container">
+      <div class="brand-outro-watermark" id="brandWatermark">
+        <span class="brand-char" style="--char-index: 0">B</span><span class="brand-char" style="--char-index: 1">I</span><span class="brand-char" style="--char-index: 2">L</span><span class="brand-char" style="--char-index: 3">L</span><span class="brand-char" style="--char-index: 4">I</span><span class="brand-char" style="--char-index: 5">N</span><span class="brand-char" style="--char-index: 6">G</span><span class="brand-char" style="--char-index: 7">S</span><span class="brand-char" style="--char-index: 8">E</span><span class="brand-char" style="--char-index: 9">R</span><span class="brand-char" style="--char-index: 10">V</span><span class="brand-char" style="--char-index: 11">E</span><span class="brand-char" style="--char-index: 12">R</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
