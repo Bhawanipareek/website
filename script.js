@@ -1,4 +1,4 @@
-// BillingServer — Enterprise SaaS Interaction Engine
+// BillingServer â€” Enterprise SaaS Interaction Engine
 
 // Immediate Redirection to Official Production Domain
 if (window.location.hostname.includes('github.io')) {
@@ -128,5 +128,115 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     watermarkObserver.observe(brandWatermark);
+  }
+  // 8. Universal Scroll Reveal Animation Engine (Emerge one-by-one)
+  const revealSelectors = [
+    '.section-header-center',
+    '.section-header-left',
+    '.advantage-card',
+    '.solution-card',
+    '.industry-card',
+    '.roadmap-step',
+    '.intro-editorial',
+    '.intro-media',
+    '.testimonial-card',
+    '.trust-item'
+  ];
+
+  const revealNodes = document.querySelectorAll(revealSelectors.join(', '));
+  revealNodes.forEach(node => node.classList.add('reveal'));
+
+  // Stagger children within grids (emerge one-by-one)
+  document.querySelectorAll('.advantage-grid, .solutions-grid, .industries-grid, .roadmap-grid, .intro-grid').forEach(grid => {
+    Array.from(grid.children).forEach((child, index) => {
+      child.style.transitionDelay = (((index % 4) * 0.12).toFixed(2)) + 's';
+    });
+  });
+
+  const scrollObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  revealNodes.forEach(node => scrollObserver.observe(node));
+
+  // 9. Client Testimonial Auto-Slider
+  const testimonialTrack = document.getElementById('testimonialTrack');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const dotsContainer = document.getElementById('testimonialDots');
+  const prevBtn = document.getElementById('testimonialPrev');
+  const nextBtn = document.getElementById('testimonialNext');
+
+  if (testimonialTrack && slides.length > 0) {
+    let currentSlide = 0;
+    let autoSlideInterval = null;
+
+    // Create indicator dots
+    if (dotsContainer) {
+      dotsContainer.innerHTML = '';
+      slides.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = 'slider-dot' + (idx === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to testimonial slide ' + (idx + 1));
+        dot.addEventListener('click', () => goToSlide(idx));
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    const updateSlider = () => {
+      slides.forEach((slide, idx) => {
+        slide.classList.toggle('active', idx === currentSlide);
+      });
+      if (dotsContainer) {
+        const dots = dotsContainer.querySelectorAll('.slider-dot');
+        dots.forEach((dot, idx) => {
+          dot.classList.toggle('active', idx === currentSlide);
+        });
+      }
+    };
+
+    const goToSlide = (n) => {
+      currentSlide = (n + slides.length) % slides.length;
+      updateSlider();
+      resetInterval();
+    };
+
+    const nextSlide = () => goToSlide(currentSlide + 1);
+    const prevSlide = () => goToSlide(currentSlide - 1);
+
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+
+    const startInterval = () => {
+      if (!autoSlideInterval) {
+        autoSlideInterval = setInterval(nextSlide, 3800);
+      }
+    };
+
+    const stopInterval = () => {
+      if (autoSlideInterval) {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = null;
+      }
+    };
+
+    const resetInterval = () => {
+      stopInterval();
+      startInterval();
+    };
+
+    testimonialTrack.addEventListener('mouseenter', stopInterval);
+    testimonialTrack.addEventListener('mouseleave', startInterval);
+    testimonialTrack.addEventListener('touchstart', stopInterval, { passive: true });
+    testimonialTrack.addEventListener('touchend', startInterval, { passive: true });
+
+    startInterval();
   }
 });
