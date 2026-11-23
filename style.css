@@ -2856,34 +2856,28 @@ ul {
   }
 }
 
-/* LEFT FORM PANEL (WHITE THEME) */
+/* LEFT FORM PANEL (CLEAN BORDERLESS THEME) */
 .form-panel {
-  background: #FFFFFF;
-  border: 1px solid #E5E7EB;
-  border-radius: var(--radius-lg);
-  padding: 1.75rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
+  box-shadow: none;
   position: relative;
 }
 
 .form-panel::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--c-red), transparent);
+  display: none;
 }
 
 .panel-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid #F3F4F6;
+  border-bottom: 1px solid #E5E7EB;
   padding-bottom: 1rem;
   gap: 0.75rem;
 }
@@ -2970,11 +2964,11 @@ ul {
 .form-card {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  background: #F9FAFB;
-  border: 1px solid #E5E7EB;
-  border-radius: 12px;
-  padding: 1.25rem;
+  gap: 1.15rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
 .form-card .input-group {
@@ -3003,12 +2997,13 @@ ul {
   border: 1px solid #D1D5DB;
   border-radius: 8px;
   color: #111827;
-  padding: 0.65rem 0.85rem;
-  font-size: 0.88rem;
+  padding: 0.75rem 0.95rem;
+  font-size: 0.9rem;
   font-family: var(--font-body);
   transition: all 0.2s ease;
   outline: none;
   width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .form-card input::placeholder,
@@ -3033,6 +3028,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .btn-submit {
@@ -3041,13 +3037,16 @@ ul {
   color: #FFFFFF;
   border: none;
   border-radius: 10px;
-  padding: 0.95rem 1.25rem;
+  padding: 1rem 1.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  box-shadow: 0 6px 22px rgba(255, 16, 26, 0.35);
+  box-shadow: 0 6px 20px rgba(255, 16, 26, 0.35);
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -3059,79 +3058,6 @@ ul {
 
 .btn-submit:active {
   transform: translateY(0);
-}
-
-.btn-submit .btn-icon {
-  font-size: 1.4rem;
-}
-
-.btn-submit .btn-text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.btn-submit .btn-text strong {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 800;
-}
-
-.btn-submit .btn-text small {
-  font-size: 0.72rem;
-  opacity: 0.88;
-}
-
-.secondary-actions-row {
-  display: flex;
-  gap: 0.65rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.btn-whatsapp-dispatch {
-  flex: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background: #075E54;
-  color: #FFFFFF;
-  border: 1px solid rgba(37, 211, 102, 0.4);
-  border-radius: 8px;
-  padding: 0.65rem 1rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  min-width: 200px;
-}
-
-.btn-whatsapp-dispatch:hover {
-  background: #128C7E;
-  border-color: #25D366;
-  transform: translateY(-1px);
-}
-
-.sound-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0.65rem 0.95rem;
-  background: #F9FAFB;
-  border: 1px solid #D1D5DB;
-  border-radius: 8px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #4B5563;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.sound-toggle-btn.active {
-  border-color: rgba(255, 16, 26, 0.4);
-  background: rgba(255, 16, 26, 0.1);
-  color: #DC2626;
 }
 
 /* RIGHT PRINTER PANEL */
@@ -3153,14 +3079,15 @@ ul {
 
 .pos-printer-device.compact-printer {
   width: 100%;
-  background: linear-gradient(180deg, #1C1C24 0%, #121218 65%, #08080C 100%);
+  background: linear-gradient(180deg, #242430 0%, #171720 65%, #0B0B10 100%);
   border-radius: 14px 14px 6px 6px;
-  padding: 12px 14px 8px 14px;
+  padding: 14px 16px 10px 16px;
   box-shadow: 
-    0 20px 45px -10px rgba(0, 0, 0, 0.35),
-    inset 0 1px 1px rgba(255, 255, 255, 0.18),
-    inset 0 -2px 4px rgba(0, 0, 0, 0.9);
-  border: 1px solid #272732;
+    0 25px 50px -10px rgba(0, 0, 0, 0.42),
+    0 10px 20px -5px rgba(0, 0, 0, 0.22),
+    inset 0 1px 2px rgba(255, 255, 255, 0.25),
+    inset 0 -2px 5px rgba(0, 0, 0, 0.95);
+  border: 1px solid #303040;
   position: relative;
   z-index: 25;
   display: flex;
@@ -3312,7 +3239,7 @@ ul {
   100% { transform: translateX(50%); }
 }
 
-/* THERMAL PAPER RECEIPT (WHITE THEME) */
+/* THERMAL PAPER RECEIPT (RICH 3D REALISTIC SHADOWS) */
 .receipt-paper-viewport {
   position: relative;
   width: 100%;
@@ -3320,12 +3247,14 @@ ul {
   display: flex;
   justify-content: center;
   z-index: 10;
-  perspective: 1000px;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.16));
+  perspective: 1200px;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.08)) 
+          drop-shadow(0 16px 24px rgba(0, 0, 0, 0.12)) 
+          drop-shadow(0 32px 42px rgba(0, 0, 0, 0.10));
 }
 
 .receipt-paper {
-  width: 285px;
+  width: 290px;
   background: transparent;
   position: relative;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
@@ -3336,25 +3265,31 @@ ul {
 .receipt-slot-top-shadow {
   width: 100%;
   height: 6px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, transparent 100%);
   background-color: #FFFFFF;
 }
 
 .receipt-content {
   background-color: #FFFFFF;
-  border-left: 1px solid rgba(0, 0, 0, 0.08);
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 
+    0 16px 30px -4px rgba(0, 0, 0, 0.14),
+    0 6px 12px -2px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.05);
   background-image: 
     repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.012) 3px),
     linear-gradient(90deg, rgba(0,0,0,0.02) 0%, transparent 4%, transparent 96%, rgba(0,0,0,0.03) 100%);
   color: #050505;
   font-family: 'Space Mono', 'Share Tech Mono', monospace;
   font-size: 0.65rem;
-  line-height: 1.3;
-  padding: 6px 12px 6px 12px;
+  line-height: 1.32;
+  padding: 8px 14px 8px 14px;
   display: flex;
   flex-direction: column;
   gap: 3px;
+  border-radius: 0 0 2px 2px;
 }
 
 .receipt-header {
@@ -3589,7 +3524,7 @@ ul {
   width: 100%;
   height: 18px;
   display: block;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.22));
 }
 
 /* ANIMATIONS */
