@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
           recServiceBox.textContent = service;
           recServiceBox.style.color = '#000000';
         } else {
-          recServiceBox.textContent = 'None Selected (Please select a service)';
+          recServiceBox.textContent = 'Awaiting Selection...';
           recServiceBox.style.color = '#777777';
         }
       }
@@ -678,23 +678,16 @@ document.addEventListener('DOMContentLoaded', () => {
       initAudio();
     }, { once: true });
 
-    // Initial setup
+    // Initial setup - Clean state with placeholders only
     updateCurrentDateTime();
     setInterval(updateCurrentDateTime, 60000);
 
-    if (fullNameInput && !fullNameInput.value) {
-      fullNameInput.value = 'Ramesh Verma';
-      if (emailIdInput) emailIdInput.value = 'ramesh.verma@example.com';
-      if (mobileNumberInput) mobileNumberInput.value = '9876543210';
-      if (serviceDropdown) serviceDropdown.value = 'Custom Software Development';
-      if (aboutBusinessInput) aboutBusinessInput.value = 'Need automated billing and inventory software for business expansion.';
-    }
+    if (fullNameInput) fullNameInput.value = '';
+    if (emailIdInput) emailIdInput.value = '';
+    if (mobileNumberInput) mobileNumberInput.value = '';
+    if (serviceDropdown) serviceDropdown.selectedIndex = 0;
+    if (aboutBusinessInput) aboutBusinessInput.value = '';
 
     syncFormToReceipt();
-
-    // Introductory rollout after brief settle
-    setTimeout(() => {
-      executeFullPrintAnimation();
-    }, 600);
   })();
 });
