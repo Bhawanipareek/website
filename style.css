@@ -810,7 +810,7 @@ ul {
 .hero-container {
   position: relative;
   z-index: 10;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -894,83 +894,156 @@ ul {
   animation: heroFadeUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.64s both;
 }
 
-/* Trust Bar (Architectural Solid Layout) */
+/* Trust Bar (Architectural 3-Pillar Grid Redesign) */
 .hero-trust-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
   width: 100%;
-  max-width: 940px;
-  background-color: rgba(13, 13, 17, 0.85);
-  border: 1px solid var(--c-dark-border);
-  border-radius: var(--radius-lg);
-  padding: 1.5rem 2.5rem;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+  max-width: 1080px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
   position: relative;
   z-index: 10;
+  margin-top: 2rem;
+}
+
+.trust-card {
+  background: rgba(14, 14, 18, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both;
 }
 
-.hero-trust-bar .trust-item:nth-of-type(1) {
-  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.95s both;
+.trust-card:nth-of-type(1) {
+  animation-delay: 0.8s;
+}
+.trust-card:nth-of-type(2) {
+  animation-delay: 0.95s;
+}
+.trust-card:nth-of-type(3) {
+  animation-delay: 1.1s;
 }
 
-.hero-trust-bar .trust-item:nth-of-type(2) {
-  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.1s both;
+.trust-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--c-red), rgba(255, 16, 26, 0.3), transparent);
+  opacity: 0.7;
+  transition: opacity 0.3s ease, height 0.3s ease;
 }
 
-.hero-trust-bar .trust-item:nth-of-type(3) {
-  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.25s both;
+.trust-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 16, 26, 0.45);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.65), 0 0 24px rgba(255, 16, 26, 0.15);
+  background: rgba(18, 18, 24, 0.92);
 }
 
-.trust-item {
+.trust-card:hover::before {
+  opacity: 1;
+  height: 3px;
+}
+
+.trust-card-top {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  text-align: left;
-  flex: 1;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
 
 .trust-icon-wrap {
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
   border-radius: var(--radius-md);
-  background-color: rgba(255, 16, 26, 0.1);
-  border: 1px solid rgba(255, 16, 26, 0.25);
+  background: rgba(255, 16, 26, 0.12);
+  border: 1px solid rgba(255, 16, 26, 0.3);
   color: var(--c-red);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.trust-card:hover .trust-icon-wrap {
+  transform: scale(1.08);
 }
 
 .trust-icon-wrap svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
-.trust-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.trust-text strong {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
+.trust-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
   font-weight: 700;
+  color: var(--c-red);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(255, 16, 26, 0.08);
+  border: 1px solid rgba(255, 16, 26, 0.22);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.trust-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
   color: var(--c-white);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
 }
 
-.trust-text span {
-  font-size: 0.8rem;
+.trust-desc {
+  font-size: 0.88rem;
   color: var(--c-text-muted);
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
+  flex-grow: 1;
 }
 
-.trust-separator {
-  width: 1px;
-  height: 38px;
-  background-color: var(--c-dark-border);
-  margin: 0 1.25rem;
+.trust-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.trust-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #9CA3AF;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.trust-card:hover .trust-tag {
+  color: #E5E7EB;
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
 /* ========================================================
@@ -2687,14 +2760,9 @@ ul {
     display: flex;
   }
   .hero-trust-bar {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 1.25rem;
-    padding: 1.5rem;
-  }
-  .trust-separator {
-    width: 100%;
-    height: 1px;
-    margin: 0;
+    padding: 0;
   }
 }
 
