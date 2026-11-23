@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Direct Dispatch & Support Desk | BillingServer</title>
+  <meta name="title" content="Contact Us — Direct Dispatch & Support Desk | BillingServer">
+  <meta name="description" content="Connect with BillingServer. Live interactive service booking receipt printer, direct phone & WhatsApp consultation with Founder & IT Architect Bhawani Shankar Pareek.">
+  <meta name="keywords" content="contact billingserver, billingserver phone number, restaurant pos support, hotel pms help rajasthan jaipur, custom software inquiry, live receipt printer">
+  <meta name="author" content="BillingServer Technologies">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://billingserver.in/contact-us.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://billingserver.in/contact-us.html">
+  <meta property="og:title" content="Contact Us — Direct Dispatch & Support Desk | BillingServer">
+  <meta property="og:description" content="Connect directly with BillingServer. Interactive Live Thermal Receipt Printer, instant phone and WhatsApp technical support.">
+  <meta property="og:image" content="https://billingserver.in/assets/logo.png">
+  <meta property="og:site_name" content="BillingServer">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://billingserver.in/contact-us.html">
+  <meta name="twitter:title" content="Contact Us — BillingServer Support & Dispatch">
+  <meta name="twitter:description" content="Connect directly with BillingServer. Interactive Live Thermal Receipt Printer, instant phone and WhatsApp support.">
+  <meta name="twitter:image" content="https://billingserver.in/assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- html2canvas for High-Resolution Receipt Image Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <!-- Structured Data: ContactPage & BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://billingserver.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact Us",
+            "item": "https://billingserver.in/contact-us.html"
+          }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "name": "BillingServer Technical Support & Dispatch",
+        "url": "https://billingserver.in/contact-us.html",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "BillingServer",
+          "telephone": "+919783883297",
+          "founder": {
+            "@type": "Person",
+            "name": "Bhawani Shankar Pareek"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+919783883297",
+            "contactType": "customer support",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
+          }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Scoped Contact Page Styles */
+    .contact-channels-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    @media (max-width: 992px) {
+      .contact-channels-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .contact-channels-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .contact-channel-card {
+      background: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact-channel-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+      border-color: rgba(255, 16, 26, 0.35);
+    }
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(255, 16, 26, 0.08);
+      color: var(--c-red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    .contact-card-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+    .contact-card-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.725rem;
+      font-weight: 700;
+      color: var(--c-red);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+    .contact-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #111827;
+      margin: 0 0 0.5rem;
+    }
+    .contact-card-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 0.5rem;
+      word-break: break-word;
+    }
+    .contact-card-sub {
+      font-size: 0.825rem;
+      color: #6B7280;
+      margin: 0;
+    }
+    .contact-card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.825rem;
+      font-weight: 700;
+      color: var(--c-red);
+      margin-top: 1.25rem;
+      text-decoration: none;
+      transition: gap 0.2s ease;
+    }
+    .contact-card-btn:hover {
+      gap: 0.65rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVIGATION BAR
+       ======================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="BillingServer Home">
+        <img src="assets/logo.png" alt="BillingServer Logo" class="logo-img">
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="features.html" class="nav-item">Features</a>
+        
+        <!-- Solutions Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Solutions</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="solutions.html#restaurant" class="dropdown-item">
+              <div class="dropdown-item-title">Restaurant Management</div>
+              <div class="dropdown-item-desc">High-speed billing, tables, KOT & delivery</div>
+            </a>
+            <a href="solutions.html#hotel" class="dropdown-item">
+              <div class="dropdown-item-title">Hotel Management (PMS)</div>
+              <div class="dropdown-item-desc">Front desk, room folios, housekeeping & rates</div>
+            </a>
+            <a href="solutions.html#cafe" class="dropdown-item">
+              <div class="dropdown-item-title">Cafe & Quick Service</div>
+              <div class="dropdown-item-desc">Counter sales, quick tokens & drive-thru</div>
+            </a>
+            <a href="solutions.html#multibranch" class="dropdown-item">
+              <div class="dropdown-item-title">Multi-Branch Business</div>
+              <div class="dropdown-item-desc">Central HQ, unified stock & branch reports</div>
+            </a>
+            <a href="custom-software.html" class="dropdown-item">
+              <div class="dropdown-item-title" style="color: var(--c-red);">Custom Software (CRM, HRMS, Billing)</div>
+              <div class="dropdown-item-desc">Bespoke software developed for your exact requirements</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="industries.html" class="nav-item">Industries</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            <span>Resources</span>
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+              <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="help-center.html" class="dropdown-item">
+              <div class="dropdown-item-title">Help Center</div>
+              <div class="dropdown-item-desc">Documentation, setup guides & FAQs</div>
+            </a>
+            <a href="hardware.html" class="dropdown-item">
+              <div class="dropdown-item-title">Hardware</div>
+              <div class="dropdown-item-desc">Touch POS terminals, printers & KDS screens</div>
+            </a>
+            <a href="integrations.html" class="dropdown-item">
+              <div class="dropdown-item-title">Integrations</div>
+              <div class="dropdown-item-desc">Payment gateways, aggregators & accounting</div>
+            </a>
+            <a href="download.html" class="dropdown-item">
+              <div class="dropdown-item-title">Download</div>
+              <div class="dropdown-item-desc">Desktop client & mobile management apps</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about-us.html" class="nav-item">About Us</a>
+        <a href="contact-us.html" class="nav-item active" style="color: var(--c-red); font-weight: 700;">Contact Us</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="tel:+919783883297" class="nav-phone-link" title="Call Us Directly">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>+91 97838 83297</span>
+        </a>
+        <a href="book-demo.html" class="btn btn-primary btn-sm">
+          <span>Book a Demo</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="features.html" class="mobile-link">Features</a>
+      
+      <!-- Mobile Solutions Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Solutions</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="solutions.html#restaurant" class="mobile-sublink">Restaurant Management</a>
+          <a href="solutions.html#hotel" class="mobile-sublink">Hotel Management (PMS)</a>
+          <a href="solutions.html#cafe" class="mobile-sublink">Cafe & Quick Service</a>
+          <a href="solutions.html#multibranch" class="mobile-sublink">Multi-Branch Business</a>
+          <a href="custom-software.html" class="mobile-sublink" style="color: var(--c-red);">Custom Software (CRM, HRMS, Billing)</a>
+        </div>
+      </div>
+
+      <a href="industries.html" class="mobile-link">Industries</a>
+
+      <!-- Mobile Resources Dropdown -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn" type="button">
+          <span>Resources</span>
+          <svg class="dropdown-arrow" viewBox="0 0 10 6" fill="currentColor">
+            <path d="M0.5 1L5 5.5L9.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+        <div class="mobile-submenu">
+          <a href="help-center.html" class="mobile-sublink">Help Center</a>
+          <a href="hardware.html" class="mobile-sublink">Hardware</a>
+          <a href="integrations.html" class="mobile-sublink">Integrations</a>
+          <a href="download.html" class="mobile-sublink">Download</a>
+        </div>
+      </div>
+
+      <a href="about-us.html" class="mobile-link">About Us</a>
+      <a href="contact-us.html" class="mobile-link active" style="color: var(--c-red); font-weight: 700;">Contact Us</a>
+
+      <div class="mobile-menu-cta" style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20connect%20with%20your%20team." target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">
+          <span>WhatsApp (+91 97838 83297)</span>
+        </a>
+        <a href="tel:+919783883297" class="btn btn-secondary btn-block">
+          <span>Call: +91 97838 83297</span>
+        </a>
+        <a href="book-demo.html" class="btn btn-primary btn-block">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         PAGE HERO
+         ======================================================== -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="page-hero-badge">DIRECT CLIENT DISPATCH</span>
+        <h1 class="page-hero-title">
+          Connect with <span class="text-brand-red">BillingServer.</span>
+        </h1>
+        <p class="page-hero-desc">
+          Whether you need a high-speed restaurant POS, hotel property management system, or a custom-engineered software platform, our engineering leadership is available to assist your business.
+        </p>
+
+        <div class="cta-actions" style="justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+          <a href="tel:+919783883297" class="btn btn-secondary btn-lg">
+            <span>Call +91 97838 83297</span>
+          </a>
+          <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20inquire%20about%20your%20software%20solutions." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <span>WhatsApp Directly</span>
+          </a>
+          <a href="#service-inquiry" class="btn btn-primary btn-lg">
+            <span>Live Receipt Dispatch ↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CONTACT CHANNELS SUMMARY GRID
+         ======================================================== -->
+    <section class="section bg-light" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="contact-channels-grid">
+          
+          <!-- Card 1: Direct Phone Line -->
+          <div class="contact-channel-card">
+            <div>
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-card-label">DIRECT PHONE LINE</div>
+              <h3 class="contact-card-title">Direct Calling Helpline</h3>
+              <div class="contact-card-value">+91 97838 83297</div>
+              <p class="contact-card-sub">Available Monday through Sunday, 9:00 AM – 9:00 PM IST for sales and technical inquiries.</p>
+            </div>
+            <a href="tel:+919783883297" class="contact-card-btn">
+              <span>Call Now</span>
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/></svg>
+            </a>
+          </div>
+
+          <!-- Card 2: WhatsApp Chat -->
+          <div class="contact-channel-card">
+            <div>
+              <div class="contact-card-icon" style="background: rgba(37, 211, 102, 0.1); color: #25D366;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.84 6.73C8.64 6.73 8.32 6.81 8.04 7.11C7.77 7.41 7 8.13 7 9.58C7 11.04 8.06 12.44 8.21 12.64C8.36 12.84 10.3 15.83 13.26 17.12C13.97 17.42 14.52 17.61 14.96 17.75C15.67 17.97 16.32 17.94 16.83 17.87C17.4 17.78 18.59 17.15 18.84 16.44C19.09 15.74 19.09 15.13 19.01 15.01C18.94 14.88 18.74 14.81 18.44 14.66C18.14 14.51 16.67 13.79 16.39 13.69C16.12 13.59 15.92 13.54 15.72 13.84C15.52 14.14 14.94 14.81 14.77 15.01C14.59 15.21 14.42 15.23 14.12 15.08C13.82 14.94 12.87 14.62 11.73 13.61C10.85 12.83 10.25 11.86 10.08 11.56C9.9 11.26 10.06 11.1 10.21 10.95C10.35 10.82 10.52 10.6 10.67 10.42C10.82 10.25 10.87 10.12 10.97 9.92C11.07 9.73 11.02 9.55 10.95 9.4C10.87 9.25 10.27 7.78 10.02 7.18C9.78 6.6 9.54 6.68 9.35 6.67C9.18 6.66 8.98 6.66 8.78 6.66L8.84 6.73Z"/>
+                </svg>
+              </div>
+              <div class="contact-card-label">INSTANT MESSAGING</div>
+              <h3 class="contact-card-title">Official WhatsApp</h3>
+              <div class="contact-card-value">+91 97838 83297</div>
+              <p class="contact-card-sub">Instant quotation, PDF brochures, demo link dispatch, and direct text interaction.</p>
+            </div>
+            <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20am%20reaching%20out%20via%20your%20Contact%20page." target="_blank" rel="noopener noreferrer" class="contact-card-btn" style="color: #25D366;">
+              <span>Start WhatsApp Chat</span>
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/></svg>
+            </a>
+          </div>
+
+          <!-- Card 3: Technical Leadership -->
+          <div class="contact-channel-card">
+            <div>
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-label">TECHNICAL LEADERSHIP</div>
+              <h3 class="contact-card-title">Founder & Solutions Architect</h3>
+              <div class="contact-card-value">Bhawani Shankar Pareek</div>
+              <p class="contact-card-sub">Direct access to lead software architect for complex custom systems and enterprise integrations.</p>
+            </div>
+            <a href="https://wa.me/919783883297?text=Hello%20Bhawani%20Shankar%20Pareek%2C%20I%20want%20to%20discuss%20my%20software%20project." target="_blank" rel="noopener noreferrer" class="contact-card-btn">
+              <span>Message Founder</span>
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/></svg>
+            </a>
+          </div>
+
+          <!-- Card 4: Guaranteed SLA -->
+          <div class="contact-channel-card">
+            <div>
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-label">SERVICE RESPONSE SLA</div>
+              <h3 class="contact-card-title">Enterprise Support Desk</h3>
+              <div class="contact-card-value">15-Min Priority SLA</div>
+              <p class="contact-card-sub">Active client properties receive dedicated emergency hotline support during active restaurant & hotel billing shifts.</p>
+            </div>
+            <a href="book-demo.html" class="contact-card-btn">
+              <span>Schedule Walkthrough</span>
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         FEATURED SECTION: PRECISION INTAKE PROTOCOL
+         LIVE THERMAL RECEIPT PRINTER & SERVICE INTAKE
+         ======================================================== -->
+    <section class="section bg-light live-printer-section" id="service-inquiry" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label text-red">PRECISION INTAKE PROTOCOL</div>
+          <h2 class="section-heading text-dark">
+            Service Inquiry & <span class="text-brand-red">Live Receipt Printer.</span>
+          </h2>
+          <p class="section-subheading text-secondary">
+            Enter your details below — watch your verified booking receipt generate and print live in real-time from our POS thermal printer engine.
+          </p>
+        </div>
+
+        <div class="live-printer-grid">
+          <!-- LEFT PANEL: ENTERPRISE SERVICE FORM -->
+          <div class="form-panel">
+            <div class="panel-header">
+              <div class="panel-header-left">
+                <div class="panel-pretitle">DIRECT CLIENT DISPATCH</div>
+                <h3 class="panel-title">Service Inquiry Form</h3>
+                <p class="panel-subtitle">Fill in your requirements below — your verified booking receipt generates and prints live on the right.</p>
+              </div>
+            </div>
+
+            <form id="serviceBookingForm" onsubmit="event.preventDefault(); handleReceiptSubmit();">
+              <!-- User Details -->
+              <div class="form-card">
+                <div class="input-group">
+                  <label for="fullName">Full Name <span class="required">*</span></label>
+                  <input type="text" id="fullName" placeholder="Enter your full name (e.g. Rahul Sharma)" required autocomplete="name">
+                </div>
+
+                <div class="input-row">
+                  <div class="input-group">
+                    <label for="emailId">Email ID</label>
+                    <input type="email" id="emailId" placeholder="example@enterprise.com" autocomplete="email">
+                  </div>
+                  <div class="input-group">
+                    <label for="mobileNumber">Mobile Number <span class="required">*</span></label>
+                    <input type="tel" id="mobileNumber" placeholder="e.g. +91 98765 43210" required autocomplete="tel">
+                  </div>
+                </div>
+
+                <!-- Service Selection Dropdown -->
+                <div class="input-group">
+                  <label for="serviceDropdown">
+                    <span>Which service do you need?</span> <span class="required">*</span>
+                  </label>
+                  <select id="serviceDropdown" required>
+                    <option value="" disabled selected>-- Select a Service --</option>
+                    <option value="Custom Software Development">💻 Custom Software Development</option>
+                    <option value="Android App Development">📱 Android App Development</option>
+                    <option value="iOS App Development">🍎 iOS App Development</option>
+                    <option value="Website Development">🌐 Website Development</option>
+                    <option value="Billing System Development">🧾 Billing System Development</option>
+                    <option value="Graphic Design">🎨 Graphic Design</option>
+                    <option value="Digital Marketing (Google Ads & Meta Ads)">🚀 Digital Marketing (Google Ads & Meta Ads)</option>
+                    <option value="All IT Solutions & Infrastructure">🛠️ All IT Solutions & Infrastructure</option>
+                    <option value="IT Consultancy & Technology Consultancy">💡 IT Consultancy & Technology Consultancy</option>
+                  </select>
+                </div>
+
+                <!-- About Your Business -->
+                <div class="input-group">
+                  <label for="aboutBusiness">About Your Business / Project Details</label>
+                  <textarea id="aboutBusiness" rows="3" placeholder="Briefly describe your business operations or project requirements..."></textarea>
+                </div>
+              </div>
+
+              <!-- Submit Action Button -->
+              <div class="submit-action-area">
+                <button type="submit" class="btn-submit" id="submitBtn">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- RIGHT PANEL: COMPACT THERMAL PRINTER & HIGH-CONTRAST BILL -->
+          <div class="printer-panel">
+            <div class="printer-stage">
+              <!-- Sleek Industrial Precision POS Printer Body -->
+              <div class="pos-printer-device compact-printer">
+                <!-- Printer Top Banner -->
+                <div class="printer-top">
+                  <div class="brand-strip">
+                    <div class="brand-logo">BILLINGSERVER™ POS-80X</div>
+                    <div class="model-number">INDUSTRIAL THERMAL ENGINE • 300MM/S</div>
+                  </div>
+                  <div class="printer-leds">
+                    <div class="led-wrapper">
+                      <span class="led led-power active" id="ledPower"></span>
+                      <span class="led-label">PWR</span>
+                    </div>
+                    <div class="led-wrapper">
+                      <span class="led led-ready active" id="ledReady"></span>
+                      <span class="led-label">ONLINE</span>
+                    </div>
+                    <div class="led-wrapper">
+                      <span class="led led-print" id="ledPrint"></span>
+                      <span class="led-label">ACTION</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Paper Output Slot with Precision Metallic Cutter -->
+                <div class="paper-slot-slit">
+                  <div class="slot-shadow"></div>
+                  <div class="cutter-blade" id="cutterBlade"></div>
+                  <div class="slot-thermal-glow" id="slotThermalGlow"></div>
+                </div>
+              </div>
+
+              <!-- RECEIPT PAPER (Emerges downwards freely out of the slot) -->
+              <div class="receipt-paper-viewport" id="receiptViewport">
+                <div class="receipt-paper idle-sway" id="receiptPaper">
+                  <!-- Top Feeding Edge from printer slot -->
+                  <div class="receipt-slot-top-shadow"></div>
+
+                  <!-- Receipt Content: High-Contrast Clean Slate -->
+                  <div class="receipt-content" id="receiptContent">
+                    <!-- Custom Branding: BillingServer Logo & Bhawani Shankar Pareek -->
+                    <div class="receipt-header">
+                      <div class="receipt-logo-wrap">
+                        <img src="assets/logo.png" alt="BillingServer Logo" class="receipt-logo-img">
+                      </div>
+                      <div class="receipt-founder-name">BHAWANI SHANKAR PAREEK</div>
+                      <div class="receipt-founder-title">FOUNDER & IT ARCHITECT</div>
+                      <div class="receipt-contact">📱 WhatsApp / Call: <b>+91 9783883297</b></div>
+                      <div class="divider-line">================================</div>
+                      <div class="receipt-title">SERVICE INVOICE & BOOKING</div>
+                      <div class="divider-line">--------------------------------</div>
+                    </div>
+
+                    <!-- Meta details -->
+                    <div class="receipt-meta">
+                      <div class="meta-row">
+                        <span>Invoice No: <b id="recInvoiceNo">INV-1089</b></span>
+                        <span id="recTime">08:00 PM</span>
+                      </div>
+                      <div class="meta-row">
+                        <span>Date: <span id="recDate">23-Nov-2026</span></span>
+                        <span class="badge-rec">VERIFIED INQUIRY</span>
+                      </div>
+                    </div>
+
+                    <div class="divider-line">================================</div>
+
+                    <!-- Client Profile Section -->
+                    <div class="receipt-section-title">CLIENT DETAILS</div>
+                    <div class="client-details-block">
+                      <div class="client-row">
+                        <span class="c-label">NAME:</span>
+                        <span class="c-val" id="recClientName">Ramesh Verma</span>
+                      </div>
+                      <div class="client-row">
+                        <span class="c-label">PHONE:</span>
+                        <span class="c-val" id="recClientPhone">9876543210</span>
+                      </div>
+                      <div class="client-row" id="recEmailRow">
+                        <span class="c-label">EMAIL:</span>
+                        <span class="c-val" id="recClientEmail">ramesh.verma@example.com</span>
+                      </div>
+                    </div>
+
+                    <div class="divider-line">--------------------------------</div>
+
+                    <!-- Service Section -->
+                    <div class="receipt-section-title">SELECTED SERVICE</div>
+                    <div class="service-highlight-box" id="recServiceBox">
+                      Custom Software Development
+                    </div>
+
+                    <!-- About Business Section -->
+                    <div class="about-biz-section" id="recAboutBizBlock">
+                      <div class="divider-line">--------------------------------</div>
+                      <div class="receipt-section-title">ABOUT BUSINESS / REQUIREMENT</div>
+                      <p class="rec-about-text" id="recAboutText">
+                        Need automated billing and inventory software for business expansion.
+                      </p>
+                    </div>
+
+                    <div class="divider-line">================================</div>
+
+                    <!-- Status & Confirmation Info -->
+                    <div class="inquiry-status-box">
+                      <div class="status-line">
+                        <span>INQUIRY STATUS:</span>
+                        <b>RECEIVED & RECORDED</b>
+                      </div>
+                      <div class="status-line">
+                        <span>SUPPORT REP:</span>
+                        <b>Bhawani Shankar Pareek</b>
+                      </div>
+                    </div>
+
+                    <!-- All Services Section -->
+                    <div class="receipt-all-services">
+                      <div class="divider-line">================================</div>
+                      <div class="receipt-services-title">⚡ OUR COMPLETE SERVICES ⚡</div>
+                      <div class="divider-line">--------------------------------</div>
+                      <ul class="receipt-services-list">
+                        <li><span class="chk-icon">✔</span> Custom Software</li>
+                        <li><span class="chk-icon">✔</span> Android App Dev</li>
+                        <li><span class="chk-icon">✔</span> iOS App Dev</li>
+                        <li><span class="chk-icon">✔</span> Website Dev</li>
+                        <li><span class="chk-icon">✔</span> Billing System</li>
+                        <li><span class="chk-icon">✔</span> Graphic Design</li>
+                        <li><span class="chk-icon">✔</span> Digital Marketing</li>
+                        <li><span class="chk-icon">✔</span> All IT Solutions</li>
+                        <li><span class="chk-icon">✔</span> IT Consultancy</li>
+                      </ul>
+                      <div class="divider-line">================================</div>
+                    </div>
+
+                    <!-- Receipt Greetings -->
+                    <div class="receipt-footer">
+                      <div class="receipt-greetings">
+                        <p>BHAWANI SHANKAR PAREEK</p>
+                        <p>FOUNDER • WHATSAPP: +91 9783883297</p>
+                        <p class="small-disclaimer">BillingServer SaaS Platform • All Rights Reserved.</p>
+                      </div>
+                    </div>
+
+                    <!-- Tear Guide Line -->
+                    <div class="tear-guide-line">- - - - - ✂ - - TEAR HERE - - ✂ - - - - -</div>
+                  </div>
+
+                  <!-- REALISTIC ZIGZAG SAWTOOTH TEETH HANGING AT THE BOTTOM -->
+                  <div class="zigzag-torn-svg-container">
+                    <svg class="zigzag-svg" viewBox="0 0 326 22" preserveAspectRatio="none">
+                      <path d="M0,0 
+                        L5.4,20 L10.8,0 L16.3,20 L21.7,0 L27.1,20 L32.6,0 L38,20 L43.4,0 L48.9,20 L54.3,0 
+                        L59.7,20 L65.2,0 L70.6,20 L76,0 L81.5,20 L86.9,0 L92.3,20 L97.8,0 L103.2,20 L108.6,0 
+                        L114.1,20 L119.5,0 L124.9,20 L130.4,0 L135.8,20 L141.2,0 L146.7,20 L152.1,0 L157.5,20 L163,0 
+                        L168.4,20 L173.8,0 L179.3,20 L184.7,0 L190.1,20 L195.6,0 L201,20 L206.4,0 L211.9,20 L217.3,0 
+                        L222.7,20 L228.2,0 L233.6,20 L239,0 L244.5,20 L249.9,0 L255.3,20 L260.8,0 L266.2,20 L271.6,0 
+                        L277.1,20 L282.5,0 L287.9,20 L293.4,0 L298.8,20 L304.2,0 L309.7,20 L315.1,0 L320.5,20 L326,0 Z" 
+                        fill="#FFFFFF"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Receipt Download Toast Notification -->
+    <div class="toast-popup" id="toastPopup">
+      <div class="toast-icon">⚡</div>
+      <div class="toast-text">
+        <strong id="toastTitle">Receipt Image Downloaded!</strong>
+        <p id="toastMessage">Receipt image saved successfully.</p>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         FINAL DIRECT CONTACT CALLOUT
+         ======================================================== -->
+    <section class="section bg-dark-cta">
+      <div class="container text-center">
+        <div class="section-label text-red">WE ARE HERE FOR YOUR SUCCESS</div>
+        <h2 class="cta-heading text-white">
+          Ready to Discuss Your Project with <span class="text-brand-red">Our Engineers?</span>
+        </h2>
+        <p class="cta-subheading text-muted">
+          Connect directly via call or WhatsApp. We deliver fast responses, transparent pricing, and zero technical friction.
+        </p>
+        <div class="cta-actions">
+          <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <span>WhatsApp: +91 97838 83297</span>
+          </a>
+          <a href="tel:+919783883297" class="btn btn-secondary btn-lg">
+            <span>Call: +91 97838 83297</span>
+          </a>
+          <a href="book-demo.html" class="btn btn-primary btn-lg">
+            <span>Book a Demo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       GRAND BRAND WATERMARK OUTRO
+       ======================================================== -->
+  <section class="brand-outro-section" id="brandOutro" aria-label="BillingServer Display Stamp">
+    <div class="brand-outro-container">
+      <div class="brand-outro-watermark" id="brandWatermark">
+        <span class="brand-char" style="--char-index: 0">B</span><span class="brand-char" style="--char-index: 1">I</span><span class="brand-char" style="--char-index: 2">L</span><span class="brand-char" style="--char-index: 3">L</span><span class="brand-char" style="--char-index: 4">I</span><span class="brand-char" style="--char-index: 5">N</span><span class="brand-char" style="--char-index: 6">G</span><span class="brand-char" style="--char-index: 7">S</span><span class="brand-char" style="--char-index: 8">E</span><span class="brand-char" style="--char-index: 9">R</span><span class="brand-char" style="--char-index: 10">V</span><span class="brand-char" style="--char-index: 11">E</span><span class="brand-char" style="--char-index: 12">R</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Contact Buttons (WhatsApp & Direct Call) -->
+  <div class="floating-contact-wrap" aria-label="Direct Support Contacts">
+    <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20know%20more%20about%20the%20software." target="_blank" rel="noopener" class="floating-btn floating-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <span class="floating-tooltip">WhatsApp: +91 97838 83297</span>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.84 6.73C8.64 6.73 8.32 6.81 8.04 7.11C7.77 7.41 7 8.13 7 9.58C7 11.04 8.06 12.44 8.21 12.64C8.36 12.84 10.3 15.83 13.26 17.12C13.97 17.42 14.52 17.61 14.96 17.75C15.67 17.97 16.32 17.94 16.83 17.87C17.4 17.78 18.59 17.15 18.84 16.44C19.09 15.74 19.09 15.13 19.01 15.01C18.94 14.88 18.74 14.81 18.44 14.66C18.14 14.51 16.67 13.79 16.39 13.69C16.12 13.59 15.92 13.54 15.72 13.84C15.52 14.14 14.94 14.81 14.77 15.01C14.59 15.21 14.42 15.23 14.12 15.08C13.82 14.94 12.87 14.62 11.73 13.61C10.85 12.83 10.25 11.86 10.08 11.56C9.9 11.26 10.06 11.1 10.21 10.95C10.35 10.82 10.52 10.6 10.67 10.42C10.82 10.25 10.87 10.12 10.97 9.92C11.07 9.73 11.02 9.55 10.95 9.4C10.87 9.25 10.27 7.78 10.02 7.18C9.78 6.6 9.54 6.68 9.35 6.67C9.18 6.66 8.98 6.66 8.78 6.66L8.84 6.73Z"/>
+      </svg>
+    </a>
+    <a href="tel:+919783883297" class="floating-btn floating-phone" title="Call Us" aria-label="Call +91 97838 83297">
+      <span class="floating-tooltip">Call: +91 97838 83297</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
