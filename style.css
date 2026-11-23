@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap');
+
 /* ========================================================
    LOCAL & WEBFONT DEFINITIONS
    ======================================================== */
@@ -48,8 +50,8 @@
   --c-text-muted: #9CA3AF;
 
   /* Typography */
-  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Elevation & Borders */
   --radius-sm: 6px;
@@ -105,10 +107,13 @@ a {
   transition: color var(--t-fast);
 }
 
-button {
+button, input, select, textarea {
   font-family: inherit;
   border: none;
   background: none;
+}
+
+button {
   cursor: pointer;
 }
 
@@ -993,7 +998,7 @@ ul {
 }
 
 .trust-badge {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-heading);
   font-size: 0.68rem;
   font-weight: 700;
   color: var(--c-red);
