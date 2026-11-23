@@ -3455,27 +3455,29 @@ ul {
 .receipt-services-list {
   list-style: none;
   padding: 0;
-  margin: 2px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  margin: 3px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px 6px;
   text-align: left;
 }
 
 .receipt-services-list li {
-  font-size: 0.56rem;
+  font-size: 0.53rem;
   display: flex;
-  align-items: center;
-  gap: 5px;
+  align-items: flex-start;
+  gap: 3px;
   color: #111;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .receipt-services-list li .chk-icon {
   font-weight: 900;
   color: #000;
-  font-size: 0.58rem;
+  font-size: 0.55rem;
+  line-height: 1.25;
+  flex-shrink: 0;
 }
 
 .receipt-footer {
