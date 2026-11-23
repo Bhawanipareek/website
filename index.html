@@ -44,7 +44,9 @@
   <!-- Preconnect & Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <!-- html2canvas for High-Resolution Receipt Image Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <link rel="stylesheet" href="style.css">
 
   <!-- Structured Data: Organization & SoftwareApplication -->
@@ -1565,6 +1567,289 @@
         </div>
       </div>
     </section>
+
+    <!-- ========================================================
+         SECTION 8.5: LIVE THERMAL RECEIPT PRINTER & SERVICE INTAKE
+         INTERACTIVE CLIENT DISPATCH ENGINE
+         ======================================================== -->
+    <section class="section bg-dark-cta live-printer-section" id="service-inquiry">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-label text-red">PRECISION INTAKE PROTOCOL</div>
+          <h2 class="section-heading text-white">
+            Service Inquiry & <span class="text-brand-red">Live Receipt Printer.</span>
+          </h2>
+          <p class="section-subheading text-muted">
+            Enter your details below — watch your verified booking receipt generate and print live in real-time from our POS thermal printer engine.
+          </p>
+        </div>
+
+        <div class="live-printer-grid">
+          <!-- LEFT PANEL: ENTERPRISE SERVICE FORM -->
+          <div class="form-panel">
+            <div class="panel-header">
+              <div class="panel-header-left">
+                <div class="panel-pretitle">DIRECT CLIENT DISPATCH</div>
+                <h3 class="panel-title">Service Inquiry Form</h3>
+                <p class="panel-subtitle">कृपया विवरण भरें — दाएँ तरफ़ थर्मल प्रिंटर से रसीद लाइव निकलेगी</p>
+              </div>
+              <div class="panel-header-actions">
+                <button type="button" class="header-btn" id="sampleDataBtn">✨ Sample</button>
+                <div class="live-pill">
+                  <span class="pill-dot"></span>
+                  <span>LIVE SYNC</span>
+                </div>
+              </div>
+            </div>
+
+            <form id="serviceBookingForm" onsubmit="event.preventDefault(); handleReceiptSubmit();">
+              <!-- User Details -->
+              <div class="form-card">
+                <div class="input-group">
+                  <label for="fullName">Full Name <span class="required">*</span></label>
+                  <input type="text" id="fullName" placeholder="अपना पूरा नाम दर्ज करें (उदा: राहुल शर्मा)" required autocomplete="name">
+                </div>
+
+                <div class="input-row">
+                  <div class="input-group">
+                    <label for="emailId">Email ID</label>
+                    <input type="email" id="emailId" placeholder="example@enterprise.com" autocomplete="email">
+                  </div>
+                  <div class="input-group">
+                    <label for="mobileNumber">Mobile Number <span class="required">*</span></label>
+                    <input type="tel" id="mobileNumber" placeholder="उदा: 9876543210" required autocomplete="tel">
+                  </div>
+                </div>
+
+                <!-- Service Selection Dropdown -->
+                <div class="input-group">
+                  <label for="serviceDropdown">
+                    <span>आप कौन सी services लेना चाहते हैं?</span> <span class="required">*</span>
+                  </label>
+                  <select id="serviceDropdown" required>
+                    <option value="" disabled selected>-- सर्विस चुनें (Select a Service) --</option>
+                    <option value="Custom Software Development">💻 Custom Software Development</option>
+                    <option value="Android App Development">📱 Android App Development</option>
+                    <option value="iOS App Development">🍎 iOS App Development</option>
+                    <option value="Website Development">🌐 Website Development</option>
+                    <option value="Billing System Development">🧾 Billing System Development</option>
+                    <option value="Graphic Design">🎨 Graphic Design</option>
+                    <option value="Digital Marketing (Google Ads & Meta Ads)">🚀 Digital Marketing (Google Ads & Meta Ads)</option>
+                    <option value="IT Solutions – सभी प्रकार के IT-related solutions">🛠️ IT Solutions – सभी प्रकार के IT-related solutions</option>
+                    <option value="IT Consultancy & Technology Consultancy">💡 IT Consultancy & Technology Consultancy</option>
+                  </select>
+                </div>
+
+                <!-- About Your Business -->
+                <div class="input-group">
+                  <label for="aboutBusiness">About Your Business / Project Details</label>
+                  <textarea id="aboutBusiness" rows="3" placeholder="अपने बिज़नेस या प्रोजेक्ट की आवश्यकता के बारे में संक्षेप में बताएं..."></textarea>
+                </div>
+              </div>
+
+              <!-- Submit Action Buttons -->
+              <div class="submit-action-area">
+                <button type="submit" class="btn-submit" id="submitBtn">
+                  <span class="btn-icon">⚡</span>
+                  <span class="btn-text">
+                    <strong>Submit & Download Bill Photo</strong>
+                    <small>हाई-रिज़ॉल्यूशन PNG इमेज डाउनलोड करें</small>
+                  </span>
+                </button>
+
+                <div class="secondary-actions-row">
+                  <button type="button" class="btn-whatsapp-dispatch" id="dispatchWhatsAppBtn">
+                    <i class="ph-bold ph-whatsapp-logo"></i>
+                    <span>Send Inquiry to WhatsApp (+91 97838 83297)</span>
+                  </button>
+                  <button type="button" class="sound-toggle-btn" id="soundToggle" title="Toggle Thermal Motor Sound">
+                    <span class="icon">🔇</span>
+                    <span class="label">Sound: OFF</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- RIGHT PANEL: COMPACT THERMAL PRINTER & HIGH-CONTRAST BILL -->
+          <div class="printer-panel">
+            <div class="printer-stage">
+              <!-- Sleek Industrial Precision POS Printer Body -->
+              <div class="pos-printer-device compact-printer">
+                <!-- Printer Top Banner -->
+                <div class="printer-top">
+                  <div class="brand-strip">
+                    <div class="brand-logo">BILLINGSERVER™ POS-80X</div>
+                    <div class="model-number">INDUSTRIAL THERMAL ENGINE • 300MM/S</div>
+                  </div>
+                  <div class="printer-leds">
+                    <div class="led-wrapper">
+                      <span class="led led-power active" id="ledPower"></span>
+                      <span class="led-label">PWR</span>
+                    </div>
+                    <div class="led-wrapper">
+                      <span class="led led-ready active" id="ledReady"></span>
+                      <span class="led-label">ONLINE</span>
+                    </div>
+                    <div class="led-wrapper">
+                      <span class="led led-print" id="ledPrint"></span>
+                      <span class="led-label">ACTION</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Paper Output Slot with Precision Metallic Cutter -->
+                <div class="paper-slot-slit">
+                  <div class="slot-shadow"></div>
+                  <div class="cutter-blade" id="cutterBlade"></div>
+                  <div class="slot-thermal-glow" id="slotThermalGlow"></div>
+                </div>
+              </div>
+
+              <!-- RECEIPT PAPER (Emerges downwards freely out of the slot) -->
+              <div class="receipt-paper-viewport" id="receiptViewport">
+                <div class="receipt-paper idle-sway" id="receiptPaper">
+                  <!-- Top Feeding Edge from printer slot -->
+                  <div class="receipt-slot-top-shadow"></div>
+
+                  <!-- Receipt Content: High-Contrast Clean Slate -->
+                  <div class="receipt-content" id="receiptContent">
+                    <!-- Custom Branding: BillingServer Logo & Bhawani Shankar Pareek -->
+                    <div class="receipt-header">
+                      <div class="receipt-logo-wrap">
+                        <img src="assets/logo.png" alt="BillingServer Logo" class="receipt-logo-img">
+                      </div>
+                      <div class="receipt-founder-name">BHAWANI SHANKAR PAREEK</div>
+                      <div class="receipt-founder-title">FOUNDER & IT ARCHITECT</div>
+                      <div class="receipt-contact">📱 WhatsApp / Call: <b>+91 9783883297</b></div>
+                      <div class="divider-line">================================</div>
+                      <div class="receipt-title">SERVICE INVOICE & BOOKING</div>
+                      <div class="divider-line">--------------------------------</div>
+                    </div>
+
+                    <!-- Meta details -->
+                    <div class="receipt-meta">
+                      <div class="meta-row">
+                        <span>Invoice No: <b id="recInvoiceNo">INV-1089</b></span>
+                        <span id="recTime">08:00 PM</span>
+                      </div>
+                      <div class="meta-row">
+                        <span>Date: <span id="recDate">23-Nov-2026</span></span>
+                        <span class="badge-rec">VERIFIED INQUIRY</span>
+                      </div>
+                    </div>
+
+                    <div class="divider-line">================================</div>
+
+                    <!-- Client Profile Section -->
+                    <div class="receipt-section-title">CLIENT DETAILS</div>
+                    <div class="client-details-block">
+                      <div class="client-row">
+                        <span class="c-label">NAME:</span>
+                        <span class="c-val" id="recClientName">Ramesh Verma</span>
+                      </div>
+                      <div class="client-row">
+                        <span class="c-label">PHONE:</span>
+                        <span class="c-val" id="recClientPhone">9876543210</span>
+                      </div>
+                      <div class="client-row" id="recEmailRow">
+                        <span class="c-label">EMAIL:</span>
+                        <span class="c-val" id="recClientEmail">ramesh.verma@example.com</span>
+                      </div>
+                    </div>
+
+                    <div class="divider-line">--------------------------------</div>
+
+                    <!-- Service Section -->
+                    <div class="receipt-section-title">SELECTED SERVICE</div>
+                    <div class="service-highlight-box" id="recServiceBox">
+                      Custom Software Development
+                    </div>
+
+                    <!-- About Business Section -->
+                    <div class="about-biz-section" id="recAboutBizBlock">
+                      <div class="divider-line">--------------------------------</div>
+                      <div class="receipt-section-title">ABOUT BUSINESS / REQUIREMENT</div>
+                      <p class="rec-about-text" id="recAboutText">
+                        Need automated billing and inventory software for business expansion.
+                      </p>
+                    </div>
+
+                    <div class="divider-line">================================</div>
+
+                    <!-- Status & Confirmation Info -->
+                    <div class="inquiry-status-box">
+                      <div class="status-line">
+                        <span>INQUIRY STATUS:</span>
+                        <b>RECEIVED & RECORDED</b>
+                      </div>
+                      <div class="status-line">
+                        <span>SUPPORT REP:</span>
+                        <b>Bhawani Shankar Pareek</b>
+                      </div>
+                    </div>
+
+                    <!-- All Services Section -->
+                    <div class="receipt-all-services">
+                      <div class="divider-line">================================</div>
+                      <div class="receipt-services-title">⚡ OUR ALL SERVICES / सेवाएँ ⚡</div>
+                      <div class="divider-line">--------------------------------</div>
+                      <ul class="receipt-services-list">
+                        <li><span class="chk-icon">✔</span> Custom Software Development</li>
+                        <li><span class="chk-icon">✔</span> Android App Development</li>
+                        <li><span class="chk-icon">✔</span> iOS App Development</li>
+                        <li><span class="chk-icon">✔</span> Website Development</li>
+                        <li><span class="chk-icon">✔</span> Billing System Development</li>
+                        <li><span class="chk-icon">✔</span> Graphic Design & Branding</li>
+                        <li><span class="chk-icon">✔</span> Digital Marketing (Google & Meta Ads)</li>
+                        <li><span class="chk-icon">✔</span> IT Solutions (सभी प्रकार के IT Solutions)</li>
+                        <li><span class="chk-icon">✔</span> IT & Technology Consultancy</li>
+                      </ul>
+                      <div class="divider-line">================================</div>
+                    </div>
+
+                    <!-- Receipt Greetings -->
+                    <div class="receipt-footer">
+                      <div class="receipt-greetings">
+                        <p>BHAWANI SHANKAR PAREEK</p>
+                        <p>FOUNDER • WHATSAPP: +91 9783883297</p>
+                        <p class="small-disclaimer">BillingServer SaaS Platform • All Rights Reserved.</p>
+                      </div>
+                    </div>
+
+                    <!-- Tear Guide Line -->
+                    <div class="tear-guide-line">- - - - - ✂ - - TEAR HERE - - ✂ - - - - -</div>
+                  </div>
+
+                  <!-- REALISTIC ZIGZAG SAWTOOTH TEETH HANGING AT THE BOTTOM -->
+                  <div class="zigzag-torn-svg-container">
+                    <svg class="zigzag-svg" viewBox="0 0 326 22" preserveAspectRatio="none">
+                      <path d="M0,0 
+                        L5.4,20 L10.8,0 L16.3,20 L21.7,0 L27.1,20 L32.6,0 L38,20 L43.4,0 L48.9,20 L54.3,0 
+                        L59.7,20 L65.2,0 L70.6,20 L76,0 L81.5,20 L86.9,0 L92.3,20 L97.8,0 L103.2,20 L108.6,0 
+                        L114.1,20 L119.5,0 L124.9,20 L130.4,0 L135.8,20 L141.2,0 L146.7,20 L152.1,0 L157.5,20 L163,0 
+                        L168.4,20 L173.8,0 L179.3,20 L184.7,0 L190.1,20 L195.6,0 L201,20 L206.4,0 L211.9,20 L217.3,0 
+                        L222.7,20 L228.2,0 L233.6,20 L239,0 L244.5,20 L249.9,0 L255.3,20 L260.8,0 L266.2,20 L271.6,0 
+                        L277.1,20 L282.5,0 L287.9,20 L293.4,0 L298.8,20 L304.2,0 L309.7,20 L315.1,0 L320.5,20 L326,0 Z" 
+                        fill="#F7F7F8"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Receipt Download Toast Notification -->
+    <div class="toast-popup" id="toastPopup">
+      <div class="toast-icon">⚡</div>
+      <div class="toast-text">
+        <strong id="toastTitle">बिल फ़ोटो डाउनलोड हो गया!</strong>
+        <p id="toastMessage">Receipt image saved successfully.</p>
+      </div>
+    </div>
 
     <!-- ========================================================
          SECTION 9: FAQ (LIGHT #FFFFFF)
