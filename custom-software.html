@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://billingserver.in/custom-software.html">
   <meta property="og:title" content="Custom Software Solutions — Bespoke Billing, CRM, HRMS & ERP Development | BillingServer">
   <meta property="og:description" content="Tailored software built for your exact business logic. Bespoke billing systems, enterprise CRM, automated HRMS payroll, and specialized enterprise software.">
-  <meta property="og:image" content="https://billingserver.in/assets/logo.png">
+  <meta property="og:image" content="https://billingserver.in/assets/images/sol-restaurant.jpg">
   <meta property="og:site_name" content="BillingServer">
   <meta property="og:locale" content="en_IN">
 
@@ -25,7 +25,7 @@
   <meta name="twitter:url" content="https://billingserver.in/custom-software.html">
   <meta name="twitter:title" content="Custom Software Solutions — Bespoke Billing, CRM & ERP | BillingServer">
   <meta name="twitter:description" content="Tailored software built for your exact business logic. Bespoke billing, enterprise CRM, automated HRMS payroll, and specialized software.">
-  <meta name="twitter:image" content="https://billingserver.in/assets/logo.png">
+  <meta name="twitter:image" content="https://billingserver.in/assets/images/sol-restaurant.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -34,603 +34,36 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Structured Data: Service & BreadcrumbList -->
+  <!-- Structured Data: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
+    "@type": "BreadcrumbList",
+    "itemListElement": [
       {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://billingserver.in/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Solutions",
-            "item": "https://billingserver.in/solutions.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Custom Software Solutions",
-            "item": "https://billingserver.in/custom-software.html"
-          }
-        ]
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://billingserver.in/"
       },
       {
-        "@type": "Service",
-        "name": "Custom Software Engineering Services",
-        "serviceType": "Bespoke Enterprise Software Development",
-        "provider": {
-          "@type": "Organization",
-          "name": "BillingServer",
-          "url": "https://billingserver.in/",
-          "telephone": "+919783883297"
-        },
-        "description": "Tailored software built for exact business logic including all-industry custom billing systems, enterprise CRM platforms, automated HRMS payroll suites, custom ERPs, mobile applications, and legacy migration.",
-        "areaServed": "Global"
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Solutions",
+        "item": "https://billingserver.in/solutions.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Custom Software Solutions",
+        "item": "https://billingserver.in/custom-software.html"
       }
     ]
   }
   </script>
-
-  <style>
-    /* ========================================================
-       PREMIUM HIGH-TECH OBSIDIAN PALETTE & DESIGN SYSTEM
-       ======================================================== */
-    :root {
-      --cs-bg-base: #060609;
-      --cs-bg-card: #0D0D14;
-      --cs-bg-card-alt: #12121D;
-      --cs-border: rgba(255, 255, 255, 0.08);
-      --cs-border-hover: rgba(255, 16, 26, 0.45);
-      --cs-red: #FF101A;
-      --cs-red-soft: rgba(255, 16, 26, 0.12);
-      --cs-red-glow: rgba(255, 16, 26, 0.25);
-      --cs-text-light: #F3F4F6;
-      --cs-text-dim: #9CA3AF;
-    }
-
-    body {
-      background-color: var(--cs-bg-base);
-      color: var(--cs-text-light);
-    }
-
-    /* Page Hero Enhancements */
-    .cs-hero-section {
-      background: radial-gradient(circle at 50% -10%, rgba(255, 16, 26, 0.18) 0%, rgba(6, 6, 9, 0) 65%),
-                  linear-gradient(180deg, #060609 0%, #0A0A10 100%);
-      padding: 150px 24px 80px;
-      text-align: center;
-      position: relative;
-      border-bottom: 1px solid var(--cs-border);
-      overflow: hidden;
-    }
-    .cs-hero-section::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-      background-size: 32px 32px;
-      opacity: 0.6;
-      pointer-events: none;
-    }
-    .cs-hero-container {
-      max-width: 960px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 2;
-    }
-    .cs-badge-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.4rem 1.1rem;
-      background: rgba(255, 16, 26, 0.08);
-      border: 1px solid rgba(255, 16, 26, 0.25);
-      border-radius: 999px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.775rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--cs-red);
-      margin-bottom: 1.5rem;
-    }
-    .cs-pulse-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--cs-red);
-      box-shadow: 0 0 10px var(--cs-red);
-      animation: csPulse 2s infinite;
-    }
-    @keyframes csPulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.8); }
-    }
-    .cs-hero-title {
-      font-family: var(--font-heading);
-      font-size: clamp(2.4rem, 5.5vw, 4rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      color: #FFFFFF;
-      margin-bottom: 1.5rem;
-    }
-    .cs-gradient-red {
-      background: linear-gradient(135deg, #FF3B30 0%, #FF101A 50%, #FF6B6B 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .cs-hero-desc {
-      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-      color: var(--cs-text-dim);
-      line-height: 1.7;
-      max-width: 780px;
-      margin: 0 auto 2.25rem;
-    }
-    .cs-hero-pills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.75rem;
-      margin-top: 2.25rem;
-    }
-    .cs-hero-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.45rem 1rem;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #D1D5DB;
-      transition: all 0.25s ease;
-    }
-    .cs-hero-chip:hover {
-      background: rgba(255, 16, 26, 0.08);
-      border-color: rgba(255, 16, 26, 0.3);
-      color: #FFFFFF;
-    }
-    .cs-hero-chip .icon {
-      color: var(--cs-red);
-      font-size: 0.9rem;
-    }
-
-    /* Core Pillars Section */
-    .cs-section {
-      padding: 6rem 0;
-      position: relative;
-    }
-    .cs-section-dark {
-      background: #060609;
-    }
-    .cs-section-alt {
-      background: #0A0A10;
-      border-top: 1px solid var(--cs-border);
-      border-bottom: 1px solid var(--cs-border);
-    }
-    .cs-matrix-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.75rem;
-      margin-top: 3.5rem;
-    }
-    @media (max-width: 992px) {
-      .cs-matrix-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 640px) {
-      .cs-matrix-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .cs-matrix-card {
-      background: var(--cs-bg-card);
-      border: 1px solid var(--cs-border);
-      border-radius: 16px;
-      padding: 2.25rem 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-      overflow: hidden;
-    }
-    .cs-matrix-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--cs-red), transparent);
-      opacity: 0.4;
-      transition: opacity 0.3s ease;
-    }
-    .cs-matrix-card:hover {
-      transform: translateY(-6px);
-      border-color: var(--cs-border-hover);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 16, 26, 0.12);
-    }
-    .cs-matrix-card:hover::before {
-      opacity: 1;
-    }
-    .cs-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.25rem;
-    }
-    .cs-card-num {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--cs-red);
-      letter-spacing: -0.02em;
-    }
-    .cs-card-icon-wrap {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      background: rgba(255, 16, 26, 0.08);
-      border: 1px solid rgba(255, 16, 26, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--cs-red);
-    }
-    .cs-card-icon-wrap svg {
-      width: 20px;
-      height: 20px;
-    }
-    .cs-card-title {
-      font-family: var(--font-heading);
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #FFFFFF;
-      margin: 0 0 0.85rem;
-      line-height: 1.3;
-    }
-    .cs-card-desc {
-      font-size: 0.925rem;
-      color: var(--cs-text-dim);
-      line-height: 1.65;
-      margin-bottom: 1.75rem;
-    }
-    .cs-card-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.45rem;
-      margin-top: auto;
-      padding-top: 1.25rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .cs-tag {
-      background: rgba(255, 255, 255, 0.04);
-      color: #D1D5DB;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.3rem 0.65rem;
-      border-radius: 6px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      letter-spacing: 0.02em;
-    }
-    .cs-matrix-card:hover .cs-tag {
-      border-color: rgba(255, 16, 26, 0.2);
-      color: #FFFFFF;
-    }
-
-    /* Solution Deep Dive Blocks */
-    .cs-solution-block {
-      padding: 6.5rem 0;
-      position: relative;
-    }
-    .cs-solution-block.alt-bg {
-      background: #0A0A10;
-      border-top: 1px solid var(--cs-border);
-      border-bottom: 1px solid var(--cs-border);
-    }
-    .cs-solution-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    @media (max-width: 992px) {
-      .cs-solution-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
-    }
-    .cs-solution-grid.reverse-grid {
-      grid-template-columns: 0.85fr 1.15fr;
-    }
-    @media (max-width: 992px) {
-      .cs-solution-grid.reverse-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .cs-sol-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--cs-red);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.85rem;
-    }
-    .cs-sol-heading {
-      font-family: var(--font-heading);
-      font-size: clamp(2rem, 3.5vw, 2.75rem);
-      font-weight: 800;
-      color: #FFFFFF;
-      line-height: 1.2;
-      margin-bottom: 1.25rem;
-    }
-    .cs-sol-lead {
-      font-size: 1.05rem;
-      color: #D1D5DB;
-      line-height: 1.7;
-      margin-bottom: 2rem;
-    }
-    .cs-features-checklist {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 2.25rem;
-      display: grid;
-      gap: 1.1rem;
-    }
-    .cs-feature-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.85rem;
-      font-size: 0.95rem;
-      color: #E5E7EB;
-      line-height: 1.6;
-    }
-    .cs-feature-icon {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: rgba(255, 16, 26, 0.12);
-      border: 1px solid rgba(255, 16, 26, 0.3);
-      color: var(--cs-red);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .cs-feature-icon svg {
-      width: 13px;
-      height: 13px;
-    }
-    .cs-feature-item strong {
-      color: #FFFFFF;
-      font-weight: 700;
-    }
-
-    /* Architecture Spec Terminal Widget */
-    .cs-terminal-widget {
-      background: #0D0D14;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 16, 26, 0.08);
-      position: relative;
-    }
-    .cs-terminal-widget::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--cs-red), rgba(255, 255, 255, 0.1));
-    }
-    .cs-terminal-topbar {
-      background: #14141E;
-      padding: 0.9rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .cs-terminal-dots {
-      display: flex;
-      gap: 6px;
-    }
-    .cs-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-    }
-    .cs-dot.red { background: #FF5F56; }
-    .cs-dot.yellow { background: #FFBD2E; }
-    .cs-dot.green { background: #27C93F; }
-    .cs-terminal-title {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #9CA3AF;
-      letter-spacing: 0.05em;
-    }
-    .cs-terminal-badge {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65rem;
-      font-weight: 700;
-      color: #10B981;
-      background: rgba(16, 185, 129, 0.1);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      border: 1px solid rgba(16, 185, 129, 0.25);
-    }
-    .cs-terminal-body {
-      padding: 1.5rem 1.5rem 1.75rem;
-    }
-    .cs-spec-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.8rem 0.75rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-      border-radius: 6px;
-      transition: background 0.2s ease;
-      font-size: 0.85rem;
-    }
-    .cs-spec-row:nth-child(even) {
-      background: rgba(255, 255, 255, 0.015);
-    }
-    .cs-spec-row:hover {
-      background: rgba(255, 16, 26, 0.04);
-    }
-    .cs-spec-label {
-      font-family: 'JetBrains Mono', monospace;
-      color: #9CA3AF;
-      font-size: 0.8rem;
-    }
-    .cs-spec-val {
-      font-weight: 700;
-      color: #FFFFFF;
-      text-align: right;
-    }
-
-    /* 5-Step Process Cards */
-    .cs-process-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1.25rem;
-      margin-top: 3.5rem;
-    }
-    @media (max-width: 1024px) {
-      .cs-process-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    @media (max-width: 640px) {
-      .cs-process-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .cs-process-card {
-      background: var(--cs-bg-card);
-      border: 1px solid var(--cs-border);
-      border-radius: 14px;
-      padding: 1.85rem 1.35rem;
-      position: relative;
-      transition: all 0.25s ease;
-    }
-    .cs-process-card:hover {
-      border-color: rgba(255, 16, 26, 0.35);
-      transform: translateY(-4px);
-    }
-    .cs-process-num {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--cs-red);
-      margin-bottom: 0.75rem;
-    }
-    .cs-process-title {
-      font-family: var(--font-heading);
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #FFFFFF;
-      margin: 0 0 0.5rem;
-    }
-    .cs-process-desc {
-      font-size: 0.85rem;
-      color: var(--cs-text-dim);
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    /* Tech Stack Matrix */
-    .cs-tech-matrix {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      margin-top: 3.5rem;
-    }
-    @media (max-width: 992px) {
-      .cs-tech-matrix {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 600px) {
-      .cs-tech-matrix {
-        grid-template-columns: 1fr;
-      }
-    }
-    .cs-tech-group {
-      background: var(--cs-bg-card);
-      border: 1px solid var(--cs-border);
-      border-radius: 14px;
-      padding: 1.75rem;
-    }
-    .cs-tech-group-title {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--cs-red);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 1.25rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .cs-tech-items {
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-    }
-    .cs-tech-badge {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 8px;
-      padding: 0.55rem 0.85rem;
-      font-size: 0.85rem;
-      color: #E5E7EB;
-      font-weight: 600;
-    }
-    .cs-tech-badge span.tech-type {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
-      color: #9CA3AF;
-    }
-
-    /* Consultation Banner */
-    .cs-cta-banner {
-      background: radial-gradient(circle at 50% 50%, rgba(255, 16, 26, 0.15) 0%, rgba(13, 13, 20, 0) 70%),
-                  linear-gradient(135deg, #0A0A10 0%, #14141E 100%);
-      border: 1px solid rgba(255, 16, 26, 0.35);
-      border-radius: 20px;
-      padding: 4rem 2rem;
-      text-align: center;
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
-      margin-top: 3rem;
-    }
-  </style>
 </head>
 <body>
 
@@ -793,683 +226,133 @@
 
   <main>
     <!-- ========================================================
-         PAGE HERO (LUXURY OBSIDIAN WITH RADIAL ACCENT)
+         PAGE HERO (NATIVE SITE THEME)
          ======================================================== -->
-    <section class="cs-hero-section">
-      <div class="cs-hero-container">
-        <div class="cs-badge-pill">
-          <span class="cs-pulse-dot"></span>
-          <span>ENTERPRISE ENGINEERING DIVISION</span>
-        </div>
-        
-        <h1 class="cs-hero-title">
-          CUSTOM SOFTWARE <span class="cs-gradient-red">SOLUTIONS</span>
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="page-hero-badge">CUSTOM SOFTWARE SOLUTIONS</span>
+        <h1 class="page-hero-title">
+          Tailored Software Built for Your <span class="text-brand-red">Exact Business Logic.</span>
         </h1>
-        
-        <p class="cs-hero-desc">
-          Tailored Software Built for Your Exact Business Logic. Beyond hospitality, our engineering team designs and develops custom billing platforms for any industry, comprehensive CRM systems, automated HRMS payroll suites, and specialized enterprise software crafted to your exact specifications.
+        <p class="page-hero-desc">
+          Beyond hospitality, our engineering team designs and develops custom billing platforms for any industry, comprehensive CRM systems, automated HRMS payroll suites, and specialized enterprise software crafted to your exact specifications.
         </p>
 
-        <div class="cta-actions" style="justify-content: center; gap: 1rem;">
-          <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20Custom%20Software%20Development%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
-            <span>Discuss on WhatsApp</span>
+        <div class="cta-actions" style="justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+          <a href="book-demo.html" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20Custom%20Software%20Development%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            <span>Chat on WhatsApp</span>
           </a>
           <a href="tel:+919783883297" class="btn btn-secondary btn-lg">
             <span>Call +91 97838 83297</span>
           </a>
-          <a href="book-demo.html" class="btn btn-primary btn-lg">
-            <span>Book Technical Walkthrough</span>
-          </a>
-        </div>
-
-        <div class="cs-hero-pills">
-          <div class="cs-hero-chip"><span class="icon">⚡</span> 100% Bespoke Codebase</div>
-          <div class="cs-hero-chip"><span class="icon">🛡️</span> Zero Recurring Bloatware</div>
-          <div class="cs-hero-chip"><span class="icon">🔄</span> Offline + Cloud Hybrid Engine</div>
-          <div class="cs-hero-chip"><span class="icon">🔑</span> Full Database & IP Ownership</div>
-          <div class="cs-hero-chip"><span class="icon">👨‍💻</span> Direct Lead Architect Support</div>
         </div>
       </div>
     </section>
 
     <!-- ========================================================
-         OVERVIEW MATRIX: 6 CORE PILLARS AT A GLANCE (DARK SECTION)
+         SECTION 1: 6 CORE DISCIPLINES GRID (BG-LIGHT)
          ======================================================== -->
-    <section class="cs-section cs-section-alt">
+    <section class="section bg-light" id="overview">
       <div class="container">
         <div class="section-header-center">
-          <div class="section-label text-red">CORE ENGINEERING DISCIPLINES</div>
-          <h2 class="section-heading text-white">
-            Six Specialized Enterprise Pillars.
+          <div class="section-label text-red">CUSTOM SOFTWARE SOLUTIONS</div>
+          <h2 class="section-heading text-dark">
+            Tailored Software Built for Your <span class="text-brand-red">Exact Business Logic.</span>
           </h2>
-          <p class="section-subheading text-muted">
-            Every business has unique operational nuances that off-the-shelf software cannot solve. We build scalable digital infrastructure tailored directly to your workflow.
+          <p class="section-subheading text-secondary">
+            Beyond hospitality, our engineering team designs and develops custom billing platforms for any industry, comprehensive CRM systems, automated HRMS payroll suites, and specialized enterprise software crafted to your exact specifications.
           </p>
         </div>
 
-        <div class="cs-matrix-grid">
+        <div class="advantage-grid" style="margin-top: 3.5rem;">
           
-          <!-- Pillar 01 -->
-          <div class="cs-matrix-card">
-            <div>
-              <div class="cs-card-header">
-                <span class="cs-card-num">01</span>
-                <div class="cs-card-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-                </div>
-              </div>
-              <h3 class="cs-card-title">All-Industry Custom Billing Software</h3>
-              <p class="cs-card-desc">
-                Bespoke POS & invoicing engines for retail shops, supermarkets, wholesale distributors, pharmacies, clinics, salons, and auto workshops. Customized barcode formats, GST/VAT compliance, discount rules, and thermal/A4 invoices.
-              </p>
-            </div>
-            <div class="cs-card-tags">
-              <span class="cs-tag">Retail & Wholesale</span>
-              <span class="cs-tag">Custom Tax/GST</span>
-              <span class="cs-tag">Thermal & A4 Print</span>
-            </div>
-          </div>
-
-          <!-- Pillar 02 -->
-          <div class="cs-matrix-card">
-            <div>
-              <div class="cs-card-header">
-                <span class="cs-card-num">02</span>
-                <div class="cs-card-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
-                </div>
-              </div>
-              <h3 class="cs-card-title">Enterprise CRM & Sales Automation</h3>
-              <p class="cs-card-desc">
-                End-to-end customer relationship management platforms. Capture leads automatically from Facebook, Google Ads, website forms & WhatsApp, track deals across visual sales pipelines, and automate customer follow-up alerts.
-              </p>
-            </div>
-            <div class="cs-card-tags">
-              <span class="cs-tag">Lead Automation</span>
-              <span class="cs-tag">Sales Pipeline</span>
-              <span class="cs-tag">WhatsApp API</span>
-            </div>
-          </div>
-
-          <!-- Pillar 03 -->
-          <div class="cs-matrix-card">
-            <div>
-              <div class="cs-card-header">
-                <span class="cs-card-num">03</span>
-                <div class="cs-card-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-              </div>
-              <h3 class="cs-card-title">HRMS & Automated Payroll Software</h3>
-              <p class="cs-card-desc">
-                Centralized human resource management with biometric fingerprint & face-recognition attendance sync, shift scheduling, auto-calculated payroll with deductions/bonuses, payslip downloads, and staff leave approvals.
-              </p>
-            </div>
-            <div class="cs-card-tags">
-              <span class="cs-tag">Biometric Sync</span>
-              <span class="cs-tag">Auto Salary Calculation</span>
-              <span class="cs-tag">Staff Portal</span>
-            </div>
-          </div>
-
-          <!-- Pillar 04 -->
-          <div class="cs-matrix-card">
-            <div>
-              <div class="cs-card-header">
-                <span class="cs-card-num">04</span>
-                <div class="cs-card-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-                </div>
-              </div>
-              <h3 class="cs-card-title">Custom ERP & Inventory Management</h3>
-              <p class="cs-card-desc">
-                Tailored ERP suites connecting vendor purchase orders, multi-warehouse stock replenishment, serial/batch number tracking, raw materials assembly, and real-time ledger accounting in one central system.
-              </p>
-            </div>
-            <div class="cs-card-tags">
-              <span class="cs-tag">Multi-Warehouse</span>
-              <span class="cs-tag">Vendor POs</span>
-              <span class="cs-tag">Batch Tracking</span>
-            </div>
-          </div>
-
-          <!-- Pillar 05 -->
-          <div class="cs-matrix-card">
-            <div>
-              <div class="cs-card-header">
-                <span class="cs-card-num">05</span>
-                <div class="cs-card-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                </div>
-              </div>
-              <h3 class="cs-card-title">Bespoke Mobile Apps & Web Portals</h3>
-              <p class="cs-card-desc">
-                Custom native Android & iOS mobile applications, real-time executive analytics dashboards, customer-facing ordering portals, and secure internal intranets engineered for speed, high concurrency, and data security.
-              </p>
-            </div>
-            <div class="cs-card-tags">
-              <span class="cs-tag">Android & iOS</span>
-              <span class="cs-tag">Executive Dashboard</span>
-              <span class="cs-tag">High Concurrency</span>
-            </div>
-          </div>
-
-          <!-- Pillar 06 -->
-          <div class="cs-matrix-card">
-            <div>
-              <div class="cs-card-header">
-                <span class="cs-card-num">06</span>
-                <div class="cs-card-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                </div>
-              </div>
-              <h3 class="cs-card-title">Legacy Migration & Custom API Bridges</h3>
-              <p class="cs-card-desc">
-                Data migration from older legacy desktop programs, custom webhook connectors, third-party ERP bridges, dedicated on-premise local servers, and customized reports formatted to your company standards.
-              </p>
-            </div>
-            <div class="cs-card-tags">
-              <span class="cs-tag">Data Migration</span>
-              <span class="cs-tag">Webhook Bridges</span>
-              <span class="cs-tag">Dedicated Server</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         DEEP DIVE 01: ALL-INDUSTRY CUSTOM BILLING SOFTWARE
-         ======================================================== -->
-    <section class="cs-solution-block" id="custom-billing">
-      <div class="container">
-        <div class="cs-solution-grid">
-          
-          <div class="cs-solution-editorial">
-            <span class="cs-sol-eyebrow"><span class="cs-pulse-dot"></span> SOLUTION 01 • RETAIL & WHOLESALE VERTICALS</span>
-            <h2 class="cs-sol-heading">All-Industry Custom Billing Software</h2>
-            <p class="cs-sol-lead">
+          <!-- Card 1: Custom Billing Systems -->
+          <div class="advantage-card" style="background-color: var(--c-white); border: 1px solid var(--c-light-border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="advantage-num" style="color: var(--c-red);">01</div>
+            <h3 class="advantage-title" style="color: var(--c-text-primary);">All-Industry Custom Billing Software</h3>
+            <p class="advantage-desc" style="color: var(--c-text-secondary);">
               Bespoke POS & invoicing engines for retail shops, supermarkets, wholesale distributors, pharmacies, clinics, salons, and auto workshops. Customized barcode formats, GST/VAT compliance, discount rules, and thermal/A4 invoices.
             </p>
-            
-            <ul class="cs-features-checklist">
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Multi-Format Output:</strong> 2-inch & 3-inch ESC/POS thermal printers, full-size A4/A5 laser invoices, and instant digital WhatsApp PDF receipts.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Bespoke Tax & GST Engine:</strong> Multi-tier slab calculations, automated HSN/SAC codes, reverse charge mechanism (RCM), and integrated E-Invoicing / E-Way bill generation.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Smart Inventory Deduction:</strong> Live stock counts automatically deducted upon barcode scan. Supports batch expiration warnings, serial numbers, and tiered pricing.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Customer Credit & Khata Book:</strong> Integrated customer ledger tracking unpaid balances, partial payments, automated WhatsApp reminders, and dynamic QR collection.</span>
-              </li>
-            </ul>
-
-            <div class="cta-actions">
-              <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20need%20Custom%20Billing%20Software%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span>Request Custom Billing Demo</span>
-              </a>
+            <div class="industry-meta" style="margin-top: 1rem;">
+              <span class="meta-tag">Retail & Wholesale</span>
+              <span class="meta-tag">Custom Tax/GST</span>
+              <span class="meta-tag">Thermal & A4 Print</span>
             </div>
           </div>
 
-          <!-- Architecture Spec Terminal -->
-          <div class="cs-terminal-widget">
-            <div class="cs-terminal-topbar">
-              <div class="cs-terminal-dots">
-                <span class="cs-dot red"></span>
-                <span class="cs-dot yellow"></span>
-                <span class="cs-dot green"></span>
-              </div>
-              <span class="cs-terminal-title">BILLING_ENGINE // ARCH_SPEC_v4</span>
-              <span class="cs-terminal-badge">LIVE ENGINE</span>
-            </div>
-            <div class="cs-terminal-body">
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">target_sectors</span>
-                <span class="cs-spec-val">Retail, Wholesale, Pharmacy, Salon, Auto</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">print_protocols</span>
-                <span class="cs-spec-val">ESC/POS (USB, LAN, BT), Spooler</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">offline_first</span>
-                <span class="cs-spec-val">100% Local DB + Auto Cloud Sync</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">peripherals</span>
-                <span class="cs-spec-val">Barcode, Weight Scale, Cash Drawer</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">tax_compliance</span>
-                <span class="cs-spec-val">GST / VAT / TDS / E-Way / E-Invoice</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">supported_os</span>
-                <span class="cs-spec-val">Windows 10/11, Android POS, Cloud</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         DEEP DIVE 02: ENTERPRISE CRM & SALES AUTOMATION
-         ======================================================== -->
-    <section class="cs-solution-block alt-bg" id="custom-crm">
-      <div class="container">
-        <div class="cs-solution-grid reverse-grid">
-          
-          <!-- Architecture Spec Terminal -->
-          <div class="cs-terminal-widget">
-            <div class="cs-terminal-topbar">
-              <div class="cs-terminal-dots">
-                <span class="cs-dot red"></span>
-                <span class="cs-dot yellow"></span>
-                <span class="cs-dot green"></span>
-              </div>
-              <span class="cs-terminal-title">CRM_PIPELINE // AUTOMATION_MODULE</span>
-              <span class="cs-terminal-badge">ACTIVE SYNC</span>
-            </div>
-            <div class="cs-terminal-body">
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">lead_ingestion</span>
-                <span class="cs-spec-val">Meta Webhooks, Google Ads, WhatsApp</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">pipeline_type</span>
-                <span class="cs-spec-val">Visual Kanban, Deal Stages, Probability</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">auto_triggers</span>
-                <span class="cs-spec-val">WhatsApp Drip, SMS, Rep Notifications</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">lead_routing</span>
-                <span class="cs-spec-val">Round-Robin, Skill & Territory Basis</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">analytics_kpi</span>
-                <span class="cs-spec-val">Win Velocity, Source ROI, CAC Tracking</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">data_security</span>
-                <span class="cs-spec-val">Role Masking (No Bulk Exfiltration)</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cs-solution-editorial">
-            <span class="cs-sol-eyebrow"><span class="cs-pulse-dot"></span> SOLUTION 02 • SALES FORCE & REVENUE ENGINE</span>
-            <h2 class="cs-sol-heading">Enterprise CRM & Sales Automation</h2>
-            <p class="cs-sol-lead">
+          <!-- Card 2: Custom CRM Systems -->
+          <div class="advantage-card" style="background-color: var(--c-white); border: 1px solid var(--c-light-border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="advantage-num" style="color: var(--c-red);">02</div>
+            <h3 class="advantage-title" style="color: var(--c-text-primary);">Enterprise CRM & Sales Automation</h3>
+            <p class="advantage-desc" style="color: var(--c-text-secondary);">
               End-to-end customer relationship management platforms. Capture leads automatically from Facebook, Google Ads, website forms & WhatsApp, track deals across visual sales pipelines, and automate customer follow-up alerts.
             </p>
-            
-            <ul class="cs-features-checklist">
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Sub-Second Lead Ingestion:</strong> Connect directly to Meta Lead Ads, Google Ads webhook listeners, and incoming WhatsApp chat inquiries.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Visual Drag & Drop Sales Pipelines:</strong> Custom Kanban boards (New Inquiry, Contacted, Demo Done, Quotation Sent, Won, Lost) with total pipeline forecasting.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Automated Follow-up Sequences:</strong> Schedule automated WhatsApp message cadences, reminders for sales representatives, and quotation expiry warnings.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Executive Revenue Analytics:</strong> Track conversion velocity, representative quotas, lead channel profitability, and pipeline health on real-time charts.</span>
-              </li>
-            </ul>
-
-            <div class="cta-actions">
-              <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20build%20a%20Custom%20Enterprise%20CRM." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span>Discuss Custom CRM Blueprint</span>
-              </a>
+            <div class="industry-meta" style="margin-top: 1rem;">
+              <span class="meta-tag">Lead Automation</span>
+              <span class="meta-tag">Sales Pipeline</span>
+              <span class="meta-tag">WhatsApp API</span>
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         DEEP DIVE 03: HRMS & AUTOMATED PAYROLL SOFTWARE
-         ======================================================== -->
-    <section class="cs-solution-block" id="custom-hrms">
-      <div class="container">
-        <div class="cs-solution-grid">
-          
-          <div class="cs-solution-editorial">
-            <span class="cs-sol-eyebrow"><span class="cs-pulse-dot"></span> SOLUTION 03 • WORKFORCE MANAGEMENT</span>
-            <h2 class="cs-sol-heading">HRMS & Automated Payroll Software</h2>
-            <p class="cs-sol-lead">
+          <!-- Card 3: Custom HRMS & Payroll -->
+          <div class="advantage-card" style="background-color: var(--c-white); border: 1px solid var(--c-light-border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="advantage-num" style="color: var(--c-red);">03</div>
+            <h3 class="advantage-title" style="color: var(--c-text-primary);">HRMS & Automated Payroll Software</h3>
+            <p class="advantage-desc" style="color: var(--c-text-secondary);">
               Centralized human resource management with biometric fingerprint & face-recognition attendance sync, shift scheduling, auto-calculated payroll with deductions/bonuses, payslip downloads, and staff leave approvals.
             </p>
-            
-            <ul class="cs-features-checklist">
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Hardware Biometric Integration:</strong> Automated real-time punch capture from fingerprint devices, RFID access gates, and AI facial recognition cameras.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Multi-Shift & Overtime Rules:</strong> Manage day/night rotational shifts, grace-period late punches, half-day calculations, and overtime rate multipliers automatically.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>1-Click Salary Calculation:</strong> Automated calculation of monthly salaries including PF, ESI, TDS, advance loan deductions, and performance bonuses.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Employee Self-Service (ESS) Portal:</strong> Staff can check duty rosters, view attendance history, apply for leaves, and download PDF payslips from their phone.</span>
-              </li>
-            </ul>
-
-            <div class="cta-actions">
-              <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20Custom%20HRMS%20and%20Payroll%20Software." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span>Request HRMS Architecture Demo</span>
-              </a>
+            <div class="industry-meta" style="margin-top: 1rem;">
+              <span class="meta-tag">Biometric Sync</span>
+              <span class="meta-tag">Auto Salary Calculation</span>
+              <span class="meta-tag">Staff Portal</span>
             </div>
           </div>
 
-          <!-- Architecture Spec Terminal -->
-          <div class="cs-terminal-widget">
-            <div class="cs-terminal-topbar">
-              <div class="cs-terminal-dots">
-                <span class="cs-dot red"></span>
-                <span class="cs-dot yellow"></span>
-                <span class="cs-dot green"></span>
-              </div>
-              <span class="cs-terminal-title">HRMS_CORE // PAYROLL_ENGINE</span>
-              <span class="cs-terminal-badge">BIOMETRIC READY</span>
-            </div>
-            <div class="cs-terminal-body">
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">hardware_sync</span>
-                <span class="cs-spec-val">ZKTeco, eSSL, Realtime, Hikvision</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">salary_modes</span>
-                <span class="cs-spec-val">Daily, Monthly, Hourly, Piece-rate</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">statutory_rules</span>
-                <span class="cs-spec-val">EPF, ESIC, Form 16, Professional Tax</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">leave_engine</span>
-                <span class="cs-spec-val">Accrual, Carry-forward, Sandwiches</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">bank_disbursement</span>
-                <span class="cs-spec-val">Direct NEFT/RTGS Excel Generator</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">mobile_portal</span>
-                <span class="cs-spec-val">Responsive Web App + Android App</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         DEEP DIVE 04: CUSTOM ERP & INVENTORY MANAGEMENT
-         ======================================================== -->
-    <section class="cs-solution-block alt-bg" id="custom-erp">
-      <div class="container">
-        <div class="cs-solution-grid reverse-grid">
-          
-          <!-- Architecture Spec Terminal -->
-          <div class="cs-terminal-widget">
-            <div class="cs-terminal-topbar">
-              <div class="cs-terminal-dots">
-                <span class="cs-dot red"></span>
-                <span class="cs-dot yellow"></span>
-                <span class="cs-dot green"></span>
-              </div>
-              <span class="cs-terminal-title">ERP_LEDGER // WAREHOUSE_TOPOLOGY</span>
-              <span class="cs-terminal-badge">MULTI-DEPOT</span>
-            </div>
-            <div class="cs-terminal-body">
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">warehouse_topology</span>
-                <span class="cs-spec-val">Multi-Warehouse, Bin & Rack Tracking</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">valuation_logic</span>
-                <span class="cs-spec-val">FIFO, Weighted Average, Standard Cost</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">procurement_flow</span>
-                <span class="cs-spec-val">Indent → PO → GRN → Purchase Invoice</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">assembly_bom</span>
-                <span class="cs-spec-val">Multi-Level Formula / Raw Decomposition</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">transfer_notes</span>
-                <span class="cs-spec-val">STN with In-Transit Discrepancy Gate</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">ledger_type</span>
-                <span class="cs-spec-val">Double-Entry Accounting & Audit Trail</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cs-solution-editorial">
-            <span class="cs-sol-eyebrow"><span class="cs-pulse-dot"></span> SOLUTION 04 • SUPPLY CHAIN & WAREHOUSING</span>
-            <h2 class="cs-sol-heading">Custom ERP & Inventory Management</h2>
-            <p class="cs-sol-lead">
+          <!-- Card 4: Custom ERP & Warehouse Inventory -->
+          <div class="advantage-card" style="background-color: var(--c-white); border: 1px solid var(--c-light-border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="advantage-num" style="color: var(--c-red);">04</div>
+            <h3 class="advantage-title" style="color: var(--c-text-primary);">Custom ERP & Inventory Management</h3>
+            <p class="advantage-desc" style="color: var(--c-text-secondary);">
               Tailored ERP suites connecting vendor purchase orders, multi-warehouse stock replenishment, serial/batch number tracking, raw materials assembly, and real-time ledger accounting in one central system.
             </p>
-            
-            <ul class="cs-features-checklist">
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Multi-Warehouse Topology:</strong> Centralize corporate command while distributing physical stock controls across regional hubs and satellite branches.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Vendor Purchase Cycles:</strong> Automated Purchase Indents, PO authorization, Goods Receipt Note (GRN) matching, and vendor ledger reconciliation.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Serial & Batch Number Traceability:</strong> Complete forward and reverse audit history for pharmaceuticals, electronics, perishables, and manufactured goods.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Bill of Materials (BOM) Assembly:</strong> Automatic consumption of raw items and packaging materials as finished batches are produced.</span>
-              </li>
-            </ul>
-
-            <div class="cta-actions">
-              <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20Custom%20ERP%20and%20Inventory%20Software." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span>Discuss ERP Requirements</span>
-              </a>
+            <div class="industry-meta" style="margin-top: 1rem;">
+              <span class="meta-tag">Multi-Warehouse</span>
+              <span class="meta-tag">Vendor POs</span>
+              <span class="meta-tag">Batch Tracking</span>
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         DEEP DIVE 05: BESPOKE MOBILE APPS & WEB PORTALS
-         ======================================================== -->
-    <section class="cs-solution-block" id="custom-apps">
-      <div class="container">
-        <div class="cs-solution-grid">
-          
-          <div class="cs-solution-editorial">
-            <span class="cs-sol-eyebrow"><span class="cs-pulse-dot"></span> SOLUTION 05 • MOBILE & CLOUD PORTALS</span>
-            <h2 class="cs-sol-heading">Bespoke Mobile Apps & Web Portals</h2>
-            <p class="cs-sol-lead">
+          <!-- Card 5: Mobile & Cloud Web Portals -->
+          <div class="advantage-card" style="background-color: var(--c-white); border: 1px solid var(--c-light-border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="advantage-num" style="color: var(--c-red);">05</div>
+            <h3 class="advantage-title" style="color: var(--c-text-primary);">Bespoke Mobile Apps & Web Portals</h3>
+            <p class="advantage-desc" style="color: var(--c-text-secondary);">
               Custom native Android & iOS mobile applications, real-time executive analytics dashboards, customer-facing ordering portals, and secure internal intranets engineered for speed, high concurrency, and data security.
             </p>
-            
-            <ul class="cs-features-checklist">
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>High Concurrency Cloud Engines:</strong> Built on modern asynchronous backends capable of serving thousands of concurrent transactions with zero latency.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Native Android & iOS Apps:</strong> Fluid touch interfaces for customers, field delivery agents, sales reps, and warehouse operators with offline SQLite caching.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Real-Time Executive Command Center:</strong> Monitor revenue across all business divisions live from your smartphone with end-of-day revenue digests and fraud alerts.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Role-Based Access Control (RBAC):</strong> Granular permissions by employee role (cashier, manager, auditor, owner) with detailed tamper-proof action audit logs.</span>
-              </li>
-            </ul>
-
-            <div class="cta-actions">
-              <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20develop%20a%20Custom%20Mobile%20App%20or%20Web%20Portal." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span>Request App Architecture Call</span>
-              </a>
+            <div class="industry-meta" style="margin-top: 1rem;">
+              <span class="meta-tag">Android & iOS</span>
+              <span class="meta-tag">Executive Dashboard</span>
+              <span class="meta-tag">High Concurrency</span>
             </div>
           </div>
 
-          <!-- Architecture Spec Terminal -->
-          <div class="cs-terminal-widget">
-            <div class="cs-terminal-topbar">
-              <div class="cs-terminal-dots">
-                <span class="cs-dot red"></span>
-                <span class="cs-dot yellow"></span>
-                <span class="cs-dot green"></span>
-              </div>
-              <span class="cs-terminal-title">APP_STACK // NATIVE_ENGINE</span>
-              <span class="cs-terminal-badge">CROSS PLATFORM</span>
-            </div>
-            <div class="cs-terminal-body">
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">mobile_frameworks</span>
-                <span class="cs-spec-val">Native Kotlin (Android), Swift (iOS)</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">web_technologies</span>
-                <span class="cs-spec-val">React, Next.js, TypeScript, Tailwind</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">backend_engine</span>
-                <span class="cs-spec-val">Node.js / Express, Python FastAPI</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">database_layer</span>
-                <span class="cs-spec-val">PostgreSQL, Redis Cache, SQLite Offline</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">security_protocols</span>
-                <span class="cs-spec-val">JWT, OAuth2, AES-256 Encryption</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">cloud_deployment</span>
-                <span class="cs-spec-val">AWS, Google Cloud, Cloudflare Edge</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         DEEP DIVE 06: LEGACY MIGRATION & CUSTOM API BRIDGES
-         ======================================================== -->
-    <section class="cs-solution-block alt-bg" id="custom-migration">
-      <div class="container">
-        <div class="cs-solution-grid reverse-grid">
-          
-          <!-- Architecture Spec Terminal -->
-          <div class="cs-terminal-widget">
-            <div class="cs-terminal-topbar">
-              <div class="cs-terminal-dots">
-                <span class="cs-dot red"></span>
-                <span class="cs-dot yellow"></span>
-                <span class="cs-dot green"></span>
-              </div>
-              <span class="cs-terminal-title">DATA_BRIDGE // MIGRATION_PIPELINE</span>
-              <span class="cs-terminal-badge">ZERO LOSS</span>
-            </div>
-            <div class="cs-terminal-body">
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">source_formats</span>
-                <span class="cs-spec-val">Tally XML/ODBC, FoxPro, Access, Excel</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">cutover_sla</span>
-                <span class="cs-spec-val">Zero-Downtime Weekend Parallel Switch</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">cleansing_engine</span>
-                <span class="cs-spec-val">Duplicate Party Merge & Ledger Balance</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">api_connectors</span>
-                <span class="cs-spec-val">RESTful JSON, GraphQL, Webhooks, gRPC</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">on_premise_sync</span>
-                <span class="cs-spec-val">Local Server + Encrypted Cloud Backup</span>
-              </div>
-              <div class="cs-spec-row">
-                <span class="cs-spec-label">auditor_reports</span>
-                <span class="cs-spec-val">Bespoke Formats for CA / Internal Audit</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cs-solution-editorial">
-            <span class="cs-sol-eyebrow"><span class="cs-pulse-dot"></span> SOLUTION 06 • DATA CONTINUITY & SYSTEMS INTEROP</span>
-            <h2 class="cs-sol-heading">Legacy Migration & Custom API Bridges</h2>
-            <p class="cs-sol-lead">
+          <!-- Card 6: Custom System Integration & Migration -->
+          <div class="advantage-card" style="background-color: var(--c-white); border: 1px solid var(--c-light-border); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="advantage-num" style="color: var(--c-red);">06</div>
+            <h3 class="advantage-title" style="color: var(--c-text-primary);">Legacy Migration & Custom API Bridges</h3>
+            <p class="advantage-desc" style="color: var(--c-text-secondary);">
               Data migration from older legacy desktop programs, custom webhook connectors, third-party ERP bridges, dedicated on-premise local servers, and customized reports formatted to your company standards.
             </p>
-            
-            <ul class="cs-features-checklist">
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Zero-Downtime Data Extraction:</strong> Extract decades of customer balances, product masters, historical invoices, and vendor ledgers into modern databases.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Custom Webhooks & REST Connectors:</strong> Real-time bi-directional pipelines connecting your billing and inventory engines with logistics and payment gateways.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Dedicated On-Premise Local Server Sync:</strong> Maintain a local offline-capable database in your showroom that operates with 100% speed even if the internet fails.</span>
-              </li>
-              <li class="cs-feature-item">
-                <span class="cs-feature-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
-                <span><strong>Auditor-Approved Custom Reports:</strong> Financial, tax, and inventory reports in the exact custom columns and Excel formats required by your chartered accountants.</span>
-              </li>
-            </ul>
-
-            <div class="cta-actions">
-              <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20Legacy%20Data%20Migration%20and%20API%20Integration." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <span>Discuss Migration & API Project</span>
-              </a>
+            <div class="industry-meta" style="margin-top: 1rem;">
+              <span class="meta-tag">Data Migration</span>
+              <span class="meta-tag">Webhook Bridges</span>
+              <span class="meta-tag">Dedicated Server</span>
             </div>
           </div>
 
@@ -1478,9 +361,195 @@
     </section>
 
     <!-- ========================================================
-         SECTION: 5-STEP ENGINEERING LIFECYCLE
+         SOLUTION 01: ALL-INDUSTRY CUSTOM BILLING SOFTWARE (BG-DARK)
          ======================================================== -->
-    <section class="cs-section cs-section-dark">
+    <section class="section bg-dark" id="billing">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 01</div>
+            <h2 class="section-heading text-white">All-Industry Custom Billing Software.</h2>
+            <div class="intro-copy">
+              <p>
+                Bespoke POS & invoicing engines for retail shops, supermarkets, wholesale distributors, pharmacies, clinics, salons, and auto workshops. Customized barcode formats, GST/VAT compliance, discount rules, and thermal/A4 invoices.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li style="color: #D1D5DB;">Thermal (2-inch & 3-inch) ESC/POS and full-page A4/A5 GST tax invoice printing</li>
+                <li style="color: #D1D5DB;">Automated HSN/SAC code mapping, multi-tier tax slabs, and E-Way bill compliance</li>
+                <li style="color: #D1D5DB;">Real-time inventory deduction with batch, expiry date, and serial number tracking</li>
+                <li style="color: #D1D5DB;">Customer credit ledger (Khata) with automated WhatsApp payment reminder links</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Request Custom Billing Demo</a>
+            </div>
+          </div>
+          <div class="intro-media">
+            <img src="assets/images/eco-frontoffice.jpg" alt="All-Industry custom billing counter and POS" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SOLUTION 02: ENTERPRISE CRM & SALES AUTOMATION (BG-LIGHT)
+         ======================================================== -->
+    <section class="section bg-light" id="crm">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-media">
+            <img src="assets/images/eco-admin.jpg" alt="Enterprise CRM sales pipeline and analytics" loading="lazy">
+          </div>
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 02</div>
+            <h2 class="section-heading text-dark">Enterprise CRM & Sales Automation.</h2>
+            <div class="intro-copy">
+              <p>
+                End-to-end customer relationship management platforms. Capture leads automatically from Facebook, Google Ads, website forms & WhatsApp, track deals across visual sales pipelines, and automate customer follow-up alerts.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li>Sub-second lead ingestion from Meta Ads, Google Ads lead forms, and website APIs</li>
+                <li>Visual drag-and-drop Kanban sales pipeline with custom deal stages and probabilities</li>
+                <li>Automated WhatsApp drip messages, follow-up reminders, and quote expiry alerts</li>
+                <li>Executive sales conversion metrics, agent activity tracking, and call logging</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Discuss CRM Blueprint</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SOLUTION 03: HRMS & AUTOMATED PAYROLL SOFTWARE (BG-DARK)
+         ======================================================== -->
+    <section class="section bg-dark" id="hrms">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 03</div>
+            <h2 class="section-heading text-white">HRMS & Automated Payroll Software.</h2>
+            <div class="intro-copy">
+              <p>
+                Centralized human resource management with biometric fingerprint & face-recognition attendance sync, shift scheduling, auto-calculated payroll with deductions/bonuses, payslip downloads, and staff leave approvals.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li style="color: #D1D5DB;">Direct hardware sync with biometric fingerprint, RFID, and facial recognition machines</li>
+                <li style="color: #D1D5DB;">Rotational shift rostering, overtime multipliers, and grace-period late rules</li>
+                <li style="color: #D1D5DB;">1-click salary calculations including PF, ESI, TDS, and advance loan recoveries</li>
+                <li style="color: #D1D5DB;">Employee self-service mobile portal for leave requests and digital payslips</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Request HRMS Demo</a>
+            </div>
+          </div>
+          <div class="intro-media">
+            <img src="assets/images/intro-manager.jpg" alt="HRMS staff and employee management" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SOLUTION 04: CUSTOM ERP & INVENTORY MANAGEMENT (BG-LIGHT)
+         ======================================================== -->
+    <section class="section bg-light" id="erp">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-media">
+            <img src="assets/images/sol-multibranch.jpg" alt="Custom ERP and warehouse inventory" loading="lazy">
+          </div>
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 04</div>
+            <h2 class="section-heading text-dark">Custom ERP & Inventory Management.</h2>
+            <div class="intro-copy">
+              <p>
+                Tailored ERP suites connecting vendor purchase orders, multi-warehouse stock replenishment, serial/batch number tracking, raw materials assembly, and real-time ledger accounting in one central system.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li>Multi-warehouse inventory allocation with inter-branch Stock Transfer Notes (STN)</li>
+                <li>Purchase Indent to Goods Receipt Note (GRN) workflow with discrepancy reconciliation</li>
+                <li>Granular batch, expiry, and serial number traceability across every transaction</li>
+                <li>Bill of Materials (BOM) formulation and raw material auto-deduction upon assembly</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Discuss ERP Requirements</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SOLUTION 05: BESPOKE MOBILE APPS & WEB PORTALS (BG-DARK)
+         ======================================================== -->
+    <section class="section bg-dark" id="apps">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 05</div>
+            <h2 class="section-heading text-white">Bespoke Mobile Apps & Web Portals.</h2>
+            <div class="intro-copy">
+              <p>
+                Custom native Android & iOS mobile applications, real-time executive analytics dashboards, customer-facing ordering portals, and secure internal intranets engineered for speed, high concurrency, and data security.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li style="color: #D1D5DB;">Native Android (Kotlin) & iOS (Swift) mobile apps with offline SQLite local caching</li>
+                <li style="color: #D1D5DB;">High concurrency backend microservices engineered for zero lag during peak traffic</li>
+                <li style="color: #D1D5DB;">Real-time executive smartphone dashboard with live revenue alerts and daily summaries</li>
+                <li style="color: #D1D5DB;">Granular Role-Based Access Control (RBAC) with cryptographic audit security</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Request App Demo</a>
+            </div>
+          </div>
+          <div class="intro-media">
+            <img src="assets/images/eco-hotel.jpg" alt="Executive mobile app and cloud portal" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SOLUTION 06: LEGACY MIGRATION & API BRIDGES (BG-LIGHT)
+         ======================================================== -->
+    <section class="section bg-light" id="migration">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-media">
+            <img src="assets/images/eco-kitchen.jpg" alt="Data migration and legacy bridge server" loading="lazy">
+          </div>
+          <div class="intro-editorial">
+            <div class="section-label text-red">SOLUTION 06</div>
+            <h2 class="section-heading text-dark">Legacy Migration & Custom API Bridges.</h2>
+            <div class="intro-copy">
+              <p>
+                Data migration from older legacy desktop programs, custom webhook connectors, third-party ERP bridges, dedicated on-premise local servers, and customized reports formatted to your company standards.
+              </p>
+              <ul class="pricing-features" style="margin-top: 1.5rem;">
+                <li>Zero-downtime data migration from Tally, FoxPro, Excel sheets, and legacy databases</li>
+                <li>Bi-directional RESTful APIs and webhook connectors to payment gateways and logistics</li>
+                <li>On-premise physical server installation with automated encrypted cloud backups</li>
+                <li>Custom formatted PDF & Excel audit reports tailored to internal auditor requirements</li>
+              </ul>
+            </div>
+            <div class="cta-actions">
+              <a href="book-demo.html" class="btn btn-primary">Discuss Migration Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         ROADMAP: 5-STEP DEVELOPMENT LIFECYCLE (BG-DARK)
+         ======================================================== -->
+    <section class="section bg-dark" id="roadmap">
       <div class="container">
         <div class="section-header-center">
           <div class="section-label text-red">DEVELOPMENT METHODOLOGY</div>
@@ -1492,46 +561,51 @@
           </p>
         </div>
 
-        <div class="cs-process-grid">
+        <div class="roadmap-grid">
           
-          <div class="cs-process-card">
-            <div class="cs-process-num">01</div>
-            <h3 class="cs-process-title">Discovery & Blueprint</h3>
-            <p class="cs-process-desc">
-              We audit your operational flows, define edge cases, and create a comprehensive Scope of Work (SOW) and database diagram.
+          <div class="roadmap-step">
+            <div class="step-num">01</div>
+            <h3 class="step-title">DISCOVERY & BLUEPRINT</h3>
+            <p class="step-desc">
+              We audit your operational flows, define edge cases, and create a comprehensive technical Scope of Work (SOW).
             </p>
+            <div class="step-timeline-meta">Step 1 • Requirements Analysis</div>
           </div>
 
-          <div class="cs-process-card">
-            <div class="cs-process-num">02</div>
-            <h3 class="cs-process-title">UI/UX & Prototype</h3>
-            <p class="cs-process-desc">
+          <div class="roadmap-step">
+            <div class="step-num">02</div>
+            <h3 class="step-title">UI/UX & PROTOTYPE</h3>
+            <p class="step-desc">
               High-fidelity interactive screens and wireframes are reviewed with your stakeholders to confirm operational convenience.
             </p>
+            <div class="step-timeline-meta">Step 2 • Visual Prototype</div>
           </div>
 
-          <div class="cs-process-card">
-            <div class="cs-process-num">03</div>
-            <h3 class="cs-process-title">Agile Sprints</h3>
-            <p class="cs-process-desc">
+          <div class="roadmap-step">
+            <div class="step-num">03</div>
+            <h3 class="step-title">AGILE SPRINTS</h3>
+            <p class="step-desc">
               Rapid bi-weekly sprint deliverables. You test live staging modules at every milestone to ensure logic is 100% accurate.
             </p>
+            <div class="step-timeline-meta">Step 3 • Milestone Sprints</div>
           </div>
 
-          <div class="cs-process-card">
-            <div class="cs-process-num">04</div>
-            <h3 class="cs-process-title">Rigorous QA & Stress</h3>
-            <p class="cs-process-desc">
+          <div class="roadmap-step">
+            <div class="step-num">04</div>
+            <h3 class="step-title">RIGOROUS QA & STRESS</h3>
+            <p class="step-desc">
               High-concurrency load testing, hardware peripheral integration checks (printers, scanners), and security audits.
             </p>
+            <div class="step-timeline-meta">Step 4 • System Hardening</div>
           </div>
 
-          <div class="cs-process-card">
-            <div class="cs-process-num">05</div>
-            <h3 class="cs-process-title">Cutover & SLA</h3>
-            <p class="cs-process-desc">
-              Smooth parallel cutover, staff training sessions, and continuous lifetime technical support directly from our senior developers.
+          <div class="roadmap-step">
+            <div class="step-num">05</div>
+            <h3 class="step-title">DEPLOYMENT & SLA</h3>
+            <p class="step-desc">
+              Smooth parallel cutover, staff training sessions, and continuous lifetime technical support directly from senior developers.
             </p>
+            <div class="step-timeline-meta">Step 5 • Production Go-Live</div>
           </div>
 
         </div>
@@ -1539,98 +613,31 @@
     </section>
 
     <!-- ========================================================
-         TECHNOLOGY STACK MATRIX
+         FINAL CTA BANNER (BG-DARK-CTA)
          ======================================================== -->
-    <section class="cs-section cs-section-alt">
-      <div class="container">
-        <div class="section-header-center">
-          <div class="section-label text-red">TECHNICAL FOUNDATION</div>
-          <h2 class="section-heading text-white">
-            Battle-Tested Architecture & Modern Stack.
-          </h2>
-          <p class="section-subheading text-muted">
-            We build with enterprise-proven technologies designed for high availability, zero latency, and military-grade data security.
-          </p>
+    <section class="section bg-dark-cta" id="consultation">
+      <div class="container text-center">
+        <div class="section-label text-red">NEED A CUSTOM BUILT SYSTEM?</div>
+        <h2 class="cta-heading text-white">
+          Have Specific Requirements for Your <span class="text-brand-red">Custom Software?</span>
+        </h2>
+        <p class="cta-subheading text-muted">
+          Discuss your custom software project directly with our lead developers. We provide tailored architecture, working prototypes, and dedicated post-deployment support.
+        </p>
+        <div class="cta-actions">
+          <a href="book-demo.html" class="btn btn-primary btn-lg">
+            <span>Book a Free Demo</span>
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h7.793L8.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L11.793 8.5H4a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20Custom%20Software%20Development%20(Billing%2C%20CRM%2C%20HRMS)." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <span>Chat on WhatsApp</span>
+          </a>
+          <a href="tel:+919783883297" class="btn btn-secondary btn-lg">
+            <span>Call +91 97838 83297</span>
+          </a>
         </div>
-
-        <div class="cs-tech-matrix">
-          
-          <!-- Category 1 -->
-          <div class="cs-tech-group">
-            <div class="cs-tech-group-title">
-              <span>💻</span> CLIENT & POS
-            </div>
-            <div class="cs-tech-items">
-              <div class="cs-tech-badge"><span>Windows Desktop</span> <span class="tech-type">Electron/C#</span></div>
-              <div class="cs-tech-badge"><span>Android POS</span> <span class="tech-type">Kotlin Native</span></div>
-              <div class="cs-tech-badge"><span>iOS Client</span> <span class="tech-type">Swift Native</span></div>
-              <div class="cs-tech-badge"><span>Web Portals</span> <span class="tech-type">React / Next.js</span></div>
-            </div>
-          </div>
-
-          <!-- Category 2 -->
-          <div class="cs-tech-group">
-            <div class="cs-tech-group-title">
-              <span>⚡</span> BACKEND & APIS
-            </div>
-            <div class="cs-tech-items">
-              <div class="cs-tech-badge"><span>Microservices</span> <span class="tech-type">Node.js / Express</span></div>
-              <div class="cs-tech-badge"><span>Data Pipelines</span> <span class="tech-type">Python FastAPI</span></div>
-              <div class="cs-tech-badge"><span>Realtime Sync</span> <span class="tech-type">WebSockets / gRPC</span></div>
-              <div class="cs-tech-badge"><span>Cloud Edge</span> <span class="tech-type">Cloudflare / AWS</span></div>
-            </div>
-          </div>
-
-          <!-- Category 3 -->
-          <div class="cs-tech-group">
-            <div class="cs-tech-group-title">
-              <span>🗄️</span> DATA & STORAGE
-            </div>
-            <div class="cs-tech-items">
-              <div class="cs-tech-badge"><span>Relational DB</span> <span class="tech-type">PostgreSQL / MySQL</span></div>
-              <div class="cs-tech-badge"><span>In-Memory Cache</span> <span class="tech-type">Redis Cluster</span></div>
-              <div class="cs-tech-badge"><span>Offline Embedded</span> <span class="tech-type">SQLite Encrypted</span></div>
-              <div class="cs-tech-badge"><span>Backup Engine</span> <span class="tech-type">S3 Automated Sync</span></div>
-            </div>
-          </div>
-
-          <!-- Category 4 -->
-          <div class="cs-tech-group">
-            <div class="cs-tech-group-title">
-              <span>🖨️</span> HARDWARE & IOT
-            </div>
-            <div class="cs-tech-items">
-              <div class="cs-tech-badge"><span>Thermal Printers</span> <span class="tech-type">ESC/POS (USB/LAN)</span></div>
-              <div class="cs-tech-badge"><span>Biometric Devices</span> <span class="tech-type">ZKTeco / eSSL</span></div>
-              <div class="cs-tech-badge"><span>Barcode Scanners</span> <span class="tech-type">1D/2D HID/Serial</span></div>
-              <div class="cs-tech-badge"><span>Weighing Scales</span> <span class="tech-type">RS-232 Protocol</span></div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Consultation Banner -->
-        <div class="cs-cta-banner">
-          <div class="cs-badge-pill" style="margin-bottom: 1rem;">DIRECT ARCHITECTURAL CONSULTATION</div>
-          <h2 style="font-family: var(--font-heading); font-size: clamp(1.8rem, 3.2vw, 2.5rem); font-weight: 800; color: #FFFFFF; margin: 0 0 1rem;">
-            Ready to Build Your <span class="cs-gradient-red">Custom Software?</span>
-          </h2>
-          <p style="font-size: 1.05rem; color: #9CA3AF; max-width: 720px; margin: 0 auto 2.5rem; line-height: 1.7;">
-            Discuss your custom software project directly with our lead developers. We provide tailored architectural blueprints, working prototypes, and dedicated post-deployment support.
-          </p>
-          <div class="cta-actions" style="justify-content: center; gap: 1rem;">
-            <a href="https://wa.me/919783883297?text=Hello%20BillingServer%2C%20I%20want%20to%20discuss%20Custom%20Software%20Development%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
-              <span>Chat on WhatsApp</span>
-            </a>
-            <a href="tel:+919783883297" class="btn btn-secondary btn-lg">
-              <span>Call +91 97838 83297</span>
-            </a>
-            <a href="book-demo.html" class="btn btn-primary btn-lg">
-              <span>Book 1-on-1 Demonstration</span>
-            </a>
-          </div>
-        </div>
-
       </div>
     </section>
   </main>
