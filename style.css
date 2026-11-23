@@ -2824,20 +2824,20 @@ ul {
 
 /* ========================================================
    SECTION 8.5: INTERACTIVE LIVE THERMAL RECEIPT PRINTER
-   INDUSTRIAL PRECISION POS INTAKE ENGINE
+   INDUSTRIAL PRECISION POS INTAKE ENGINE (WHITE THEME)
    ======================================================== */
 .live-printer-section {
   position: relative;
   overflow: hidden;
-  background-color: #060608;
+  background-color: #FFFFFF;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(255, 16, 26, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 40%),
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    radial-gradient(circle at 10% 20%, rgba(255, 16, 26, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 0, 0, 0.02) 0%, transparent 40%),
+    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
-  border-top: 1px solid var(--c-dark-border);
-  border-bottom: 1px solid var(--c-dark-border);
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .live-printer-grid {
@@ -2856,19 +2856,17 @@ ul {
   }
 }
 
-/* LEFT FORM PANEL */
+/* LEFT FORM PANEL (WHITE THEME) */
 .form-panel {
-  background: rgba(13, 13, 17, 0.85);
-  border: 1px solid var(--c-dark-border);
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
   border-radius: var(--radius-lg);
   padding: 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
   position: relative;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 
 .form-panel::before {
@@ -2885,7 +2883,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid var(--c-dark-border);
+  border-bottom: 1px solid #F3F4F6;
   padding-bottom: 1rem;
   gap: 0.75rem;
 }
@@ -2903,13 +2901,13 @@ ul {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #111827;
   margin: 0;
 }
 
 .panel-subtitle {
   font-size: 0.825rem;
-  color: #9CA3AF;
+  color: #6B7280;
   margin-top: 0.25rem;
 }
 
@@ -2921,9 +2919,9 @@ ul {
 
 .header-btn {
   padding: 6px 13px;
-  background: #181822;
-  border: 1px solid var(--c-dark-border);
-  color: #F7F7F8;
+  background: #F9FAFB;
+  border: 1px solid #D1D5DB;
+  color: #1F2937;
   border-radius: 20px;
   font-family: var(--font-heading);
   font-weight: 700;
@@ -2934,8 +2932,8 @@ ul {
 
 .header-btn:hover {
   border-color: var(--c-red);
-  background: #242434;
-  color: #fff;
+  background: #FEE2E2;
+  color: var(--c-red);
   transform: translateY(-1px);
 }
 
@@ -2943,14 +2941,14 @@ ul {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255, 16, 26, 0.1);
-  border: 1px solid rgba(255, 16, 26, 0.35);
+  background: rgba(255, 16, 26, 0.08);
+  border: 1px solid rgba(255, 16, 26, 0.25);
   padding: 4px 10px;
   border-radius: 20px;
   font-family: var(--font-heading);
   font-size: 0.68rem;
   font-weight: 800;
-  color: #FFA5A8;
+  color: #DC2626;
   letter-spacing: 0.5px;
 }
 
@@ -2973,8 +2971,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: #101016;
-  border: 1px solid var(--c-dark-border);
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
   border-radius: 12px;
   padding: 1.25rem;
 }
@@ -2988,9 +2986,9 @@ ul {
 
 .form-card label {
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.825rem;
   font-weight: 700;
-  color: #E5E7EB;
+  color: #1F2937;
   letter-spacing: -0.2px;
 }
 
@@ -3001,10 +2999,10 @@ ul {
 .form-card input,
 .form-card select,
 .form-card textarea {
-  background: #09090D;
-  border: 1px solid var(--c-dark-border);
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #111827;
   padding: 0.65rem 0.85rem;
   font-size: 0.88rem;
   font-family: var(--font-body);
@@ -3013,21 +3011,22 @@ ul {
   width: 100%;
 }
 
-.form-card select {
-  cursor: pointer;
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+  color: #9CA3AF;
 }
 
-.form-card textarea {
-  resize: vertical;
-  min-height: 70px;
+.form-card select {
+  cursor: pointer;
+  color: #111827;
 }
 
 .form-card input:focus,
 .form-card select:focus,
 .form-card textarea:focus {
   border-color: var(--c-red);
-  box-shadow: 0 0 0 3px rgba(255, 16, 26, 0.2);
-  background: #0D0D14;
+  box-shadow: 0 0 0 3px rgba(255, 16, 26, 0.15);
+  background: #FFFFFF;
 }
 
 .submit-action-area {
@@ -3048,14 +3047,14 @@ ul {
   justify-content: center;
   gap: 12px;
   cursor: pointer;
-  box-shadow: 0 6px 22px rgba(255, 16, 26, 0.4);
+  box-shadow: 0 6px 22px rgba(255, 16, 26, 0.35);
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-submit:hover {
   background: linear-gradient(135deg, #FF262E 0%, #E00C15 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(255, 16, 26, 0.6);
+  box-shadow: 0 10px 28px rgba(255, 16, 26, 0.55);
 }
 
 .btn-submit:active {
@@ -3119,20 +3118,20 @@ ul {
   align-items: center;
   gap: 6px;
   padding: 0.65rem 0.95rem;
-  background: #12121A;
-  border: 1px solid var(--c-dark-border);
+  background: #F9FAFB;
+  border: 1px solid #D1D5DB;
   border-radius: 8px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #9CA3AF;
+  color: #4B5563;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .sound-toggle-btn.active {
   border-color: rgba(255, 16, 26, 0.4);
-  background: rgba(255, 16, 26, 0.12);
-  color: #FFA5A8;
+  background: rgba(255, 16, 26, 0.1);
+  color: #DC2626;
 }
 
 /* RIGHT PRINTER PANEL */
@@ -3158,10 +3157,10 @@ ul {
   border-radius: 14px 14px 6px 6px;
   padding: 12px 14px 8px 14px;
   box-shadow: 
-    0 20px 40px -10px rgba(0, 0, 0, 0.9),
-    inset 0 1px 1px rgba(255, 255, 255, 0.12),
-    inset 0 -2px 4px rgba(0, 0, 0, 0.95);
-  border: 1px solid var(--c-dark-border);
+    0 20px 45px -10px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.18),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.9);
+  border: 1px solid #272732;
   position: relative;
   z-index: 25;
   display: flex;
@@ -3313,7 +3312,7 @@ ul {
   100% { transform: translateX(50%); }
 }
 
-/* THERMAL PAPER RECEIPT */
+/* THERMAL PAPER RECEIPT (WHITE THEME) */
 .receipt-paper-viewport {
   position: relative;
   width: 100%;
@@ -3322,7 +3321,7 @@ ul {
   justify-content: center;
   z-index: 10;
   perspective: 1000px;
-  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.16));
 }
 
 .receipt-paper {
@@ -3337,15 +3336,17 @@ ul {
 .receipt-slot-top-shadow {
   width: 100%;
   height: 6px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
-  background-color: #F7F7F8;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, transparent 100%);
+  background-color: #FFFFFF;
 }
 
 .receipt-content {
-  background-color: #F7F7F8;
+  background-color: #FFFFFF;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
   background-image: 
-    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.015) 3px),
-    linear-gradient(90deg, rgba(0,0,0,0.03) 0%, transparent 4%, transparent 96%, rgba(0,0,0,0.04) 100%);
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.012) 3px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 0%, transparent 4%, transparent 96%, rgba(0,0,0,0.03) 100%);
   color: #050505;
   font-family: 'Space Mono', 'Share Tech Mono', monospace;
   font-size: 0.65rem;
