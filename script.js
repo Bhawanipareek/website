@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
           recServiceBox.textContent = service;
           recServiceBox.style.color = '#000000';
         } else {
-          recServiceBox.textContent = 'None Selected (कृपया सर्विस चुनें)';
+          recServiceBox.textContent = 'None Selected (Please select a service)';
           recServiceBox.style.color = '#777777';
         }
       }
@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Download Receipt Image
     async function downloadReceiptImage() {
       try {
-        showToast('बिल फोटो तैयार हो रही है...', 'कृपया प्रतीक्षा करें...');
+        showToast('Preparing Receipt Image...', 'Please wait a moment...');
 
         receiptPaper.classList.remove('idle-sway', 'paper-feed-bounce', 'cinematic-printing');
         const originalTransform = receiptPaper.style.transform;
@@ -545,13 +545,13 @@ document.addEventListener('DOMContentLoaded', () => {
           link.click();
           document.body.removeChild(link);
 
-          showToast('बिल फ़ोटो डाउनलोड हो गया! ✅', `फ़ाइल: ${fileName}`);
+          showToast('Receipt Downloaded! ✅', `File: ${fileName}`);
         } else {
-          showToast('सूचना', 'स्क्रीनशॉट कैप्चर समर्थित नहीं है, संपर्क करें +91 9783883297');
+          showToast('Notice', 'Canvas capture unavailable. Contact +91 9783883297');
         }
       } catch (err) {
         console.error("html2canvas error:", err);
-        showToast('सफलतापूर्वक दर्ज', 'विवरण सुरक्षित हो गया है। व्हाट्सएप पर भेजें!');
+        showToast('Inquiry Recorded', 'Details saved successfully. Connecting to WhatsApp!');
       }
     }
 
@@ -578,19 +578,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle Form Submit
     window.handleReceiptSubmit = function() {
       if (!fullNameInput.value.trim()) {
-        alert('कृपया अपना पूरा नाम (Full Name) दर्ज करें');
+        alert('Please enter your Full Name');
         fullNameInput.focus();
         return;
       }
 
       if (!mobileNumberInput.value.trim()) {
-        alert('कृपया अपना मोबाइल नंबर दर्ज करें');
+        alert('Please enter your Mobile Number');
         mobileNumberInput.focus();
         return;
       }
 
       if (!serviceDropdown.value) {
-        alert('कृपया सर्विस (Service) का चयन करें');
+        alert('Please select a Service');
         serviceDropdown.focus();
         return;
       }
