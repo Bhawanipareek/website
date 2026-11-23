@@ -225,14 +225,19 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0.8rem 1.65rem;
   text-decoration: none;
   border-radius: var(--radius-md);
   transition: all var(--t-fast);
   cursor: pointer;
   white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .btn-primary {
@@ -260,18 +265,46 @@ ul {
   transform: translateY(-1px);
 }
 
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #FFFFFF;
+  border: 1px solid #25D366;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.65rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  transition: all var(--t-fast);
+  box-sizing: border-box;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20BD5A;
+  border-color: #20BD5A;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+
 .btn-sm {
-  padding: 0.55rem 1.15rem;
+  padding: 0.55rem 1.25rem;
   font-size: 0.85rem;
+  gap: 0.45rem;
 }
 
 .btn-lg {
-  padding: 0.95rem 2rem;
-  font-size: 1rem;
+  padding: 1rem 2.25rem;
+  font-size: 1.05rem;
+  gap: 0.75rem;
 }
 
 .btn-block {
   width: 100%;
+  display: flex;
+  padding: 0.85rem 1.65rem;
 }
 
 .icon-arrow {
@@ -568,20 +601,6 @@ ul {
   opacity: 1;
 }
 
-.btn-whatsapp {
-  background-color: #25D366;
-  color: #FFFFFF;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btn-whatsapp:hover {
-  background-color: #20BD5A;
-  color: #FFFFFF;
-}
-
 @media (max-width: 640px) {
   .floating-contact-wrap {
     bottom: 16px;
@@ -712,6 +731,9 @@ ul {
 
 .mobile-menu-cta {
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 /* ========================================================
@@ -3110,17 +3132,18 @@ ul {
   color: #FFFFFF;
   border: none;
   border-radius: 10px;
-  padding: 1rem 1.75rem;
+  padding: 1.05rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
   font-size: 1.05rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.5px;
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(255, 16, 26, 0.35);
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
 }
 
 .btn-submit:hover {
