@@ -93,8 +93,8 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
-      margin-top: 3rem;
-      margin-bottom: 3.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
     }
     @media (max-width: 992px) {
       .contact-channels-grid {
@@ -110,36 +110,56 @@
       background: #FFFFFF;
       border: 1px solid #E5E7EB;
       border-radius: var(--radius-lg);
-      padding: 1.75rem 1.5rem;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
-      transition: all 0.25s ease;
+      padding: 2rem 1.6rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-channel-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--c-red), transparent);
+      opacity: 0.3;
+      transition: opacity 0.3s ease;
     }
     .contact-channel-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
-      border-color: rgba(255, 16, 26, 0.35);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+      border-color: rgba(255, 16, 26, 0.4);
+    }
+    .contact-channel-card:hover::before {
+      opacity: 1;
     }
     .contact-card-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
       background: rgba(255, 16, 26, 0.08);
       color: var(--c-red);
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 1.25rem;
+      transition: transform 0.25s ease;
+    }
+    .contact-channel-card:hover .contact-card-icon {
+      transform: scale(1.08);
     }
     .contact-card-icon svg {
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
     }
     .contact-card-label {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.725rem;
+      font-size: 0.75rem;
       font-weight: 700;
       color: var(--c-red);
       letter-spacing: 0.08em;
@@ -148,31 +168,32 @@
     }
     .contact-card-title {
       font-family: var(--font-heading);
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: #111827;
       margin: 0 0 0.5rem;
     }
     .contact-card-value {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #374151;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1F2937;
       margin-bottom: 0.5rem;
       word-break: break-word;
     }
     .contact-card-sub {
-      font-size: 0.825rem;
+      font-size: 0.85rem;
       color: #6B7280;
       margin: 0;
+      line-height: 1.55;
     }
     .contact-card-btn {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      font-size: 0.825rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--c-red);
-      margin-top: 1.25rem;
+      margin-top: 1.35rem;
       text-decoration: none;
       transition: gap 0.2s ease;
     }
